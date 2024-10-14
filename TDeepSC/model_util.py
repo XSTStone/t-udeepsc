@@ -281,12 +281,20 @@ class DecoderLayer(nn.Module):
 
 class Decoder(nn.Module):
     def __init__(self, depth=4, embed_dim=128, num_heads=4, dff=128, drop_rate=0.1):
+        """
+        depth: 解码层的数量
+        embed_dim: 嵌入的维度，每个输入特征的维度
+        num_heads: 多头自注意力机制中的头数，通过并行计算多个注意力机制来提高模型的表达能力
+        dff: 前馈网络的隐藏层维度，通常比嵌入维度大，便于处理非线性变换
+        drop_rate: dropout 概率，用于防止过拟合
+        """
         super(Decoder, self).__init__()
     
         self.d_model = embed_dim
-        self.pos_encoding = PositionalEncoding(embed_dim, drop_rate, 50)
+        self.pos_encoding = PositionalEncoding(embed_dim, drop_rate, 50)  # 位置编码在序列模型中用于为模型提供输入序列中每个位置的信息，以帮助模型理解单词的顺序
         self.dec_layers = nn.ModuleList([DecoderLayer(embed_dim, num_heads, dff, drop_rate) 
                                             for _ in range(depth)])
+        # 使用 nn.ModuleList 创建多个解码器层。这里每一层都是 DecoderLayer 的一个实例，并传入了 embed_dim、num_heads、dff 和 drop_rate
         
     def forward(self, x, memory, look_ahead_mask=None, trg_padding_mask=None):
         for dec_layer in self.dec_layers:

@@ -308,7 +308,7 @@ class TDeepSC_textc(nn.Module):
         x = self.decoder(query_embed, x, None, None, None)  # 将映射到解码器嵌入向量空间的信号X，根据查询嵌入，来进行解码，回到最原始的数据状态---存疑
 
         x = self.head(x.mean(1))  # 解码器输出经过平均池化后，通过分类头 self.head 进行分类
-        return x
+        return x  # 返回分类结果
     
 class TDeepSC_textr(nn.Module):
     def __init__(self,
