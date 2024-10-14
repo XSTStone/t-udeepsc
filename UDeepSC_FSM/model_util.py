@@ -849,34 +849,42 @@ class rho_function(nn.Module):
     
     
 class FSM(nn.Module):
-    def __init__(self, mask_num=64, embed_dim=384):
+    def __init__(self, mask_num=64, embed_dim=384):  # mask_num表示在每次前向传播中要保留的掩码的数量，默认值为 64
         super().__init__()
-        self.mask_generator = mask_gen(embed_dim)
+        self.mask_generator = mask_gen(embed_dim)  # 调用 mask_gen 函数创建掩码生成器，用于生成掩码概率
         self.mask_num = mask_num
-        
+
+
+    """
+    input_feature：输入特征，通常是一个形状为 (batch_size, seq_length, embed_dim) 的张量。
+    noise_feature：噪声特征，用于生成掩码的额外输入。
+    prev_m：上一个时间步的掩码，形状为 (batch_size, seq_length, 1)。
+    num_skip：跳过的特征数量，默认为 1。
+    ratio：用于控制保留掩码数量的比例
+    """
     def forward(self, input_feature, 
                 noise_feature, 
                 prev_m, 
                 num_skip=1,
                 ratio=1.): 
         batch_size = input_feature.shape[0]
+        # 调用mask_gen生成当前输入特征的掩码概率，input_feature[:,num_skip:,:]表示跳过前num_skip个特征，reshape成[batch_size, -1, 2]的形状
         prob = self.mask_generator(input_feature[:,num_skip:,:], prev_m, noise_feature).reshape(batch_size, -1, 2)  # Z^g Z^l Z^c
         temp_feature = torch.zeros_like(input_feature).to(input_feature.device)
-        if self.training:
-            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m
+        if self.training:  # 训练模式
+            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m  # 利用gumbel_softmax从prob中获取m_i,并与上一步的m_(i-1)逐元素相乘，得到当前步的m
             return input_feature, curr_m
-        else:
-          
-            prob_kept = prob[:,:,0]    # Obtain the first one
+        else:  # 推理模式
+            prob_kept = prob[:,:,0]    # Obtain the first one 获取prob中第一个通道的概率，即掩码的保留概率
             # prob_kept = torch.randn(prob_kept.shape).cuda()
-            num_kept = int(np.round(self.mask_num * ratio))
-            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m
-            keep_index = torch.argsort(prob_kept, dim=1, descending=True)[:, :num_kept]    
+            num_kept = int(np.round(self.mask_num * ratio))  # 根据ratio计算要保留的掩码数量num_kept
+            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m  # 使用gumbel_softmax和上一步m，生成当前步的掩码向量m-------这一步好像没用到
+            keep_index = torch.argsort(prob_kept, dim=1, descending=True)[:, :num_kept]  # 获取 prob_kept 中的最大概率索引，并按概率值降序排列，保留前 num_kept 个索引
             print(keep_index[0])
-            skip_index = torch.zeros(batch_size, num_skip, dtype=keep_index.dtype, device=keep_index.device)
-            full_m = torch.cat([skip_index, keep_index + num_skip], dim=1)
-            input_feature = batch_index_select(input_feature, full_m)
-            curr_m = batch_index_select(prev_m, keep_index)
+            skip_index = torch.zeros(batch_size, num_skip, dtype=keep_index.dtype, device=keep_index.device)  # 创建一个全零的 skip_index，用于跳过的特征
+            full_m = torch.cat([skip_index, keep_index + num_skip], dim=1)  # 将 skip_index 和 keep_index 合并为 full_m，以形成完整的掩码
+            input_feature = batch_index_select(input_feature, full_m)  # 使用 batch_index_select 函数从 input_feature 中选择特征
+            curr_m = batch_index_select(prev_m, keep_index)  # 使用 batch_index_select 函数从 prev_m 中选择当前掩码向量m
           
             return input_feature, curr_m
 

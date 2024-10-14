@@ -30,6 +30,15 @@ class DropPath(nn.Module):
     def extra_repr(self) -> str:
         return 'p={}'.format(self.drop_prob)
 
+"""
+简单多层感知器  工作流程：
+输入层：数据输入，特征维度为 in_features。
+第一层全连接（fc1）：将输入特征映射到隐藏特征空间，维度从 in_features 变为 hidden_features。
+激活函数（act）：通过激活函数（默认为 GELU）对隐藏特征进行非线性变换。
+第二层全连接（fc2）：将隐藏特征映射到输出特征空间，维度从 hidden_features 变为 out_features。
+Dropout：在输出前应用 Dropout 操作，减少过拟合。
+输出：返回经过 MLP 处理的输出。
+"""
 class Mlp(nn.Module):
     def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, drop=0.):
         super().__init__()
@@ -97,13 +106,14 @@ class Block(nn.Module):
                  drop_path=0., init_values=None, act_layer=nn.GELU, norm_layer=nn.LayerNorm,
                  attn_head_dim=None):
         super().__init__()
-        self.norm1 = norm_layer(dim)
+        self.norm1 = norm_layer(dim)  # 对输入特征进行归一化处理的层，使用 Layer Normalization
         self.attn = Attention(
             dim, num_heads=num_heads, qkv_bias=qkv_bias, qk_scale=qk_scale,
             attn_drop=attn_drop, proj_drop=drop, attn_head_dim=attn_head_dim)
         # NOTE: drop path for stochastic depth, we shall see if this is better than dropout here
+        # DropPath 是一种正则化技术，旨在通过在训练过程中随机丢弃整个路径来防止深度学习模型的过拟合。在标准的 dropout 中，我们通常丢弃一些神经元的输出，而 DropPath 则是在特定层的整个输出被随机选择丢弃，这意味着在前向传播中某些层的输出会被完全忽略
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
-        self.norm2 = norm_layer(dim)
+        self.norm2 = norm_layer(dim)  # 第二个归一化层，处理从 MLP 输出的特征
         mlp_hidden_dim = int(dim * mlp_ratio)
         self.mlp = Mlp(in_features=dim, hidden_features=mlp_hidden_dim, act_layer=act_layer, drop=drop)
 
@@ -114,6 +124,8 @@ class Block(nn.Module):
             self.gamma_1, self.gamma_2 = None, None
 
     def forward(self, x):
+        # 先归一化，再注意力处理得到更新后的特征，再随机丢弃路径，然后和X相加，形成残差连接
+        # 再次归一化，然后用MLP，进一步处理特征，然后形成第二次残差链接
         if self.gamma_1 is None:
             x = x + self.drop_path(self.attn(self.norm1(x)))
             x = x + self.drop_path(self.mlp(self.norm2(x)))
@@ -157,7 +169,11 @@ def get_sinusoid_encoding_table(n_position, d_hid):
 
     return torch.FloatTensor(sinusoid_table).unsqueeze(0) 
 
-
+"""
+PositionalEncoding 类是位置编码（Positional Encoding）的实现，主要用于将位置信息引入到模型中
+尤其是在像 Transformer 这样没有显式的顺序信息的架构中。
+位置编码用于补充自注意力机制（Self-Attention）的顺序信息，让模型能够区分序列中的不同位置
+"""
 class PositionalEncoding(nn.Module):
     "Implement the PE function."
     def __init__(self, d_model, dropout, max_len=5000):
@@ -165,14 +181,16 @@ class PositionalEncoding(nn.Module):
         self.dropout = nn.Dropout(p=dropout)
         
         # Compute the positional encodings once in log space.
-        pe = torch.zeros(max_len, d_model)
-        position = torch.arange(0, max_len).unsqueeze(1) # [max_len, 1]
+        pe = torch.zeros(max_len, d_model)  # 初始化一个形状为 (max_len, d_model) 的全零张量，用于存储每个位置的编码信息
+        position = torch.arange(0, max_len).unsqueeze(1)  # 创建一个从 0 到 max_len 的序列，表示位置索引。维度为 [max_len, 1]
         div_term = torch.exp(torch.arange(0, d_model, 2) *
-                             -(math.log(10000.0) / d_model)) #math.log(math.exp(1)) = 1
-        pe[:, 0::2] = torch.sin(position * div_term)
-        pe[:, 1::2] = torch.cos(position * div_term)
-        pe = pe.unsqueeze(0) #[1, max_len, d_model]
-        self.register_buffer('pe', pe)
+                             -(math.log(10000.0) / d_model)) # math.log(math.exp(1)) = 1 计算用于正弦和余弦函数的分母部分。这个分母是一个随特征维度变化的指数衰减值，其目的是保证不同维度上的频率不同，从而编码不同的位置信息
+        # 生成正弦和余弦编码
+        # 正弦和余弦函数生成的编码值使得不同位置的编码是不同的，并且能够保留一定的相对位置信息。这种结构设计的目的是让模型能够通过相对位置捕捉顺序信息
+        pe[:, 0::2] = torch.sin(position * div_term)  # 偶数列使用正弦编码
+        pe[:, 1::2] = torch.cos(position * div_term)  # 奇数列使用余弦编码
+        pe = pe.unsqueeze(0) # 为位置编码增加一个批次维度，[1, max_len, d_model]
+        self.register_buffer('pe', pe)  # register_buffer: 将 pe 位置编码注册为缓冲区，不会作为模型参数参与训练，但会随着模型保存和加载
         
     def forward(self, x):
         x = x + self.pe[:, :x.size(1)]
@@ -204,7 +222,9 @@ class MultiHeadedAttention(nn.Module):
             mask = mask.unsqueeze(1)
         nbatches = query.size(0)
         
-        # 1) Do all the linear projections in batch from d_model => h x d_k 
+        # 1) Do all the linear projections in batch from d_model => h x d_k
+        # 将输入 query，key，value 通过对应的线性层 wq, wk, wv，将其转换为新的维度（d_model），并 reshape 为 num_heads 个子向量，维度为 d_k
+        # 通过 view 和 transpose 函数，将 query, key, value 的形状转换为 (nbatches, num_heads, seq_len, d_k)，其中 seq_len 是序列长度
         query = self.wq(query).view(nbatches, -1, self.num_heads, self.d_k)
         query = query.transpose(1, 2)
         
@@ -214,6 +234,7 @@ class MultiHeadedAttention(nn.Module):
         value = self.wv(value).view(nbatches, -1, self.num_heads, self.d_k)
         value = value.transpose(1, 2)
 
+        # 进行多头注意力计算，返回新的值 x 和注意力权重 p_attn
         x, self.attn = self.attention(query, key, value, mask=mask)
         
         # 3) "Concat" using a view and apply a final linear. 
@@ -229,12 +250,12 @@ class MultiHeadedAttention(nn.Module):
         "Compute 'Scaled Dot Product Attention'"
         d_k = query.size(-1)
         scores = torch.matmul(query, key.transpose(-2, -1)) \
-                 / math.sqrt(d_k)
+                 / math.sqrt(d_k)  # 通过计算查询向量和键向量的点积，得到注意力分数
         #print(mask.shape)
         if mask is not None:
             scores += (mask * -1e9)
             # attention weights
-        p_attn = F.softmax(scores, dim = -1)
+        p_attn = F.softmax(scores, dim = -1)  # 使用 softmax 函数将分数转换为注意力权重，这些权重表示每个位置的重要性
         return torch.matmul(p_attn, value), p_attn
 
 class PositionwiseFeedForward(nn.Module):
@@ -256,10 +277,11 @@ class DecoderLayer(nn.Module):
     "Decoder is made of self-attn, src-attn, and feed forward (defined below)"
     def __init__(self, d_model, num_heads, dff, dropout):
         super(DecoderLayer, self).__init__()
-        self.self_mha = MultiHeadedAttention(num_heads, d_model, dropout = 0.1)
-        self.src_mha = MultiHeadedAttention(num_heads, d_model, dropout = 0.1)
-        self.ffn = PositionwiseFeedForward(d_model, dff, dropout = 0.1)
-        
+        self.self_mha = MultiHeadedAttention(num_heads, d_model, dropout = 0.1)  # 多头自注意力机制，它接收输入序列 x，并计算每个元素对序列中其他元素的注意力分数
+        self.src_mha = MultiHeadedAttention(num_heads, d_model, dropout = 0.1)  # 跨注意力机制，它计算输入序列 x 与记忆 memory（通常是编码器输出）的注意力分数
+        self.ffn = PositionwiseFeedForward(d_model, dff, dropout = 0.1)  # 两层的前馈神经网络，类似于一个扩展和压缩的过程；第一个全连接层将维度从 d_model 扩展到 dff，然后通过激活函数，再通过另一个全连接层将维度压缩回 d_model
+
+        # 层归一化的作用是帮助稳定训练，避免梯度消失和梯度爆炸问题
         self.layernorm1 = nn.LayerNorm(d_model, eps=1e-6)
         self.layernorm2 = nn.LayerNorm(d_model, eps=1e-6)
         self.layernorm3 = nn.LayerNorm(d_model, eps=1e-6)
@@ -267,10 +289,16 @@ class DecoderLayer(nn.Module):
         #self.sublayer = clones(SublayerConnection(size, dropout), 3)
  
     def forward(self, x, memory, look_ahead_mask, trg_padding_mask):
-        "Follow Figure 1 (right) for connections."
-        attn_output = self.self_mha(x, x, x, look_ahead_mask)
-        x = self.layernorm1(x + attn_output)
-     
+        "文章图5右侧的三层连接方式：多头自注意力+多头跨注意力+前馈神经网络"
+        attn_output = self.self_mha(x, x, x, look_ahead_mask)  # look_ahead_mask 作为掩码（mask）用来防止模型查看未来的 tokens，常用于解码阶段防止模型作弊
+        x = self.layernorm1(x + attn_output)  # 在每个子层后，进行残差连接（即输入 x 加上经过子层的输出，逐元素相加），然后进行层归一化
+
+        """
+        注解中的 q, k, v 分别代表 query（查询向量）、key（键向量） 和 value（值向量），它们是多头自注意力机制（Multi-Headed Attention）中的核心概念。这些向量之间的相互作用决定了注意力的计算方式。具体解释如下：
+        Query (q): 查询向量用于“询问”其他位置的特征，查询当前位置与其他位置的相关性。
+        Key (k): 键向量帮助查询向量找到与其相关的其他位置。键向量和查询向量的相似度决定了注意力的权重。
+        Value (v): 值向量是实际要聚合的信息。在多头注意力中，计算出的注意力权重会应用于值向量，从而决定最终的注意力输出
+        """
         src_output = self.src_mha(x, memory, memory, trg_padding_mask) # q, k, v
         x = self.layernorm2(x + src_output)
         
@@ -295,11 +323,17 @@ class Decoder(nn.Module):
         self.dec_layers = nn.ModuleList([DecoderLayer(embed_dim, num_heads, dff, drop_rate) 
                                             for _ in range(depth)])
         # 使用 nn.ModuleList 创建多个解码器层。这里每一层都是 DecoderLayer 的一个实例，并传入了 embed_dim、num_heads、dff 和 drop_rate
-        
+
+    """
+    x: 输入特征，通常是从编码器获得的特征表示，形状为 [batch_size, target_sequence_length, embed_dim]。
+    memory: 编码器输出的记忆（也称为上下文向量），它包含输入序列的信息。
+    look_ahead_mask: 可选参数，用于防止模型在生成序列时看到未来的词（即未生成的部分），通常用于训练时的自回归模型。
+    trg_padding_mask: 可选参数，用于遮挡目标序列中填充的部分，以确保模型在计算注意力时不考虑这些无用的填充部分
+    """
     def forward(self, x, memory, look_ahead_mask=None, trg_padding_mask=None):
         for dec_layer in self.dec_layers:
-            x = dec_layer(x, memory, look_ahead_mask, trg_padding_mask)  
-        return x
+            x = dec_layer(x, memory, look_ahead_mask, trg_padding_mask)  # 每一层的 dec_layer 进行自注意力计算和前馈网络处理，输出新的特征表示 x。该过程的目的是在生成过程中结合目标序列的上下文信息
+        return x  # 返回最终的 x，这通常是处理后的特征表示，可以用于后续的任务
 
 
 
