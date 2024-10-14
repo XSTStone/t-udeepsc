@@ -793,28 +793,37 @@ class TextEncoder_FSM(nn.Module):
 class mask_gen(nn.Module):
     def __init__(self, embed_dim=384):
         super().__init__()
-        self.in_conv = nn.Sequential(
-            nn.LayerNorm(embed_dim),
-            nn.Linear(embed_dim, embed_dim),
-            nn.GELU()
+        self.in_conv = nn.Sequential(  # 输入的卷积层的内容：
+            nn.LayerNorm(embed_dim),  # 对输入特征进行层归一化
+            nn.Linear(embed_dim, embed_dim),  # 线性变换，将输入的嵌入维度映射到特定维度
+            nn.GELU()  # 激活函数
         )
-        self.out_conv = nn.Sequential(
-            nn.Linear(embed_dim + embed_dim // 2, embed_dim // 2),
-            nn.GELU(),
+        """
+        多层线性变换将特征维度逐步减少，最后输出两个值
+        两个值经过LogSoftmax变换表示概率分布
+        """
+        self.out_conv = nn.Sequential(  # 输出的卷积层内容
+            nn.Linear(embed_dim + embed_dim // 2, embed_dim // 2),  # 线性变换
+            nn.GELU(),  # 激活函数，引入非线性
             nn.Linear(embed_dim // 2, embed_dim // 4),
             nn.GELU(),
             nn.Linear(embed_dim // 4, 2),
             nn.LogSoftmax(dim=-1)
         )
 
+    """
+    x：输入特征，形状为 (batch_size, seq_len, embed_dim)
+    policy：用于全局信息加权的政策向量，形状通常与输入特征相匹配
+    noise_feature：噪声特征，用于增强模型的鲁棒性
+    """
     def forward(self, x, policy, noise_feature):
         x = self.in_conv(x)
-        B, N, C = x.size()
-        local_x = x[:,:, :C//2]
-        global_x = (x[:,:, C//2:] * policy).sum(dim=1, keepdim=True) / torch.sum(policy, dim=1, keepdim=True)
+        B, N, C = x.size()  # 提取输入特征的维度：batch size, seq_length, embed_dim
+        local_x = x[:,:, :C//2]  # 提取前一半的特征作为局部特征
+        global_x = (x[:,:, C//2:] * policy).sum(dim=1, keepdim=True) / torch.sum(policy, dim=1, keepdim=True)  # 根据文章公式12计算全局特征
  
-        x = torch.cat([local_x, global_x.expand(B, N, C//2), noise_feature.expand(B,N,C//2)], dim=-1)
-        return self.out_conv(x)
+        x = torch.cat([local_x, global_x.expand(B, N, C//2), noise_feature.expand(B,N,C//2)], dim=-1)  # 将局部特征，全局特征的扩展，噪声特征的扩展进行拼接
+        return self.out_conv(x)  # 过一个输出卷积层，然后将得到的概率分布返回
     
 
 class rho_layer(nn.Module):
@@ -829,7 +838,6 @@ class rho_layer(nn.Module):
         H = torch.abs(self.H)
         x = F.linear(x,H)
         return torch.tanh(x* 1.7)
-
 
 
 class rho_function(nn.Module):
