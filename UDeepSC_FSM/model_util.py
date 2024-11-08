@@ -793,37 +793,28 @@ class TextEncoder_FSM(nn.Module):
 class mask_gen(nn.Module):
     def __init__(self, embed_dim=384):
         super().__init__()
-        self.in_conv = nn.Sequential(  # 输入的卷积层的内容：
-            nn.LayerNorm(embed_dim),  # 对输入特征进行层归一化
-            nn.Linear(embed_dim, embed_dim),  # 线性变换，将输入的嵌入维度映射到特定维度
-            nn.GELU()  # 激活函数
+        self.in_conv = nn.Sequential(
+            nn.LayerNorm(embed_dim),
+            nn.Linear(embed_dim, embed_dim),
+            nn.GELU()
         )
-        """
-        多层线性变换将特征维度逐步减少，最后输出两个值
-        两个值经过LogSoftmax变换表示概率分布
-        """
-        self.out_conv = nn.Sequential(  # 输出的卷积层内容
-            nn.Linear(embed_dim + embed_dim // 2, embed_dim // 2),  # 线性变换
-            nn.GELU(),  # 激活函数，引入非线性
+        self.out_conv = nn.Sequential(
+            nn.Linear(embed_dim + embed_dim // 2, embed_dim // 2),
+            nn.GELU(),
             nn.Linear(embed_dim // 2, embed_dim // 4),
             nn.GELU(),
             nn.Linear(embed_dim // 4, 2),
             nn.LogSoftmax(dim=-1)
         )
 
-    """
-    x：输入特征，形状为 (batch_size, seq_len, embed_dim)
-    policy：用于全局信息加权的政策向量，形状通常与输入特征相匹配
-    noise_feature：噪声特征，用于增强模型的鲁棒性
-    """
     def forward(self, x, policy, noise_feature):
         x = self.in_conv(x)
-        B, N, C = x.size()  # 提取输入特征的维度：batch size, seq_length, embed_dim
-        local_x = x[:,:, :C//2]  # 提取前一半的特征作为局部特征
-        global_x = (x[:,:, C//2:] * policy).sum(dim=1, keepdim=True) / torch.sum(policy, dim=1, keepdim=True)  # 根据文章公式12计算全局特征
+        B, N, C = x.size()
+        local_x = x[:,:, :C//2]
+        global_x = (x[:,:, C//2:] * policy).sum(dim=1, keepdim=True) / torch.sum(policy, dim=1, keepdim=True)
  
-        x = torch.cat([local_x, global_x.expand(B, N, C//2), noise_feature.expand(B,N,C//2)], dim=-1)  # 将局部特征，全局特征的扩展，噪声特征的扩展进行拼接
-        return self.out_conv(x)  # 过一个输出卷积层，然后将得到的概率分布返回
+        x = torch.cat([local_x, global_x.expand(B, N, C//2), noise_feature.expand(B,N,C//2)], dim=-1)
+        return self.out_conv(x)
     
 
 class rho_layer(nn.Module):
@@ -838,6 +829,7 @@ class rho_layer(nn.Module):
         H = torch.abs(self.H)
         x = F.linear(x,H)
         return torch.tanh(x* 1.7)
+
 
 
 class rho_function(nn.Module):
@@ -857,42 +849,34 @@ class rho_function(nn.Module):
     
     
 class FSM(nn.Module):
-    def __init__(self, mask_num=64, embed_dim=384):  # mask_num表示在每次前向传播中要保留的掩码的数量，默认值为 64
+    def __init__(self, mask_num=64, embed_dim=384):
         super().__init__()
-        self.mask_generator = mask_gen(embed_dim)  # 调用 mask_gen 函数创建掩码生成器，用于生成掩码概率
+        self.mask_generator = mask_gen(embed_dim)
         self.mask_num = mask_num
-
-
-    """
-    input_feature：输入特征，通常是一个形状为 (batch_size, seq_length, embed_dim) 的张量。
-    noise_feature：噪声特征，用于生成掩码的额外输入。
-    prev_m：上一个时间步的掩码，形状为 (batch_size, seq_length, 1)。
-    num_skip：跳过的特征数量，默认为 1。
-    ratio：用于控制保留掩码数量的比例
-    """
+        
     def forward(self, input_feature, 
                 noise_feature, 
                 prev_m, 
                 num_skip=1,
                 ratio=1.): 
         batch_size = input_feature.shape[0]
-        # 调用mask_gen生成当前输入特征的掩码概率，input_feature[:,num_skip:,:]表示跳过前num_skip个特征，reshape成[batch_size, -1, 2]的形状
         prob = self.mask_generator(input_feature[:,num_skip:,:], prev_m, noise_feature).reshape(batch_size, -1, 2)  # Z^g Z^l Z^c
         temp_feature = torch.zeros_like(input_feature).to(input_feature.device)
-        if self.training:  # 训练模式
-            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m  # 利用gumbel_softmax从prob中获取m_i,并与上一步的m_(i-1)逐元素相乘，得到当前步的m
+        if self.training:
+            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m
             return input_feature, curr_m
-        else:  # 推理模式
-            prob_kept = prob[:,:,0]    # Obtain the first one 获取prob中第一个通道的概率，即掩码的保留概率
+        else:
+          
+            prob_kept = prob[:,:,0]    # Obtain the first one
             # prob_kept = torch.randn(prob_kept.shape).cuda()
-            num_kept = int(np.round(self.mask_num * ratio))  # 根据ratio计算要保留的掩码数量num_kept
-            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m  # 使用gumbel_softmax和上一步m，生成当前步的掩码向量m-------这一步好像没用到
-            keep_index = torch.argsort(prob_kept, dim=1, descending=True)[:, :num_kept]  # 获取 prob_kept 中的最大概率索引，并按概率值降序排列，保留前 num_kept 个索引
+            num_kept = int(np.round(self.mask_num * ratio))
+            curr_m = F.gumbel_softmax(prob, hard=True)[:, :, 0:1] * prev_m
+            keep_index = torch.argsort(prob_kept, dim=1, descending=True)[:, :num_kept]    
             print(keep_index[0])
-            skip_index = torch.zeros(batch_size, num_skip, dtype=keep_index.dtype, device=keep_index.device)  # 创建一个全零的 skip_index，用于跳过的特征
-            full_m = torch.cat([skip_index, keep_index + num_skip], dim=1)  # 将 skip_index 和 keep_index 合并为 full_m，以形成完整的掩码
-            input_feature = batch_index_select(input_feature, full_m)  # 使用 batch_index_select 函数从 input_feature 中选择特征
-            curr_m = batch_index_select(prev_m, keep_index)  # 使用 batch_index_select 函数从 prev_m 中选择当前掩码向量m
+            skip_index = torch.zeros(batch_size, num_skip, dtype=keep_index.dtype, device=keep_index.device)
+            full_m = torch.cat([skip_index, keep_index + num_skip], dim=1)
+            input_feature = batch_index_select(input_feature, full_m)
+            curr_m = batch_index_select(prev_m, keep_index)
           
             return input_feature, curr_m
 

@@ -11,7 +11,7 @@ def get_args():
     parser.add_argument('--batch_size', default=64, type=int)
     parser.add_argument('--epochs', default=300, type=int)
     parser.add_argument('--save_freq', default=15, type=int)
-    parser.add_argument('--update_freq', default=1, type=int)
+    parser.add_argument('--update_freq', default=2, type=int)
     parser.add_argument('--chep', default='', type=str,
                         help='chceckpint path')
     

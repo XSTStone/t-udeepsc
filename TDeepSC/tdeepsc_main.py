@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta
 import numpy as np
 import time
 import torch
@@ -6,6 +6,7 @@ import utils
 import model   
 import torch.backends.cudnn as cudnn
 
+from model_util import print_log_file
 from engine import *
 from pathlib import Path
 from base_args import get_args
@@ -26,11 +27,13 @@ def seed_initial(seed=0):
 
 def main(args):
     ### Configuration
+    #args.device = "cpu"
     utils.init_distributed_mode(args)
     device = torch.device(args.device)
     seed_initial(seed=args.seed)
     ####################################### Get the model
     model = get_model(args)
+    log_root_dir = "/home/local/Stone/code/t-udeepsc/TDeepSC/log"
     if args.resume:
         checkpoint_model = load_checkpoint(model, args)
         
@@ -43,6 +46,7 @@ def main(args):
     print('=> Number of params: {} M'.format(n_parameters / 1e6))
     print('')
     model.to(device)
+    print('Hello from main file')
     model_without_ddp = model
     if args.distributed:
         model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.gpu], find_unused_parameters=True)
@@ -58,9 +62,10 @@ def main(args):
     #         param.requires_grad=True
         
     
-    
+    print("test message in tdeepsc-main file") 
     trainset = build_dataset(is_train=True, args=args)
 
+    # 如果是视频语义分析msa，需要将视频内不同模态的数据进行整理/变形，需要定义Collate函数
     Collate_fn = collate_fn if args.ta_perform.startswith('msa') else None 
     trainloader = torch.utils.data.DataLoader(dataset=trainset,
                                             sampler=torch.utils.data.RandomSampler(trainset),
@@ -71,7 +76,7 @@ def main(args):
     valset = None
     if args.ta_perform:
         valset = build_dataset(is_train=False, args=args)
-        sampler_val = torch.utils.data.SequentialSampler(valset)
+        sampler_val = torch.utils.data.SequentialSampler(valset)  # 按顺序 遍历数据集中的所有样本。它会返回一个索引序列，按顺序依次读取 valset 中的数据。
     else:
         valset = None
 
@@ -113,21 +118,26 @@ def main(args):
                                 net=model, dataloader=dataloader_val, 
                                 device=device, criterion=criterion)
             if args.ta_perform.startswith('imgc') or args.ta_perform.startswith('textc'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['acc']*100)
                 print(f"Accuracy of the network on the {len(valset)} test samples: {test_stats['acc']*100:.3f}")
             elif args.ta_perform.startswith('imgr'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['psnr'])
                 print(f"Average PSNR on the {len(valset)} test samples: {test_stats['psnr']:.3f}dB")
             elif args.ta_perform.startswith('textr'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['bleu'])
                 print(f"Average BLEU on the {len(valset)} test samples: {test_stats['bleu']:.3f}")
         elif args.ta_perform.startswith('msa'):
             test_stats = evaluate_msa(ta_perform=args.ta_perform, 
                                 net=model, dataloader=dataloader_val, 
                                 device=device, criterion=criterion)
+            print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['acc']*100)
             print(f"Accuracy of the network on the {len(valset)} test samples: {test_stats['acc']*100:.3f}")
         
         elif args.ta_perform.startswith('vqa'):
             test_stats = evaluate_vqa(ta_perform=args.ta_perform, 
                                 net=model, dataloader=dataloader_val, 
                                 device=device, criterion=criterion)
+            print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_value=test_stats)
             print("Overall Accuracy is: %.02f" % (test_stats['overall']))
             print("Per Answer Type Accuracy is the following:")
             for ansType in test_stats['perAnswerType']:
@@ -183,21 +193,26 @@ def main(args):
                                     net=model, dataloader=dataloader_val, 
                                     device=device, criterion=criterion)
             if args.ta_perform.startswith('imgc') or args.ta_perform.startswith('textc'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['acc']*100)
                 print(f"Accuracy of the network on the {len(valset)} test images: {test_stats['acc']*100:.3f}")
             elif args.ta_perform.startswith('imgr'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['psnr'])
                 print(f"Average PSNR on the {len(valset)} test images: {test_stats['psnr']:.3f} dB")
             elif args.ta_perform.startswith('textr'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['bleu'])
                 print(f"Average BLEU on the {len(valset)} test samples: {test_stats['bleu']:.3f}")
             elif args.ta_perform.startswith('msa'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_len=len(valset), extra_value=test_stats['acc']*100)
                 print(f"Accuracy of the network on the {len(valset)} test samples: {test_stats['acc']*100:.3f}")
             elif args.ta_perform.startswith('vqa'):
+                print_log_file(root_dir=log_root_dir, ta_perform=args.ta_perform, end=True, extra_value=test_stats)
                 print("Overall Accuracy is: %.02f" % (test_stats['overall']))
                 print("Per Answer Type Accuracy is the following:")
                 for ansType in test_stats['perAnswerType']:
                     print("%s : %.02f" % (ansType, test_stats['perAnswerType'][ansType]))
        
     total_time = time.time() - start_time
-    total_time_str = str(datetime.timedelta(seconds=int(total_time)))
+    total_time_str = str(timedelta(seconds=int(total_time)))
     print('Training time {}'.format(total_time_str))
 
 

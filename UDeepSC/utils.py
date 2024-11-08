@@ -23,9 +23,6 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report, accuracy_score, f1_score
 ## Including pakages
-"""
-根据不同任务类型，选择不同的损失函数
-"""
 def sel_criterion_train(args, ta_sel, device):
     criterion_group = {}
     for ta in ta_sel:
@@ -80,11 +77,11 @@ def get_model(args):
         drop_path_rate=args.drop_path,
         drop_block_rate=None,
     )
-
-
+ 
+     
     n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print('=> Number of params: {} M'.format(n_parameters / 1e6))
-
+    
     return model
 
 def load_checkpoint(model,args):
@@ -292,16 +289,6 @@ def get_grad_norm_(parameters, norm_type: float = 2.0) -> torch.Tensor:
     return total_norm
 
 
-"""
-这个函数 cosine_scheduler 旨在生成一个学习率调度表，其中学习率随着训练过程呈现余弦衰减。它通常用于深度学习的训练过程中，以逐渐减少学习率，帮助模型更好地收敛。
-该函数还支持warmup（预热）机制，逐步增加学习率以避免模型在训练初期震荡过大
-base_value: 学习率的初始值--预热之后的最高值
-final_value: 余弦衰减结束时的最小学习率--训练结束时的学习率
-niter_per_ep: 每个 epoch 需要的迭代次数
-warmup_epochs: 预热阶段的 epoch 数量，在这段时间内，学习率逐步从 start_warmup_value 增加到 base_value
-start_warmup_value: 预热阶段开始时的初始学习率
-warmup_steps: 如果指定了 warmup_steps，则用于替代 warmup_epochs * niter_per_ep，即直接指定预热的总步数
-"""
 def cosine_scheduler(base_value, final_value, epochs, niter_per_ep, warmup_epochs=0,
                      start_warmup_value=0, warmup_steps=-1):
     warmup_schedule = np.array([])
@@ -410,8 +397,8 @@ def tensor2cuda(tensor):
         tensor = tensor.cuda()
 
     return tensor
-
-
+    
+    
 def create_ds_config(args):
     args.deepspeed_config = os.path.join(args.output_dir, "deepspeed_config.json")
     with open(args.deepspeed_config, mode="w") as writer:
@@ -478,7 +465,7 @@ def get_imagenet_list(path):
         reader = csv.reader(csvfile)
         for row in reader:
             fns.append(row[0])
-
+    
     return fns
 
 def complex_sig(shape, device):
@@ -547,17 +534,17 @@ def tokens2sentence(outputs):
     for tokens in outputs:
         sentence = []
         for token in tokens:
-
+            
             word = tokenizer.decode([int(token)])
-
+ 
             if word == '[PAD]':
                 break
             sentence.append(word)
         sentences.append(sentence)
-    return sentences
-
+    return sentences  
+ 
 def computebleu(sentences, targets):
-  score = 0
+  score = 0 
   assert (len(sentences) == len(targets))
   def cut_token(sentence):
     tmp = []
@@ -566,14 +553,14 @@ def computebleu(sentences, targets):
         tmp.append(token)
       else:
         tmp += [word for word in token]
-    return tmp
+    return tmp 
 
   for sentence, target in zip(sentences, targets):
     sentence = cut_token(sentence)
-
+   
     target = cut_token(target)
 
-    score += sentence_bleu([target], sentence, weights=(1, 0, 0, 0))
+    score += sentence_bleu([target], sentence, weights=(1, 0, 0, 0))                                                                                          
   return score
 
 
@@ -591,7 +578,7 @@ def calc_metrics(y_true, y_pred, mode=None, to_print=True):
         :return: Classification accuracy
         """
         return np.sum(np.round(preds) == np.round(truths)) / float(len(truths))
-
+    
     test_preds = y_pred
     test_truth = y_true
 
@@ -606,7 +593,7 @@ def calc_metrics(y_true, y_pred, mode=None, to_print=True):
     corr = np.corrcoef(test_preds, test_truth)[0][1]
     mult_a7 = multiclass_acc(test_preds_a7, test_truth_a7)
     mult_a5 = multiclass_acc(test_preds_a5, test_truth_a5)
-
+    
     # f_score = f1_score((test_preds[non_zeros] > 0), (test_truth[non_zeros] > 0), average='weighted')
     # pos - neg
     binary_truth = (test_truth[non_zeros] > 0)
@@ -619,7 +606,7 @@ def calc_metrics(y_true, y_pred, mode=None, to_print=True):
         print("Classification Report (pos/neg) :")
         # print(classification_report(binary_truth, binary_preds, digits=5))
         print("Accuracy (pos/neg) ", accuracy_score(binary_truth, binary_preds))
-
+        
         # non-neg - neg
         binary_truth = (test_truth >= 0)
         binary_preds = (test_preds >= 0)
@@ -628,26 +615,26 @@ def calc_metrics(y_true, y_pred, mode=None, to_print=True):
             print("Classification Report (non-neg/neg) :")
             # print(classification_report(binary_truth, binary_preds, digits=5))
             print("Accuracy (non-neg/neg) ", accuracy_score(binary_truth, binary_preds))
-
+        
         return accuracy_score(binary_truth, binary_preds)
-
-
+    
+    
 class DiffPruningLoss(torch.nn.Module):
     def __init__(self, base_criterion: torch.nn.Module, dynamic=True, ratio_weight=2.0, main_weight=1.):
         super().__init__()
         self.base_criterion = base_criterion
         self.main_weight = 1.
         self.surp_weight = 0.022
-        self.rho_weight = 0.01
-        self.vq_weight = 2.0
+        self.rho_weight = 0.01    
+        self.vq_weight = 2.0    
         self.print_mode = True
-
+        
         self.count = 0
         self.main_loss_record = 0.
         self.surp_loss_record = 0.
         self.vq_loss_record = 0.
         self.keep_ratio_record = 0.
-
+        
         self.dynamic = dynamic
         if self.dynamic:
             print('using dynamic loss')
@@ -657,8 +644,8 @@ class DiffPruningLoss(torch.nn.Module):
         surp_loss = 0.0
         score = mask_m
         keep_ratio = score.mean(1)
-
-        surp_loss = surp_loss + ((keep_ratio - rho) ** 2).mean()    ### The supervised loss.
+   
+        surp_loss = surp_loss + ((keep_ratio - rho) ** 2).mean()    ### The supervised loss. 
         main_loss = self.base_criterion(pred, labels)              ### Reconstruction loss.
 
         loss = self.main_weight * main_loss + \
@@ -672,9 +659,9 @@ class DiffPruningLoss(torch.nn.Module):
             self.keep_ratio_record += keep_ratio.mean().item()
             self.count += 1
             if self.count == 100:
-                print('loss info: main_loss=%.4f, surp_loss=%.4f, vq_loss=%.4f, keep ratio=%.4f'
-                        % (self.main_loss_record / self.count,
-                           self.surp_loss_record / self.count,
+                print('loss info: main_loss=%.4f, surp_loss=%.4f, vq_loss=%.4f, keep ratio=%.4f' 
+                        % (self.main_loss_record / self.count, 
+                           self.surp_loss_record / self.count, 
                            self.vq_loss_record / self.count,
                            self.keep_ratio_record / self.count))
                 self.main_loss_record = 0

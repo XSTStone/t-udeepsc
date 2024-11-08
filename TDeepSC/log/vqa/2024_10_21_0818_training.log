@@ -1,0 +1,2225 @@
+INFO:root:Training started
+INFO:root:[Epoch: 1, Batch: 0/443757, Loss: 109182.2344, Acc: 0.0000%, lr: 0.0000e+00
+INFO:root:[Epoch: 1, Batch: 25000/443757, Loss: 104911.2959, Acc: 0.0319%, lr: 1.5030e-05
+INFO:root:[Epoch: 1, Batch: 50000/443757, Loss: 88331.9733, Acc: 0.0340%, lr: 3.0000e-05
+INFO:root:[Epoch: 1, Batch: 75000/443757, Loss: 70773.0622, Acc: 0.0373%, lr: 2.9999e-05
+INFO:root:[Epoch: 1, Batch: 100000/443757, Loss: 57372.8879, Acc: 0.0320%, lr: 2.9995e-05
+INFO:root:[Epoch: 1, Batch: 125000/443757, Loss: 47563.1607, Acc: 3.0340%, lr: 2.9989e-05
+INFO:root:[Epoch: 1, Batch: 150000/443757, Loss: 40317.0969, Acc: 5.5695%, lr: 2.9980e-05
+INFO:root:[Epoch: 1, Batch: 175000/443757, Loss: 34855.0072, Acc: 7.5550%, lr: 2.9969e-05
+INFO:root:[Epoch: 1, Batch: 200000/443757, Loss: 30653.5442, Acc: 9.0997%, lr: 2.9955e-05
+INFO:root:[Epoch: 1, Batch: 225000/443757, Loss: 27329.1117, Acc: 10.2102%, lr: 2.9938e-05
+INFO:root:[Epoch: 1, Batch: 250000/443757, Loss: 24651.4096, Acc: 11.0702%, lr: 2.9920e-05
+INFO:root:[Epoch: 1, Batch: 275000/443757, Loss: 22452.2432, Acc: 11.7833%, lr: 2.9898e-05
+INFO:root:[Epoch: 1, Batch: 300000/443757, Loss: 20616.1528, Acc: 12.3609%, lr: 2.9874e-05
+INFO:root:[Epoch: 1, Batch: 325000/443757, Loss: 19061.1310, Acc: 12.8537%, lr: 2.9848e-05
+INFO:root:[Epoch: 1, Batch: 350000/443757, Loss: 17727.0968, Acc: 13.4484%, lr: 2.9819e-05
+INFO:root:[Epoch: 1, Batch: 375000/443757, Loss: 16570.4654, Acc: 14.0144%, lr: 2.9788e-05
+INFO:root:[Epoch: 1, Batch: 400000/443757, Loss: 15557.9955, Acc: 14.5144%, lr: 2.9754e-05
+INFO:root:[Epoch: 1, Batch: 425000/443757, Loss: 14665.4122, Acc: 15.0523%, lr: 2.9718e-05
+INFO:root:Overall Accuracy is: 29.89
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 5.60
+INFO:root:yes/no : 62.56
+INFO:root:number : 27.59
+INFO:root:Training started
+INFO:root:[Epoch: 2, Batch: 0/443757, Loss: 393.4926, Acc: 22.0000%, lr: 3.0000e-05
+INFO:root:[Epoch: 2, Batch: 25000/443757, Loss: 362.4526, Acc: 22.3992%, lr: 2.9999e-05
+INFO:root:[Epoch: 2, Batch: 50000/443757, Loss: 359.2209, Acc: 23.1229%, lr: 2.9995e-05
+INFO:root:[Epoch: 2, Batch: 75000/443757, Loss: 355.0930, Acc: 23.4763%, lr: 2.9989e-05
+INFO:root:[Epoch: 2, Batch: 100000/443757, Loss: 353.3728, Acc: 23.5122%, lr: 2.9980e-05
+INFO:root:[Epoch: 2, Batch: 125000/443757, Loss: 350.9687, Acc: 23.6257%, lr: 2.9969e-05
+INFO:root:[Epoch: 2, Batch: 150000/443757, Loss: 348.5022, Acc: 23.5588%, lr: 2.9955e-05
+INFO:root:[Epoch: 2, Batch: 175000/443757, Loss: 346.0185, Acc: 23.6452%, lr: 2.9938e-05
+INFO:root:[Epoch: 2, Batch: 200000/443757, Loss: 344.1777, Acc: 23.7251%, lr: 2.9920e-05
+INFO:root:[Epoch: 2, Batch: 225000/443757, Loss: 342.2119, Acc: 23.7392%, lr: 2.9898e-05
+INFO:root:[Epoch: 2, Batch: 250000/443757, Loss: 340.9431, Acc: 23.8360%, lr: 2.9874e-05
+INFO:root:[Epoch: 2, Batch: 275000/443757, Loss: 339.5466, Acc: 23.7989%, lr: 2.9848e-05
+INFO:root:[Epoch: 2, Batch: 300000/443757, Loss: 337.9569, Acc: 23.8644%, lr: 2.9819e-05
+INFO:root:[Epoch: 2, Batch: 325000/443757, Loss: 336.5712, Acc: 24.0178%, lr: 2.9788e-05
+INFO:root:[Epoch: 2, Batch: 350000/443757, Loss: 335.0181, Acc: 24.1537%, lr: 2.9754e-05
+INFO:root:[Epoch: 2, Batch: 375000/443757, Loss: 333.6912, Acc: 24.3170%, lr: 2.9718e-05
+INFO:root:[Epoch: 2, Batch: 400000/443757, Loss: 332.3707, Acc: 24.4612%, lr: 2.9679e-05
+INFO:root:[Epoch: 2, Batch: 425000/443757, Loss: 331.1824, Acc: 24.5900%, lr: 2.9638e-05
+INFO:root:Overall Accuracy is: 33.04
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 9.46
+INFO:root:yes/no : 65.76
+INFO:root:number : 27.98
+INFO:root:Training started
+INFO:root:[Epoch: 3, Batch: 0/443757, Loss: 327.9814, Acc: 24.0000%, lr: 2.9995e-05
+INFO:root:[Epoch: 3, Batch: 25000/443757, Loss: 311.2183, Acc: 26.7385%, lr: 2.9989e-05
+INFO:root:[Epoch: 3, Batch: 50000/443757, Loss: 310.6467, Acc: 26.7772%, lr: 2.9980e-05
+INFO:root:[Epoch: 3, Batch: 75000/443757, Loss: 308.7560, Acc: 27.0873%, lr: 2.9969e-05
+INFO:root:[Epoch: 3, Batch: 100000/443757, Loss: 307.8600, Acc: 27.2254%, lr: 2.9955e-05
+INFO:root:[Epoch: 3, Batch: 125000/443757, Loss: 307.2181, Acc: 27.2627%, lr: 2.9938e-05
+INFO:root:[Epoch: 3, Batch: 150000/443757, Loss: 307.0421, Acc: 27.2143%, lr: 2.9920e-05
+INFO:root:[Epoch: 3, Batch: 175000/443757, Loss: 306.0892, Acc: 27.4007%, lr: 2.9898e-05
+INFO:root:[Epoch: 3, Batch: 200000/443757, Loss: 305.4642, Acc: 27.5896%, lr: 2.9874e-05
+INFO:root:[Epoch: 3, Batch: 225000/443757, Loss: 305.0112, Acc: 27.7081%, lr: 2.9848e-05
+INFO:root:[Epoch: 3, Batch: 250000/443757, Loss: 304.0927, Acc: 27.8836%, lr: 2.9819e-05
+INFO:root:[Epoch: 3, Batch: 275000/443757, Loss: 303.4980, Acc: 28.0364%, lr: 2.9788e-05
+INFO:root:[Epoch: 3, Batch: 300000/443757, Loss: 302.9008, Acc: 28.2116%, lr: 2.9754e-05
+INFO:root:[Epoch: 3, Batch: 325000/443757, Loss: 302.0199, Acc: 28.3501%, lr: 2.9718e-05
+INFO:root:[Epoch: 3, Batch: 350000/443757, Loss: 301.4256, Acc: 28.4822%, lr: 2.9679e-05
+INFO:root:[Epoch: 3, Batch: 375000/443757, Loss: 300.5158, Acc: 28.6231%, lr: 2.9638e-05
+INFO:root:[Epoch: 3, Batch: 400000/443757, Loss: 299.6881, Acc: 28.7564%, lr: 2.9595e-05
+INFO:root:[Epoch: 3, Batch: 425000/443757, Loss: 298.7569, Acc: 28.9011%, lr: 2.9549e-05
+INFO:root:Overall Accuracy is: 37.49
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 17.40
+INFO:root:yes/no : 66.57
+INFO:root:number : 29.70
+INFO:root:Training started
+INFO:root:[Epoch: 4, Batch: 0/443757, Loss: 373.6304, Acc: 24.0000%, lr: 2.9980e-05
+INFO:root:[Epoch: 4, Batch: 25000/443757, Loss: 282.4313, Acc: 31.8084%, lr: 2.9969e-05
+INFO:root:[Epoch: 4, Batch: 50000/443757, Loss: 281.0029, Acc: 31.8981%, lr: 2.9955e-05
+INFO:root:[Epoch: 4, Batch: 75000/443757, Loss: 281.7072, Acc: 31.6576%, lr: 2.9938e-05
+INFO:root:[Epoch: 4, Batch: 100000/443757, Loss: 280.7730, Acc: 31.8401%, lr: 2.9920e-05
+INFO:root:[Epoch: 4, Batch: 125000/443757, Loss: 279.9258, Acc: 31.8968%, lr: 2.9898e-05
+INFO:root:[Epoch: 4, Batch: 150000/443757, Loss: 278.8104, Acc: 32.1433%, lr: 2.9874e-05
+INFO:root:[Epoch: 4, Batch: 175000/443757, Loss: 278.8099, Acc: 32.1474%, lr: 2.9848e-05
+INFO:root:[Epoch: 4, Batch: 200000/443757, Loss: 278.0037, Acc: 32.2294%, lr: 2.9819e-05
+INFO:root:[Epoch: 4, Batch: 225000/443757, Loss: 277.5849, Acc: 32.2928%, lr: 2.9788e-05
+INFO:root:[Epoch: 4, Batch: 250000/443757, Loss: 277.0604, Acc: 32.3615%, lr: 2.9754e-05
+INFO:root:[Epoch: 4, Batch: 275000/443757, Loss: 276.4870, Acc: 32.4388%, lr: 2.9718e-05
+INFO:root:[Epoch: 4, Batch: 300000/443757, Loss: 275.9829, Acc: 32.5616%, lr: 2.9679e-05
+INFO:root:[Epoch: 4, Batch: 325000/443757, Loss: 275.5726, Acc: 32.6485%, lr: 2.9638e-05
+INFO:root:[Epoch: 4, Batch: 350000/443757, Loss: 275.1187, Acc: 32.6893%, lr: 2.9595e-05
+INFO:root:[Epoch: 4, Batch: 375000/443757, Loss: 274.7245, Acc: 32.7580%, lr: 2.9549e-05
+INFO:root:[Epoch: 4, Batch: 400000/443757, Loss: 274.2965, Acc: 32.8044%, lr: 2.9501e-05
+INFO:root:[Epoch: 4, Batch: 425000/443757, Loss: 273.6970, Acc: 32.8961%, lr: 2.9450e-05
+INFO:root:Overall Accuracy is: 41.38
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 23.48
+INFO:root:yes/no : 68.72
+INFO:root:number : 30.31
+INFO:root:Training started
+INFO:root:[Epoch: 5, Batch: 0/443757, Loss: 198.1249, Acc: 38.0000%, lr: 2.9955e-05
+INFO:root:[Epoch: 5, Batch: 25000/443757, Loss: 260.1760, Acc: 35.2255%, lr: 2.9938e-05
+INFO:root:[Epoch: 5, Batch: 50000/443757, Loss: 261.7178, Acc: 35.2368%, lr: 2.9920e-05
+INFO:root:[Epoch: 5, Batch: 75000/443757, Loss: 260.6004, Acc: 35.3618%, lr: 2.9898e-05
+INFO:root:[Epoch: 5, Batch: 100000/443757, Loss: 260.9822, Acc: 35.2434%, lr: 2.9874e-05
+INFO:root:[Epoch: 5, Batch: 125000/443757, Loss: 260.6343, Acc: 35.3235%, lr: 2.9848e-05
+INFO:root:[Epoch: 5, Batch: 150000/443757, Loss: 260.5701, Acc: 35.3475%, lr: 2.9819e-05
+INFO:root:[Epoch: 5, Batch: 175000/443757, Loss: 259.6725, Acc: 35.3899%, lr: 2.9788e-05
+INFO:root:[Epoch: 5, Batch: 200000/443757, Loss: 259.4260, Acc: 35.4476%, lr: 2.9754e-05
+INFO:root:[Epoch: 5, Batch: 225000/443757, Loss: 259.0755, Acc: 35.4521%, lr: 2.9718e-05
+INFO:root:[Epoch: 5, Batch: 250000/443757, Loss: 258.5819, Acc: 35.4589%, lr: 2.9679e-05
+INFO:root:[Epoch: 5, Batch: 275000/443757, Loss: 258.3731, Acc: 35.4256%, lr: 2.9638e-05
+INFO:root:[Epoch: 5, Batch: 300000/443757, Loss: 257.8844, Acc: 35.4528%, lr: 2.9595e-05
+INFO:root:[Epoch: 5, Batch: 325000/443757, Loss: 257.5954, Acc: 35.4669%, lr: 2.9549e-05
+INFO:root:[Epoch: 5, Batch: 350000/443757, Loss: 257.1992, Acc: 35.4904%, lr: 2.9501e-05
+INFO:root:[Epoch: 5, Batch: 375000/443757, Loss: 256.9726, Acc: 35.4979%, lr: 2.9450e-05
+INFO:root:[Epoch: 5, Batch: 400000/443757, Loss: 256.7291, Acc: 35.5318%, lr: 2.9397e-05
+INFO:root:[Epoch: 5, Batch: 425000/443757, Loss: 256.5614, Acc: 35.5443%, lr: 2.9341e-05
+INFO:root:Overall Accuracy is: 43.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 26.87
+INFO:root:yes/no : 68.93
+INFO:root:number : 31.70
+INFO:root:Training started
+INFO:root:[Epoch: 6, Batch: 0/443757, Loss: 299.2033, Acc: 32.0000%, lr: 2.9920e-05
+INFO:root:[Epoch: 6, Batch: 25000/443757, Loss: 247.7145, Acc: 37.0299%, lr: 2.9898e-05
+INFO:root:[Epoch: 6, Batch: 50000/443757, Loss: 247.5307, Acc: 37.1868%, lr: 2.9874e-05
+INFO:root:[Epoch: 6, Batch: 75000/443757, Loss: 247.7776, Acc: 37.2258%, lr: 2.9848e-05
+INFO:root:[Epoch: 6, Batch: 100000/443757, Loss: 247.4288, Acc: 37.2904%, lr: 2.9819e-05
+INFO:root:[Epoch: 6, Batch: 125000/443757, Loss: 247.2466, Acc: 37.2467%, lr: 2.9788e-05
+INFO:root:[Epoch: 6, Batch: 150000/443757, Loss: 247.3559, Acc: 37.1789%, lr: 2.9754e-05
+INFO:root:[Epoch: 6, Batch: 175000/443757, Loss: 246.6912, Acc: 37.1808%, lr: 2.9718e-05
+INFO:root:[Epoch: 6, Batch: 200000/443757, Loss: 246.5442, Acc: 37.1927%, lr: 2.9679e-05
+INFO:root:[Epoch: 6, Batch: 225000/443757, Loss: 246.3982, Acc: 37.2273%, lr: 2.9638e-05
+INFO:root:[Epoch: 6, Batch: 250000/443757, Loss: 246.4662, Acc: 37.2493%, lr: 2.9595e-05
+INFO:root:[Epoch: 6, Batch: 275000/443757, Loss: 245.9803, Acc: 37.3063%, lr: 2.9549e-05
+INFO:root:[Epoch: 6, Batch: 300000/443757, Loss: 245.6270, Acc: 37.3268%, lr: 2.9501e-05
+INFO:root:[Epoch: 6, Batch: 325000/443757, Loss: 245.4302, Acc: 37.3306%, lr: 2.9450e-05
+INFO:root:[Epoch: 6, Batch: 350000/443757, Loss: 245.5351, Acc: 37.2761%, lr: 2.9397e-05
+INFO:root:[Epoch: 6, Batch: 375000/443757, Loss: 245.3573, Acc: 37.3078%, lr: 2.9341e-05
+INFO:root:[Epoch: 6, Batch: 400000/443757, Loss: 244.9283, Acc: 37.3328%, lr: 2.9284e-05
+INFO:root:[Epoch: 6, Batch: 425000/443757, Loss: 244.6958, Acc: 37.3314%, lr: 2.9224e-05
+INFO:root:Overall Accuracy is: 44.59
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 29.25
+INFO:root:yes/no : 69.20
+INFO:root:number : 31.74
+INFO:root:Training started
+INFO:root:[Epoch: 7, Batch: 0/443757, Loss: 195.5315, Acc: 46.0000%, lr: 2.9874e-05
+INFO:root:[Epoch: 7, Batch: 25000/443757, Loss: 239.2004, Acc: 38.4591%, lr: 2.9848e-05
+INFO:root:[Epoch: 7, Batch: 50000/443757, Loss: 237.0550, Acc: 38.8751%, lr: 2.9819e-05
+INFO:root:[Epoch: 7, Batch: 75000/443757, Loss: 237.3159, Acc: 38.8421%, lr: 2.9788e-05
+INFO:root:[Epoch: 7, Batch: 100000/443757, Loss: 237.6774, Acc: 38.6057%, lr: 2.9754e-05
+INFO:root:[Epoch: 7, Batch: 125000/443757, Loss: 237.7925, Acc: 38.6373%, lr: 2.9718e-05
+INFO:root:[Epoch: 7, Batch: 150000/443757, Loss: 237.7356, Acc: 38.5818%, lr: 2.9679e-05
+INFO:root:[Epoch: 7, Batch: 175000/443757, Loss: 237.2761, Acc: 38.6798%, lr: 2.9638e-05
+INFO:root:[Epoch: 7, Batch: 200000/443757, Loss: 237.1781, Acc: 38.7008%, lr: 2.9595e-05
+INFO:root:[Epoch: 7, Batch: 225000/443757, Loss: 237.0423, Acc: 38.7070%, lr: 2.9549e-05
+INFO:root:[Epoch: 7, Batch: 250000/443757, Loss: 236.8553, Acc: 38.7514%, lr: 2.9501e-05
+INFO:root:[Epoch: 7, Batch: 275000/443757, Loss: 237.0000, Acc: 38.7453%, lr: 2.9450e-05
+INFO:root:[Epoch: 7, Batch: 300000/443757, Loss: 236.6527, Acc: 38.8225%, lr: 2.9397e-05
+INFO:root:[Epoch: 7, Batch: 325000/443757, Loss: 236.5819, Acc: 38.8036%, lr: 2.9341e-05
+INFO:root:[Epoch: 7, Batch: 350000/443757, Loss: 236.2574, Acc: 38.8082%, lr: 2.9284e-05
+INFO:root:[Epoch: 7, Batch: 375000/443757, Loss: 236.2950, Acc: 38.8364%, lr: 2.9224e-05
+INFO:root:[Epoch: 7, Batch: 400000/443757, Loss: 236.1841, Acc: 38.8544%, lr: 2.9161e-05
+INFO:root:[Epoch: 7, Batch: 425000/443757, Loss: 236.0337, Acc: 38.8888%, lr: 2.9096e-05
+INFO:root:Overall Accuracy is: 45.75
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 31.36
+INFO:root:yes/no : 69.57
+INFO:root:number : 31.60
+INFO:root:Training started
+INFO:root:[Epoch: 8, Batch: 0/443757, Loss: 216.6153, Acc: 42.0000%, lr: 2.9819e-05
+INFO:root:[Epoch: 8, Batch: 25000/443757, Loss: 229.5500, Acc: 40.6188%, lr: 2.9788e-05
+INFO:root:[Epoch: 8, Batch: 50000/443757, Loss: 230.3212, Acc: 40.3496%, lr: 2.9754e-05
+INFO:root:[Epoch: 8, Batch: 75000/443757, Loss: 229.4950, Acc: 40.4410%, lr: 2.9718e-05
+INFO:root:[Epoch: 8, Batch: 100000/443757, Loss: 229.3739, Acc: 40.4408%, lr: 2.9679e-05
+INFO:root:[Epoch: 8, Batch: 125000/443757, Loss: 229.7373, Acc: 40.3111%, lr: 2.9638e-05
+INFO:root:[Epoch: 8, Batch: 150000/443757, Loss: 229.9430, Acc: 40.3286%, lr: 2.9595e-05
+INFO:root:[Epoch: 8, Batch: 175000/443757, Loss: 230.1392, Acc: 40.2925%, lr: 2.9549e-05
+INFO:root:[Epoch: 8, Batch: 200000/443757, Loss: 229.8223, Acc: 40.3174%, lr: 2.9501e-05
+INFO:root:[Epoch: 8, Batch: 225000/443757, Loss: 229.9330, Acc: 40.2679%, lr: 2.9450e-05
+INFO:root:[Epoch: 8, Batch: 250000/443757, Loss: 229.9913, Acc: 40.2531%, lr: 2.9397e-05
+INFO:root:[Epoch: 8, Batch: 275000/443757, Loss: 230.0164, Acc: 40.2250%, lr: 2.9341e-05
+INFO:root:[Epoch: 8, Batch: 300000/443757, Loss: 229.7060, Acc: 40.2356%, lr: 2.9284e-05
+INFO:root:[Epoch: 8, Batch: 325000/443757, Loss: 229.6369, Acc: 40.2313%, lr: 2.9224e-05
+INFO:root:[Epoch: 8, Batch: 350000/443757, Loss: 229.5364, Acc: 40.2117%, lr: 2.9161e-05
+INFO:root:[Epoch: 8, Batch: 375000/443757, Loss: 229.6516, Acc: 40.1629%, lr: 2.9096e-05
+INFO:root:[Epoch: 8, Batch: 400000/443757, Loss: 229.7284, Acc: 40.1667%, lr: 2.9029e-05
+INFO:root:[Epoch: 8, Batch: 425000/443757, Loss: 229.7590, Acc: 40.1449%, lr: 2.8960e-05
+INFO:root:Overall Accuracy is: 46.69
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 32.98
+INFO:root:yes/no : 69.65
+INFO:root:number : 32.47
+INFO:root:Training started
+INFO:root:[Epoch: 9, Batch: 0/443757, Loss: 212.1803, Acc: 52.0000%, lr: 2.9754e-05
+INFO:root:[Epoch: 9, Batch: 25000/443757, Loss: 225.7521, Acc: 41.2335%, lr: 2.9718e-05
+INFO:root:[Epoch: 9, Batch: 50000/443757, Loss: 226.3013, Acc: 41.0749%, lr: 2.9679e-05
+INFO:root:[Epoch: 9, Batch: 75000/443757, Loss: 225.5563, Acc: 41.2898%, lr: 2.9638e-05
+INFO:root:[Epoch: 9, Batch: 100000/443757, Loss: 225.7435, Acc: 41.3043%, lr: 2.9595e-05
+INFO:root:[Epoch: 9, Batch: 125000/443757, Loss: 224.9473, Acc: 41.3363%, lr: 2.9549e-05
+INFO:root:[Epoch: 9, Batch: 150000/443757, Loss: 224.4611, Acc: 41.4429%, lr: 2.9501e-05
+INFO:root:[Epoch: 9, Batch: 175000/443757, Loss: 224.7316, Acc: 41.4487%, lr: 2.9450e-05
+INFO:root:[Epoch: 9, Batch: 200000/443757, Loss: 224.6864, Acc: 41.3981%, lr: 2.9397e-05
+INFO:root:[Epoch: 9, Batch: 225000/443757, Loss: 224.4741, Acc: 41.4112%, lr: 2.9341e-05
+INFO:root:[Epoch: 9, Batch: 250000/443757, Loss: 224.6105, Acc: 41.3621%, lr: 2.9284e-05
+INFO:root:[Epoch: 9, Batch: 275000/443757, Loss: 224.3369, Acc: 41.3983%, lr: 2.9224e-05
+INFO:root:[Epoch: 9, Batch: 300000/443757, Loss: 224.2271, Acc: 41.3748%, lr: 2.9161e-05
+INFO:root:[Epoch: 9, Batch: 325000/443757, Loss: 224.2472, Acc: 41.3715%, lr: 2.9096e-05
+INFO:root:[Epoch: 9, Batch: 350000/443757, Loss: 224.1202, Acc: 41.3678%, lr: 2.9029e-05
+INFO:root:[Epoch: 9, Batch: 375000/443757, Loss: 224.1547, Acc: 41.3406%, lr: 2.8960e-05
+INFO:root:[Epoch: 9, Batch: 400000/443757, Loss: 224.0345, Acc: 41.3326%, lr: 2.8888e-05
+INFO:root:[Epoch: 9, Batch: 425000/443757, Loss: 223.9469, Acc: 41.3615%, lr: 2.8815e-05
+INFO:root:Overall Accuracy is: 47.22
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.06
+INFO:root:yes/no : 69.64
+INFO:root:number : 32.48
+INFO:root:Training started
+INFO:root:[Epoch: 10, Batch: 0/443757, Loss: 236.0588, Acc: 40.0000%, lr: 2.9679e-05
+INFO:root:[Epoch: 10, Batch: 25000/443757, Loss: 220.5245, Acc: 42.9341%, lr: 2.9638e-05
+INFO:root:[Epoch: 10, Batch: 50000/443757, Loss: 220.9602, Acc: 42.8192%, lr: 2.9595e-05
+INFO:root:[Epoch: 10, Batch: 75000/443757, Loss: 221.1429, Acc: 42.6369%, lr: 2.9549e-05
+INFO:root:[Epoch: 10, Batch: 100000/443757, Loss: 220.4273, Acc: 42.6237%, lr: 2.9501e-05
+INFO:root:[Epoch: 10, Batch: 125000/443757, Loss: 219.6913, Acc: 42.7389%, lr: 2.9450e-05
+INFO:root:[Epoch: 10, Batch: 150000/443757, Loss: 219.9812, Acc: 42.5985%, lr: 2.9397e-05
+INFO:root:[Epoch: 10, Batch: 175000/443757, Loss: 219.8912, Acc: 42.5444%, lr: 2.9341e-05
+INFO:root:[Epoch: 10, Batch: 200000/443757, Loss: 219.8319, Acc: 42.5309%, lr: 2.9284e-05
+INFO:root:[Epoch: 10, Batch: 225000/443757, Loss: 219.9997, Acc: 42.4675%, lr: 2.9224e-05
+INFO:root:[Epoch: 10, Batch: 250000/443757, Loss: 220.2920, Acc: 42.3979%, lr: 2.9161e-05
+INFO:root:[Epoch: 10, Batch: 275000/443757, Loss: 220.0492, Acc: 42.3861%, lr: 2.9096e-05
+INFO:root:[Epoch: 10, Batch: 300000/443757, Loss: 220.0302, Acc: 42.3289%, lr: 2.9029e-05
+INFO:root:[Epoch: 10, Batch: 325000/443757, Loss: 219.9020, Acc: 42.3073%, lr: 2.8960e-05
+INFO:root:[Epoch: 10, Batch: 350000/443757, Loss: 219.6371, Acc: 42.3262%, lr: 2.8888e-05
+INFO:root:[Epoch: 10, Batch: 375000/443757, Loss: 219.6967, Acc: 42.3186%, lr: 2.8815e-05
+INFO:root:[Epoch: 10, Batch: 400000/443757, Loss: 219.5172, Acc: 42.3172%, lr: 2.8738e-05
+INFO:root:[Epoch: 10, Batch: 425000/443757, Loss: 219.6668, Acc: 42.2746%, lr: 2.8660e-05
+INFO:root:Overall Accuracy is: 47.68
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.82
+INFO:root:yes/no : 69.70
+INFO:root:number : 32.94
+INFO:root:Training started
+INFO:root:[Epoch: 11, Batch: 0/443757, Loss: 200.4362, Acc: 46.0000%, lr: 2.9595e-05
+INFO:root:[Epoch: 11, Batch: 25000/443757, Loss: 216.6694, Acc: 43.4770%, lr: 2.9549e-05
+INFO:root:[Epoch: 11, Batch: 50000/443757, Loss: 217.0312, Acc: 43.2148%, lr: 2.9501e-05
+INFO:root:[Epoch: 11, Batch: 75000/443757, Loss: 216.9294, Acc: 43.0526%, lr: 2.9450e-05
+INFO:root:[Epoch: 11, Batch: 100000/443757, Loss: 216.9687, Acc: 43.0045%, lr: 2.9397e-05
+INFO:root:[Epoch: 11, Batch: 125000/443757, Loss: 216.5683, Acc: 42.9516%, lr: 2.9341e-05
+INFO:root:[Epoch: 11, Batch: 150000/443757, Loss: 216.4229, Acc: 43.0370%, lr: 2.9284e-05
+INFO:root:[Epoch: 11, Batch: 175000/443757, Loss: 216.4115, Acc: 43.0266%, lr: 2.9224e-05
+INFO:root:[Epoch: 11, Batch: 200000/443757, Loss: 216.2702, Acc: 43.0352%, lr: 2.9161e-05
+INFO:root:[Epoch: 11, Batch: 225000/443757, Loss: 216.1495, Acc: 43.0838%, lr: 2.9096e-05
+INFO:root:[Epoch: 11, Batch: 250000/443757, Loss: 215.8290, Acc: 43.1370%, lr: 2.9029e-05
+INFO:root:[Epoch: 11, Batch: 275000/443757, Loss: 215.7510, Acc: 43.1540%, lr: 2.8960e-05
+INFO:root:[Epoch: 11, Batch: 300000/443757, Loss: 215.7412, Acc: 43.1631%, lr: 2.8888e-05
+INFO:root:[Epoch: 11, Batch: 325000/443757, Loss: 215.6690, Acc: 43.1607%, lr: 2.8815e-05
+INFO:root:[Epoch: 11, Batch: 350000/443757, Loss: 215.7563, Acc: 43.1158%, lr: 2.8738e-05
+INFO:root:[Epoch: 11, Batch: 375000/443757, Loss: 215.6420, Acc: 43.1148%, lr: 2.8660e-05
+INFO:root:[Epoch: 11, Batch: 400000/443757, Loss: 215.6681, Acc: 43.1019%, lr: 2.8580e-05
+INFO:root:[Epoch: 11, Batch: 425000/443757, Loss: 215.4821, Acc: 43.1457%, lr: 2.8497e-05
+INFO:root:Overall Accuracy is: 47.89
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.44
+INFO:root:yes/no : 69.45
+INFO:root:number : 32.90
+INFO:root:Training started
+INFO:root:[Epoch: 12, Batch: 0/443757, Loss: 207.5221, Acc: 48.0000%, lr: 2.9501e-05
+INFO:root:[Epoch: 12, Batch: 25000/443757, Loss: 211.2225, Acc: 43.8962%, lr: 2.9450e-05
+INFO:root:[Epoch: 12, Batch: 50000/443757, Loss: 211.7768, Acc: 44.2897%, lr: 2.9397e-05
+INFO:root:[Epoch: 12, Batch: 75000/443757, Loss: 212.5479, Acc: 44.2558%, lr: 2.9341e-05
+INFO:root:[Epoch: 12, Batch: 100000/443757, Loss: 212.6946, Acc: 44.2069%, lr: 2.9284e-05
+INFO:root:[Epoch: 12, Batch: 125000/443757, Loss: 212.7511, Acc: 44.1743%, lr: 2.9224e-05
+INFO:root:[Epoch: 12, Batch: 150000/443757, Loss: 212.9966, Acc: 44.1086%, lr: 2.9161e-05
+INFO:root:[Epoch: 12, Batch: 175000/443757, Loss: 213.0008, Acc: 44.1051%, lr: 2.9096e-05
+INFO:root:[Epoch: 12, Batch: 200000/443757, Loss: 212.7447, Acc: 44.1805%, lr: 2.9029e-05
+INFO:root:[Epoch: 12, Batch: 225000/443757, Loss: 212.4314, Acc: 44.2026%, lr: 2.8960e-05
+INFO:root:[Epoch: 12, Batch: 250000/443757, Loss: 212.5019, Acc: 44.1696%, lr: 2.8888e-05
+INFO:root:[Epoch: 12, Batch: 275000/443757, Loss: 212.4713, Acc: 44.1363%, lr: 2.8815e-05
+INFO:root:[Epoch: 12, Batch: 300000/443757, Loss: 212.3572, Acc: 44.1316%, lr: 2.8738e-05
+INFO:root:[Epoch: 12, Batch: 325000/443757, Loss: 212.5622, Acc: 44.0628%, lr: 2.8660e-05
+INFO:root:[Epoch: 12, Batch: 350000/443757, Loss: 212.5660, Acc: 44.0457%, lr: 2.8580e-05
+INFO:root:[Epoch: 12, Batch: 375000/443757, Loss: 212.4742, Acc: 43.9891%, lr: 2.8497e-05
+INFO:root:[Epoch: 12, Batch: 400000/443757, Loss: 212.2639, Acc: 44.0167%, lr: 2.8413e-05
+INFO:root:[Epoch: 12, Batch: 425000/443757, Loss: 212.2995, Acc: 43.9925%, lr: 2.8326e-05
+INFO:root:Overall Accuracy is: 48.15
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.68
+INFO:root:yes/no : 69.87
+INFO:root:number : 32.84
+INFO:root:Training started
+INFO:root:[Epoch: 13, Batch: 0/443757, Loss: 169.9474, Acc: 54.0000%, lr: 2.9397e-05
+INFO:root:[Epoch: 13, Batch: 25000/443757, Loss: 209.2015, Acc: 45.3812%, lr: 2.9341e-05
+INFO:root:[Epoch: 13, Batch: 50000/443757, Loss: 208.1551, Acc: 45.3487%, lr: 2.9284e-05
+INFO:root:[Epoch: 13, Batch: 75000/443757, Loss: 208.5638, Acc: 45.3511%, lr: 2.9224e-05
+INFO:root:[Epoch: 13, Batch: 100000/443757, Loss: 208.1498, Acc: 45.2784%, lr: 2.9161e-05
+INFO:root:[Epoch: 13, Batch: 125000/443757, Loss: 207.3878, Acc: 45.3850%, lr: 2.9096e-05
+INFO:root:[Epoch: 13, Batch: 150000/443757, Loss: 207.7335, Acc: 45.2696%, lr: 2.9029e-05
+INFO:root:[Epoch: 13, Batch: 175000/443757, Loss: 208.1753, Acc: 45.2117%, lr: 2.8960e-05
+INFO:root:[Epoch: 13, Batch: 200000/443757, Loss: 208.2589, Acc: 45.1842%, lr: 2.8888e-05
+INFO:root:[Epoch: 13, Batch: 225000/443757, Loss: 208.5005, Acc: 45.1033%, lr: 2.8815e-05
+INFO:root:[Epoch: 13, Batch: 250000/443757, Loss: 208.6746, Acc: 45.0850%, lr: 2.8738e-05
+INFO:root:[Epoch: 13, Batch: 275000/443757, Loss: 208.6048, Acc: 45.0540%, lr: 2.8660e-05
+INFO:root:[Epoch: 13, Batch: 300000/443757, Loss: 208.3504, Acc: 45.0388%, lr: 2.8580e-05
+INFO:root:[Epoch: 13, Batch: 325000/443757, Loss: 208.4531, Acc: 45.0414%, lr: 2.8497e-05
+INFO:root:[Epoch: 13, Batch: 350000/443757, Loss: 208.3973, Acc: 45.0661%, lr: 2.8413e-05
+INFO:root:[Epoch: 13, Batch: 375000/443757, Loss: 208.5346, Acc: 44.9665%, lr: 2.8326e-05
+INFO:root:[Epoch: 13, Batch: 400000/443757, Loss: 208.5103, Acc: 44.9439%, lr: 2.8237e-05
+INFO:root:[Epoch: 13, Batch: 425000/443757, Loss: 208.4388, Acc: 44.9117%, lr: 2.8146e-05
+INFO:root:Overall Accuracy is: 48.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.97
+INFO:root:yes/no : 69.75
+INFO:root:number : 33.24
+INFO:root:Training started
+INFO:root:[Epoch: 14, Batch: 0/443757, Loss: 216.9254, Acc: 44.0000%, lr: 2.9284e-05
+INFO:root:[Epoch: 14, Batch: 25000/443757, Loss: 206.2225, Acc: 45.6367%, lr: 2.9224e-05
+INFO:root:[Epoch: 14, Batch: 50000/443757, Loss: 206.9768, Acc: 45.9620%, lr: 2.9161e-05
+INFO:root:[Epoch: 14, Batch: 75000/443757, Loss: 206.2738, Acc: 46.1252%, lr: 2.9096e-05
+INFO:root:[Epoch: 14, Batch: 100000/443757, Loss: 205.9687, Acc: 45.9450%, lr: 2.9029e-05
+INFO:root:[Epoch: 14, Batch: 125000/443757, Loss: 205.9635, Acc: 45.9952%, lr: 2.8960e-05
+INFO:root:[Epoch: 14, Batch: 150000/443757, Loss: 205.5841, Acc: 46.0393%, lr: 2.8888e-05
+INFO:root:[Epoch: 14, Batch: 175000/443757, Loss: 205.8642, Acc: 45.9572%, lr: 2.8815e-05
+INFO:root:[Epoch: 14, Batch: 200000/443757, Loss: 206.2181, Acc: 45.9010%, lr: 2.8738e-05
+INFO:root:[Epoch: 14, Batch: 225000/443757, Loss: 206.3524, Acc: 45.8187%, lr: 2.8660e-05
+INFO:root:[Epoch: 14, Batch: 250000/443757, Loss: 206.3901, Acc: 45.7848%, lr: 2.8580e-05
+INFO:root:[Epoch: 14, Batch: 275000/443757, Loss: 206.4379, Acc: 45.7346%, lr: 2.8497e-05
+INFO:root:[Epoch: 14, Batch: 300000/443757, Loss: 206.2515, Acc: 45.7724%, lr: 2.8413e-05
+INFO:root:[Epoch: 14, Batch: 325000/443757, Loss: 206.3700, Acc: 45.7376%, lr: 2.8326e-05
+INFO:root:[Epoch: 14, Batch: 350000/443757, Loss: 206.4966, Acc: 45.7055%, lr: 2.8237e-05
+INFO:root:[Epoch: 14, Batch: 375000/443757, Loss: 206.5890, Acc: 45.6488%, lr: 2.8146e-05
+INFO:root:[Epoch: 14, Batch: 400000/443757, Loss: 206.5942, Acc: 45.6040%, lr: 2.8053e-05
+INFO:root:[Epoch: 14, Batch: 425000/443757, Loss: 206.7679, Acc: 45.5462%, lr: 2.7958e-05
+INFO:root:Overall Accuracy is: 48.61
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.59
+INFO:root:yes/no : 69.80
+INFO:root:number : 33.12
+INFO:root:Training started
+INFO:root:[Epoch: 15, Batch: 0/443757, Loss: 238.4093, Acc: 44.0000%, lr: 2.9161e-05
+INFO:root:[Epoch: 15, Batch: 25000/443757, Loss: 203.0514, Acc: 47.2894%, lr: 2.9096e-05
+INFO:root:[Epoch: 15, Batch: 50000/443757, Loss: 202.8747, Acc: 47.2248%, lr: 2.9029e-05
+INFO:root:[Epoch: 15, Batch: 75000/443757, Loss: 202.7330, Acc: 46.9580%, lr: 2.8960e-05
+INFO:root:[Epoch: 15, Batch: 100000/443757, Loss: 202.8067, Acc: 46.9345%, lr: 2.8888e-05
+INFO:root:[Epoch: 15, Batch: 125000/443757, Loss: 202.7315, Acc: 46.8820%, lr: 2.8815e-05
+INFO:root:[Epoch: 15, Batch: 150000/443757, Loss: 203.1295, Acc: 46.7651%, lr: 2.8738e-05
+INFO:root:[Epoch: 15, Batch: 175000/443757, Loss: 203.1799, Acc: 46.7723%, lr: 2.8660e-05
+INFO:root:[Epoch: 15, Batch: 200000/443757, Loss: 203.5042, Acc: 46.6578%, lr: 2.8580e-05
+INFO:root:[Epoch: 15, Batch: 225000/443757, Loss: 203.6800, Acc: 46.5457%, lr: 2.8497e-05
+INFO:root:[Epoch: 15, Batch: 250000/443757, Loss: 204.2173, Acc: 46.3899%, lr: 2.8413e-05
+INFO:root:[Epoch: 15, Batch: 275000/443757, Loss: 204.4106, Acc: 46.3178%, lr: 2.8326e-05
+INFO:root:[Epoch: 15, Batch: 300000/443757, Loss: 204.7741, Acc: 46.2333%, lr: 2.8237e-05
+INFO:root:[Epoch: 15, Batch: 325000/443757, Loss: 204.6607, Acc: 46.2424%, lr: 2.8146e-05
+INFO:root:[Epoch: 15, Batch: 350000/443757, Loss: 204.6822, Acc: 46.2265%, lr: 2.8053e-05
+INFO:root:[Epoch: 15, Batch: 375000/443757, Loss: 204.5049, Acc: 46.2322%, lr: 2.7958e-05
+INFO:root:[Epoch: 15, Batch: 400000/443757, Loss: 204.4534, Acc: 46.2372%, lr: 2.7861e-05
+INFO:root:[Epoch: 15, Batch: 425000/443757, Loss: 204.3993, Acc: 46.2421%, lr: 2.7761e-05
+INFO:root:Overall Accuracy is: 48.60
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.67
+INFO:root:yes/no : 69.56
+INFO:root:number : 33.40
+INFO:root:Training started
+INFO:root:[Epoch: 16, Batch: 0/443757, Loss: 202.2643, Acc: 52.0000%, lr: 2.9029e-05
+INFO:root:[Epoch: 16, Batch: 25000/443757, Loss: 202.0181, Acc: 47.3253%, lr: 2.8960e-05
+INFO:root:[Epoch: 16, Batch: 50000/443757, Loss: 202.3028, Acc: 47.1169%, lr: 2.8888e-05
+INFO:root:[Epoch: 16, Batch: 75000/443757, Loss: 201.8412, Acc: 47.2765%, lr: 2.8815e-05
+INFO:root:[Epoch: 16, Batch: 100000/443757, Loss: 201.4410, Acc: 47.2894%, lr: 2.8738e-05
+INFO:root:[Epoch: 16, Batch: 125000/443757, Loss: 200.8516, Acc: 47.3019%, lr: 2.8660e-05
+INFO:root:[Epoch: 16, Batch: 150000/443757, Loss: 200.5943, Acc: 47.3396%, lr: 2.8580e-05
+INFO:root:[Epoch: 16, Batch: 175000/443757, Loss: 200.9058, Acc: 47.2631%, lr: 2.8497e-05
+INFO:root:[Epoch: 16, Batch: 200000/443757, Loss: 201.1761, Acc: 47.2562%, lr: 2.8413e-05
+INFO:root:[Epoch: 16, Batch: 225000/443757, Loss: 201.0778, Acc: 47.2828%, lr: 2.8326e-05
+INFO:root:[Epoch: 16, Batch: 250000/443757, Loss: 201.2555, Acc: 47.2122%, lr: 2.8237e-05
+INFO:root:[Epoch: 16, Batch: 275000/443757, Loss: 201.4387, Acc: 47.1438%, lr: 2.8146e-05
+INFO:root:[Epoch: 16, Batch: 300000/443757, Loss: 201.4474, Acc: 47.1155%, lr: 2.8053e-05
+INFO:root:[Epoch: 16, Batch: 325000/443757, Loss: 201.4379, Acc: 47.1038%, lr: 2.7958e-05
+INFO:root:[Epoch: 16, Batch: 350000/443757, Loss: 201.5143, Acc: 47.0410%, lr: 2.7861e-05
+INFO:root:[Epoch: 16, Batch: 375000/443757, Loss: 201.3657, Acc: 47.0401%, lr: 2.7761e-05
+INFO:root:[Epoch: 16, Batch: 400000/443757, Loss: 201.3195, Acc: 47.0664%, lr: 2.7660e-05
+INFO:root:[Epoch: 16, Batch: 425000/443757, Loss: 201.4216, Acc: 47.0439%, lr: 2.7557e-05
+INFO:root:Overall Accuracy is: 48.47
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.56
+INFO:root:yes/no : 69.46
+INFO:root:number : 33.11
+INFO:root:Training started
+INFO:root:[Epoch: 17, Batch: 0/443757, Loss: 299.6666, Acc: 30.0000%, lr: 2.8888e-05
+INFO:root:[Epoch: 17, Batch: 25000/443757, Loss: 199.7066, Acc: 48.3553%, lr: 2.8815e-05
+INFO:root:[Epoch: 17, Batch: 50000/443757, Loss: 200.1289, Acc: 48.0579%, lr: 2.8738e-05
+INFO:root:[Epoch: 17, Batch: 75000/443757, Loss: 199.4377, Acc: 48.2505%, lr: 2.8660e-05
+INFO:root:[Epoch: 17, Batch: 100000/443757, Loss: 199.8032, Acc: 48.0270%, lr: 2.8580e-05
+INFO:root:[Epoch: 17, Batch: 125000/443757, Loss: 199.9208, Acc: 47.9216%, lr: 2.8497e-05
+INFO:root:[Epoch: 17, Batch: 150000/443757, Loss: 199.5396, Acc: 47.9993%, lr: 2.8413e-05
+INFO:root:[Epoch: 17, Batch: 175000/443757, Loss: 199.8427, Acc: 47.8698%, lr: 2.8326e-05
+INFO:root:[Epoch: 17, Batch: 200000/443757, Loss: 199.8567, Acc: 47.8270%, lr: 2.8237e-05
+INFO:root:[Epoch: 17, Batch: 225000/443757, Loss: 200.0991, Acc: 47.7361%, lr: 2.8146e-05
+INFO:root:[Epoch: 17, Batch: 250000/443757, Loss: 200.0143, Acc: 47.6797%, lr: 2.8053e-05
+INFO:root:[Epoch: 17, Batch: 275000/443757, Loss: 200.1608, Acc: 47.6448%, lr: 2.7958e-05
+INFO:root:[Epoch: 17, Batch: 300000/443757, Loss: 200.2404, Acc: 47.6147%, lr: 2.7861e-05
+INFO:root:[Epoch: 17, Batch: 325000/443757, Loss: 199.9865, Acc: 47.6281%, lr: 2.7761e-05
+INFO:root:[Epoch: 17, Batch: 350000/443757, Loss: 200.0607, Acc: 47.5872%, lr: 2.7660e-05
+INFO:root:[Epoch: 17, Batch: 375000/443757, Loss: 199.9124, Acc: 47.5606%, lr: 2.7557e-05
+INFO:root:[Epoch: 17, Batch: 400000/443757, Loss: 199.7696, Acc: 47.5881%, lr: 2.7453e-05
+INFO:root:[Epoch: 17, Batch: 425000/443757, Loss: 199.7714, Acc: 47.5911%, lr: 2.7346e-05
+INFO:root:Overall Accuracy is: 48.67
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.74
+INFO:root:yes/no : 69.67
+INFO:root:number : 33.33
+INFO:root:Training started
+INFO:root:[Epoch: 18, Batch: 0/443757, Loss: 164.5643, Acc: 58.0000%, lr: 2.8738e-05
+INFO:root:[Epoch: 18, Batch: 25000/443757, Loss: 196.6583, Acc: 49.5329%, lr: 2.8660e-05
+INFO:root:[Epoch: 18, Batch: 50000/443757, Loss: 195.4853, Acc: 49.4266%, lr: 2.8580e-05
+INFO:root:[Epoch: 18, Batch: 75000/443757, Loss: 194.9610, Acc: 49.3538%, lr: 2.8497e-05
+INFO:root:[Epoch: 18, Batch: 100000/443757, Loss: 195.8061, Acc: 49.1114%, lr: 2.8413e-05
+INFO:root:[Epoch: 18, Batch: 125000/443757, Loss: 196.3624, Acc: 48.9252%, lr: 2.8326e-05
+INFO:root:[Epoch: 18, Batch: 150000/443757, Loss: 196.2627, Acc: 48.8697%, lr: 2.8237e-05
+INFO:root:[Epoch: 18, Batch: 175000/443757, Loss: 196.3612, Acc: 48.8112%, lr: 2.8146e-05
+INFO:root:[Epoch: 18, Batch: 200000/443757, Loss: 196.4611, Acc: 48.7573%, lr: 2.8053e-05
+INFO:root:[Epoch: 18, Batch: 225000/443757, Loss: 196.6446, Acc: 48.6732%, lr: 2.7958e-05
+INFO:root:[Epoch: 18, Batch: 250000/443757, Loss: 196.7476, Acc: 48.6667%, lr: 2.7861e-05
+INFO:root:[Epoch: 18, Batch: 275000/443757, Loss: 196.8396, Acc: 48.6355%, lr: 2.7761e-05
+INFO:root:[Epoch: 18, Batch: 300000/443757, Loss: 196.9912, Acc: 48.6132%, lr: 2.7660e-05
+INFO:root:[Epoch: 18, Batch: 325000/443757, Loss: 197.0549, Acc: 48.5867%, lr: 2.7557e-05
+INFO:root:[Epoch: 18, Batch: 350000/443757, Loss: 197.0823, Acc: 48.5611%, lr: 2.7453e-05
+INFO:root:[Epoch: 18, Batch: 375000/443757, Loss: 197.0158, Acc: 48.5743%, lr: 2.7346e-05
+INFO:root:[Epoch: 18, Batch: 400000/443757, Loss: 197.1158, Acc: 48.5609%, lr: 2.7237e-05
+INFO:root:[Epoch: 18, Batch: 425000/443757, Loss: 197.1883, Acc: 48.5183%, lr: 2.7127e-05
+INFO:root:Overall Accuracy is: 48.78
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 37.12
+INFO:root:yes/no : 69.52
+INFO:root:number : 33.20
+INFO:root:Training started
+INFO:root:[Epoch: 19, Batch: 0/443757, Loss: 338.0040, Acc: 34.0000%, lr: 2.8580e-05
+INFO:root:[Epoch: 19, Batch: 25000/443757, Loss: 197.2078, Acc: 49.2655%, lr: 2.8497e-05
+INFO:root:[Epoch: 19, Batch: 50000/443757, Loss: 195.7737, Acc: 49.6643%, lr: 2.8413e-05
+INFO:root:[Epoch: 19, Batch: 75000/443757, Loss: 195.0422, Acc: 49.8907%, lr: 2.8326e-05
+INFO:root:[Epoch: 19, Batch: 100000/443757, Loss: 194.3805, Acc: 49.8811%, lr: 2.8237e-05
+INFO:root:[Epoch: 19, Batch: 125000/443757, Loss: 194.0075, Acc: 49.9120%, lr: 2.8146e-05
+INFO:root:[Epoch: 19, Batch: 150000/443757, Loss: 194.2449, Acc: 49.7474%, lr: 2.8053e-05
+INFO:root:[Epoch: 19, Batch: 175000/443757, Loss: 194.5147, Acc: 49.5990%, lr: 2.7958e-05
+INFO:root:[Epoch: 19, Batch: 200000/443757, Loss: 194.9824, Acc: 49.4926%, lr: 2.7861e-05
+INFO:root:[Epoch: 19, Batch: 225000/443757, Loss: 194.9701, Acc: 49.4615%, lr: 2.7761e-05
+INFO:root:[Epoch: 19, Batch: 250000/443757, Loss: 195.0502, Acc: 49.4081%, lr: 2.7660e-05
+INFO:root:[Epoch: 19, Batch: 275000/443757, Loss: 195.0726, Acc: 49.4110%, lr: 2.7557e-05
+INFO:root:[Epoch: 19, Batch: 300000/443757, Loss: 195.1455, Acc: 49.3491%, lr: 2.7453e-05
+INFO:root:[Epoch: 19, Batch: 325000/443757, Loss: 195.1276, Acc: 49.3275%, lr: 2.7346e-05
+INFO:root:[Epoch: 19, Batch: 350000/443757, Loss: 195.2921, Acc: 49.2621%, lr: 2.7237e-05
+INFO:root:[Epoch: 19, Batch: 375000/443757, Loss: 195.3998, Acc: 49.1868%, lr: 2.7127e-05
+INFO:root:[Epoch: 19, Batch: 400000/443757, Loss: 195.5217, Acc: 49.1494%, lr: 2.7015e-05
+INFO:root:[Epoch: 19, Batch: 425000/443757, Loss: 195.4772, Acc: 49.1210%, lr: 2.6901e-05
+INFO:root:Overall Accuracy is: 48.58
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.98
+INFO:root:yes/no : 69.33
+INFO:root:number : 32.79
+INFO:root:Training started
+INFO:root:[Epoch: 20, Batch: 0/443757, Loss: 224.9566, Acc: 34.0000%, lr: 2.8413e-05
+INFO:root:[Epoch: 20, Batch: 25000/443757, Loss: 189.6937, Acc: 50.8463%, lr: 2.8326e-05
+INFO:root:[Epoch: 20, Batch: 50000/443757, Loss: 191.4400, Acc: 50.4955%, lr: 2.8237e-05
+INFO:root:[Epoch: 20, Batch: 75000/443757, Loss: 191.4806, Acc: 50.4637%, lr: 2.8146e-05
+INFO:root:[Epoch: 20, Batch: 100000/443757, Loss: 192.0113, Acc: 50.3768%, lr: 2.8053e-05
+INFO:root:[Epoch: 20, Batch: 125000/443757, Loss: 191.8796, Acc: 50.3423%, lr: 2.7958e-05
+INFO:root:[Epoch: 20, Batch: 150000/443757, Loss: 191.7380, Acc: 50.2319%, lr: 2.7861e-05
+INFO:root:[Epoch: 20, Batch: 175000/443757, Loss: 192.0824, Acc: 50.0834%, lr: 2.7761e-05
+INFO:root:[Epoch: 20, Batch: 200000/443757, Loss: 191.9999, Acc: 50.1385%, lr: 2.7660e-05
+INFO:root:[Epoch: 20, Batch: 225000/443757, Loss: 192.0745, Acc: 50.0564%, lr: 2.7557e-05
+INFO:root:[Epoch: 20, Batch: 250000/443757, Loss: 192.3094, Acc: 49.9944%, lr: 2.7453e-05
+INFO:root:[Epoch: 20, Batch: 275000/443757, Loss: 192.2954, Acc: 49.9476%, lr: 2.7346e-05
+INFO:root:[Epoch: 20, Batch: 300000/443757, Loss: 192.1561, Acc: 49.9490%, lr: 2.7237e-05
+INFO:root:[Epoch: 20, Batch: 325000/443757, Loss: 192.4837, Acc: 49.8751%, lr: 2.7127e-05
+INFO:root:[Epoch: 20, Batch: 350000/443757, Loss: 192.7556, Acc: 49.8380%, lr: 2.7015e-05
+INFO:root:[Epoch: 20, Batch: 375000/443757, Loss: 192.7446, Acc: 49.8291%, lr: 2.6901e-05
+INFO:root:[Epoch: 20, Batch: 400000/443757, Loss: 192.7348, Acc: 49.8193%, lr: 2.6785e-05
+INFO:root:[Epoch: 20, Batch: 425000/443757, Loss: 192.6928, Acc: 49.8226%, lr: 2.6668e-05
+INFO:root:Overall Accuracy is: 48.78
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 37.21
+INFO:root:yes/no : 69.65
+INFO:root:number : 32.49
+INFO:root:Training started
+INFO:root:[Epoch: 21, Batch: 0/443757, Loss: 170.2747, Acc: 48.0000%, lr: 2.8237e-05
+INFO:root:[Epoch: 21, Batch: 25000/443757, Loss: 193.9338, Acc: 50.7705%, lr: 2.8146e-05
+INFO:root:[Epoch: 21, Batch: 50000/443757, Loss: 191.9592, Acc: 50.9710%, lr: 2.8053e-05
+INFO:root:[Epoch: 21, Batch: 75000/443757, Loss: 191.4798, Acc: 50.9047%, lr: 2.7958e-05
+INFO:root:[Epoch: 21, Batch: 100000/443757, Loss: 190.8484, Acc: 50.9595%, lr: 2.7861e-05
+INFO:root:[Epoch: 21, Batch: 125000/443757, Loss: 191.0451, Acc: 50.8964%, lr: 2.7761e-05
+INFO:root:[Epoch: 21, Batch: 150000/443757, Loss: 191.0430, Acc: 50.8384%, lr: 2.7660e-05
+INFO:root:[Epoch: 21, Batch: 175000/443757, Loss: 191.3679, Acc: 50.7358%, lr: 2.7557e-05
+INFO:root:[Epoch: 21, Batch: 200000/443757, Loss: 191.9597, Acc: 50.6058%, lr: 2.7453e-05
+INFO:root:[Epoch: 21, Batch: 225000/443757, Loss: 191.8031, Acc: 50.6008%, lr: 2.7346e-05
+INFO:root:[Epoch: 21, Batch: 250000/443757, Loss: 191.9494, Acc: 50.5775%, lr: 2.7237e-05
+INFO:root:[Epoch: 21, Batch: 275000/443757, Loss: 191.9694, Acc: 50.5359%, lr: 2.7127e-05
+INFO:root:[Epoch: 21, Batch: 300000/443757, Loss: 191.9526, Acc: 50.5339%, lr: 2.7015e-05
+INFO:root:[Epoch: 21, Batch: 325000/443757, Loss: 191.8350, Acc: 50.4904%, lr: 2.6901e-05
+INFO:root:[Epoch: 21, Batch: 350000/443757, Loss: 191.7416, Acc: 50.4354%, lr: 2.6785e-05
+INFO:root:[Epoch: 21, Batch: 375000/443757, Loss: 191.8796, Acc: 50.3925%, lr: 2.6668e-05
+INFO:root:[Epoch: 21, Batch: 400000/443757, Loss: 191.9149, Acc: 50.3622%, lr: 2.6549e-05
+INFO:root:[Epoch: 21, Batch: 425000/443757, Loss: 191.8475, Acc: 50.3343%, lr: 2.6428e-05
+INFO:root:Overall Accuracy is: 48.61
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 37.01
+INFO:root:yes/no : 69.45
+INFO:root:number : 32.52
+INFO:root:Training started
+INFO:root:[Epoch: 22, Batch: 0/443757, Loss: 172.4619, Acc: 56.0000%, lr: 2.8053e-05
+INFO:root:[Epoch: 22, Batch: 25000/443757, Loss: 186.6081, Acc: 52.1996%, lr: 2.7958e-05
+INFO:root:[Epoch: 22, Batch: 50000/443757, Loss: 187.6118, Acc: 51.8262%, lr: 2.7861e-05
+INFO:root:[Epoch: 22, Batch: 75000/443757, Loss: 187.7956, Acc: 51.9920%, lr: 2.7761e-05
+INFO:root:[Epoch: 22, Batch: 100000/443757, Loss: 187.9870, Acc: 51.8951%, lr: 2.7660e-05
+INFO:root:[Epoch: 22, Batch: 125000/443757, Loss: 188.0619, Acc: 51.7249%, lr: 2.7557e-05
+INFO:root:[Epoch: 22, Batch: 150000/443757, Loss: 188.1324, Acc: 51.7074%, lr: 2.7453e-05
+INFO:root:[Epoch: 22, Batch: 175000/443757, Loss: 188.0755, Acc: 51.6624%, lr: 2.7346e-05
+INFO:root:[Epoch: 22, Batch: 200000/443757, Loss: 188.6197, Acc: 51.4881%, lr: 2.7237e-05
+INFO:root:[Epoch: 22, Batch: 225000/443757, Loss: 188.7158, Acc: 51.4126%, lr: 2.7127e-05
+INFO:root:[Epoch: 22, Batch: 250000/443757, Loss: 188.8519, Acc: 51.3501%, lr: 2.7015e-05
+INFO:root:[Epoch: 22, Batch: 275000/443757, Loss: 188.7822, Acc: 51.3434%, lr: 2.6901e-05
+INFO:root:[Epoch: 22, Batch: 300000/443757, Loss: 189.0155, Acc: 51.2425%, lr: 2.6785e-05
+INFO:root:[Epoch: 22, Batch: 325000/443757, Loss: 189.2845, Acc: 51.1789%, lr: 2.6668e-05
+INFO:root:[Epoch: 22, Batch: 350000/443757, Loss: 189.4877, Acc: 51.1187%, lr: 2.6549e-05
+INFO:root:[Epoch: 22, Batch: 375000/443757, Loss: 189.5224, Acc: 51.0841%, lr: 2.6428e-05
+INFO:root:[Epoch: 22, Batch: 400000/443757, Loss: 189.6085, Acc: 51.0854%, lr: 2.6306e-05
+INFO:root:[Epoch: 22, Batch: 425000/443757, Loss: 189.7164, Acc: 51.0095%, lr: 2.6182e-05
+INFO:root:Overall Accuracy is: 49.01
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 37.23
+INFO:root:yes/no : 69.97
+INFO:root:number : 33.29
+INFO:root:Training started
+INFO:root:[Epoch: 23, Batch: 0/443757, Loss: 215.4504, Acc: 56.0000%, lr: 2.7861e-05
+INFO:root:[Epoch: 23, Batch: 25000/443757, Loss: 186.8389, Acc: 52.2515%, lr: 2.7761e-05
+INFO:root:[Epoch: 23, Batch: 50000/443757, Loss: 185.9000, Acc: 52.4855%, lr: 2.7660e-05
+INFO:root:[Epoch: 23, Batch: 75000/443757, Loss: 186.0577, Acc: 52.4397%, lr: 2.7557e-05
+INFO:root:[Epoch: 23, Batch: 100000/443757, Loss: 186.2202, Acc: 52.4208%, lr: 2.7453e-05
+INFO:root:[Epoch: 23, Batch: 125000/443757, Loss: 186.2963, Acc: 52.2495%, lr: 2.7346e-05
+INFO:root:[Epoch: 23, Batch: 150000/443757, Loss: 186.7679, Acc: 52.1186%, lr: 2.7237e-05
+INFO:root:[Epoch: 23, Batch: 175000/443757, Loss: 186.7119, Acc: 52.1320%, lr: 2.7127e-05
+INFO:root:[Epoch: 23, Batch: 200000/443757, Loss: 186.8440, Acc: 52.0475%, lr: 2.7015e-05
+INFO:root:[Epoch: 23, Batch: 225000/443757, Loss: 187.1166, Acc: 51.9964%, lr: 2.6901e-05
+INFO:root:[Epoch: 23, Batch: 250000/443757, Loss: 187.1740, Acc: 51.9840%, lr: 2.6785e-05
+INFO:root:[Epoch: 23, Batch: 275000/443757, Loss: 187.5640, Acc: 51.8651%, lr: 2.6668e-05
+INFO:root:[Epoch: 23, Batch: 300000/443757, Loss: 187.3884, Acc: 51.8687%, lr: 2.6549e-05
+INFO:root:[Epoch: 23, Batch: 325000/443757, Loss: 187.4583, Acc: 51.8369%, lr: 2.6428e-05
+INFO:root:[Epoch: 23, Batch: 350000/443757, Loss: 187.8741, Acc: 51.7223%, lr: 2.6306e-05
+INFO:root:[Epoch: 23, Batch: 375000/443757, Loss: 187.8450, Acc: 51.6704%, lr: 2.6182e-05
+INFO:root:[Epoch: 23, Batch: 400000/443757, Loss: 187.8666, Acc: 51.7065%, lr: 2.6056e-05
+INFO:root:[Epoch: 23, Batch: 425000/443757, Loss: 187.9745, Acc: 51.6654%, lr: 2.5929e-05
+INFO:root:Overall Accuracy is: 48.72
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.97
+INFO:root:yes/no : 69.63
+INFO:root:number : 32.98
+INFO:root:Training started
+INFO:root:[Epoch: 24, Batch: 0/443757, Loss: 216.5406, Acc: 62.0000%, lr: 2.7660e-05
+INFO:root:[Epoch: 24, Batch: 25000/443757, Loss: 186.0969, Acc: 53.0180%, lr: 2.7557e-05
+INFO:root:[Epoch: 24, Batch: 50000/443757, Loss: 186.9204, Acc: 52.6094%, lr: 2.7453e-05
+INFO:root:[Epoch: 24, Batch: 75000/443757, Loss: 186.6831, Acc: 52.5650%, lr: 2.7346e-05
+INFO:root:[Epoch: 24, Batch: 100000/443757, Loss: 186.0292, Acc: 52.6497%, lr: 2.7237e-05
+INFO:root:[Epoch: 24, Batch: 125000/443757, Loss: 186.7752, Acc: 52.4430%, lr: 2.7127e-05
+INFO:root:[Epoch: 24, Batch: 150000/443757, Loss: 186.7566, Acc: 52.4598%, lr: 2.7015e-05
+INFO:root:[Epoch: 24, Batch: 175000/443757, Loss: 186.8252, Acc: 52.4347%, lr: 2.6901e-05
+INFO:root:[Epoch: 24, Batch: 200000/443757, Loss: 187.3209, Acc: 52.3284%, lr: 2.6785e-05
+INFO:root:[Epoch: 24, Batch: 225000/443757, Loss: 187.4150, Acc: 52.2768%, lr: 2.6668e-05
+INFO:root:[Epoch: 24, Batch: 250000/443757, Loss: 187.3312, Acc: 52.2623%, lr: 2.6549e-05
+INFO:root:[Epoch: 24, Batch: 275000/443757, Loss: 187.1920, Acc: 52.2269%, lr: 2.6428e-05
+INFO:root:[Epoch: 24, Batch: 300000/443757, Loss: 187.2087, Acc: 52.1936%, lr: 2.6306e-05
+INFO:root:[Epoch: 24, Batch: 325000/443757, Loss: 187.2806, Acc: 52.1769%, lr: 2.6182e-05
+INFO:root:[Epoch: 24, Batch: 350000/443757, Loss: 186.9325, Acc: 52.1743%, lr: 2.6056e-05
+INFO:root:[Epoch: 24, Batch: 375000/443757, Loss: 186.8520, Acc: 52.1125%, lr: 2.5929e-05
+INFO:root:[Epoch: 24, Batch: 400000/443757, Loss: 186.7870, Acc: 52.1227%, lr: 2.5801e-05
+INFO:root:[Epoch: 24, Batch: 425000/443757, Loss: 186.7444, Acc: 52.1322%, lr: 2.5671e-05
+INFO:root:Overall Accuracy is: 48.61
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.87
+INFO:root:yes/no : 69.50
+INFO:root:number : 32.86
+INFO:root:Training started
+INFO:root:[Epoch: 25, Batch: 0/443757, Loss: 319.2476, Acc: 30.0000%, lr: 2.7453e-05
+INFO:root:[Epoch: 25, Batch: 25000/443757, Loss: 180.9784, Acc: 53.7206%, lr: 2.7346e-05
+INFO:root:[Epoch: 25, Batch: 50000/443757, Loss: 181.6375, Acc: 53.7443%, lr: 2.7237e-05
+INFO:root:[Epoch: 25, Batch: 75000/443757, Loss: 183.7622, Acc: 53.2258%, lr: 2.7127e-05
+INFO:root:[Epoch: 25, Batch: 100000/443757, Loss: 184.0206, Acc: 53.2174%, lr: 2.7015e-05
+INFO:root:[Epoch: 25, Batch: 125000/443757, Loss: 184.1858, Acc: 53.1579%, lr: 2.6901e-05
+INFO:root:[Epoch: 25, Batch: 150000/443757, Loss: 184.2274, Acc: 53.0663%, lr: 2.6785e-05
+INFO:root:[Epoch: 25, Batch: 175000/443757, Loss: 184.0689, Acc: 53.0380%, lr: 2.6668e-05
+INFO:root:[Epoch: 25, Batch: 200000/443757, Loss: 184.1565, Acc: 52.9873%, lr: 2.6549e-05
+INFO:root:[Epoch: 25, Batch: 225000/443757, Loss: 184.2924, Acc: 52.9349%, lr: 2.6428e-05
+INFO:root:[Epoch: 25, Batch: 250000/443757, Loss: 184.2405, Acc: 52.9058%, lr: 2.6306e-05
+INFO:root:[Epoch: 25, Batch: 275000/443757, Loss: 184.4670, Acc: 52.8926%, lr: 2.6182e-05
+INFO:root:[Epoch: 25, Batch: 300000/443757, Loss: 184.6708, Acc: 52.8102%, lr: 2.6056e-05
+INFO:root:[Epoch: 25, Batch: 325000/443757, Loss: 184.5609, Acc: 52.8036%, lr: 2.5929e-05
+INFO:root:[Epoch: 25, Batch: 350000/443757, Loss: 184.5770, Acc: 52.7425%, lr: 2.5801e-05
+INFO:root:[Epoch: 25, Batch: 375000/443757, Loss: 184.7453, Acc: 52.6970%, lr: 2.5671e-05
+INFO:root:[Epoch: 25, Batch: 400000/443757, Loss: 184.6867, Acc: 52.6842%, lr: 2.5539e-05
+INFO:root:[Epoch: 25, Batch: 425000/443757, Loss: 184.6848, Acc: 52.6371%, lr: 2.5406e-05
+INFO:root:Overall Accuracy is: 48.47
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.97
+INFO:root:yes/no : 69.26
+INFO:root:number : 32.14
+INFO:root:Training started
+INFO:root:[Epoch: 26, Batch: 0/443757, Loss: 169.2408, Acc: 58.0000%, lr: 2.7237e-05
+INFO:root:[Epoch: 26, Batch: 25000/443757, Loss: 182.0272, Acc: 53.9840%, lr: 2.7127e-05
+INFO:root:[Epoch: 26, Batch: 50000/443757, Loss: 182.6224, Acc: 53.6424%, lr: 2.7015e-05
+INFO:root:[Epoch: 26, Batch: 75000/443757, Loss: 182.8956, Acc: 53.6176%, lr: 2.6901e-05
+INFO:root:[Epoch: 26, Batch: 100000/443757, Loss: 182.5554, Acc: 53.6112%, lr: 2.6785e-05
+INFO:root:[Epoch: 26, Batch: 125000/443757, Loss: 182.4327, Acc: 53.5826%, lr: 2.6668e-05
+INFO:root:[Epoch: 26, Batch: 150000/443757, Loss: 182.5693, Acc: 53.5775%, lr: 2.6549e-05
+INFO:root:[Epoch: 26, Batch: 175000/443757, Loss: 182.7301, Acc: 53.5070%, lr: 2.6428e-05
+INFO:root:[Epoch: 26, Batch: 200000/443757, Loss: 182.7835, Acc: 53.4616%, lr: 2.6306e-05
+INFO:root:[Epoch: 26, Batch: 225000/443757, Loss: 183.0053, Acc: 53.3637%, lr: 2.6182e-05
+INFO:root:[Epoch: 26, Batch: 250000/443757, Loss: 183.0601, Acc: 53.3701%, lr: 2.6056e-05
+INFO:root:[Epoch: 26, Batch: 275000/443757, Loss: 183.0520, Acc: 53.3212%, lr: 2.5929e-05
+INFO:root:[Epoch: 26, Batch: 300000/443757, Loss: 183.0498, Acc: 53.2878%, lr: 2.5801e-05
+INFO:root:[Epoch: 26, Batch: 325000/443757, Loss: 183.2017, Acc: 53.2718%, lr: 2.5671e-05
+INFO:root:[Epoch: 26, Batch: 350000/443757, Loss: 183.3641, Acc: 53.1684%, lr: 2.5539e-05
+INFO:root:[Epoch: 26, Batch: 375000/443757, Loss: 183.5274, Acc: 53.1350%, lr: 2.5406e-05
+INFO:root:[Epoch: 26, Batch: 400000/443757, Loss: 183.7207, Acc: 53.0741%, lr: 2.5272e-05
+INFO:root:[Epoch: 26, Batch: 425000/443757, Loss: 183.7310, Acc: 53.0422%, lr: 2.5137e-05
+INFO:root:Overall Accuracy is: 48.54
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.91
+INFO:root:yes/no : 69.42
+INFO:root:number : 32.47
+INFO:root:Training started
+INFO:root:[Epoch: 27, Batch: 0/443757, Loss: 155.9333, Acc: 60.0000%, lr: 2.7015e-05
+INFO:root:[Epoch: 27, Batch: 25000/443757, Loss: 181.2654, Acc: 53.8243%, lr: 2.6901e-05
+INFO:root:[Epoch: 27, Batch: 50000/443757, Loss: 179.9434, Acc: 54.4196%, lr: 2.6785e-05
+INFO:root:[Epoch: 27, Batch: 75000/443757, Loss: 180.0714, Acc: 54.4211%, lr: 2.6668e-05
+INFO:root:[Epoch: 27, Batch: 100000/443757, Loss: 180.1347, Acc: 54.3238%, lr: 2.6549e-05
+INFO:root:[Epoch: 27, Batch: 125000/443757, Loss: 180.5173, Acc: 54.1575%, lr: 2.6428e-05
+INFO:root:[Epoch: 27, Batch: 150000/443757, Loss: 181.2139, Acc: 54.0373%, lr: 2.6306e-05
+INFO:root:[Epoch: 27, Batch: 175000/443757, Loss: 181.4862, Acc: 53.9509%, lr: 2.6182e-05
+INFO:root:[Epoch: 27, Batch: 200000/443757, Loss: 181.3506, Acc: 53.9720%, lr: 2.6056e-05
+INFO:root:[Epoch: 27, Batch: 225000/443757, Loss: 181.1795, Acc: 53.9689%, lr: 2.5929e-05
+INFO:root:[Epoch: 27, Batch: 250000/443757, Loss: 181.3420, Acc: 53.8920%, lr: 2.5801e-05
+INFO:root:[Epoch: 27, Batch: 275000/443757, Loss: 182.1163, Acc: 53.7375%, lr: 2.5671e-05
+INFO:root:[Epoch: 27, Batch: 300000/443757, Loss: 182.4513, Acc: 53.6057%, lr: 2.5539e-05
+INFO:root:[Epoch: 27, Batch: 325000/443757, Loss: 182.8362, Acc: 53.4887%, lr: 2.5406e-05
+INFO:root:[Epoch: 27, Batch: 350000/443757, Loss: 182.6150, Acc: 53.5178%, lr: 2.5272e-05
+INFO:root:[Epoch: 27, Batch: 375000/443757, Loss: 182.6524, Acc: 53.4953%, lr: 2.5137e-05
+INFO:root:[Epoch: 27, Batch: 400000/443757, Loss: 182.6642, Acc: 53.4556%, lr: 2.5000e-05
+INFO:root:[Epoch: 27, Batch: 425000/443757, Loss: 182.7041, Acc: 53.4024%, lr: 2.4862e-05
+INFO:root:Overall Accuracy is: 48.43
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.86
+INFO:root:yes/no : 69.13
+INFO:root:number : 32.63
+INFO:root:Training started
+INFO:root:[Epoch: 28, Batch: 0/443757, Loss: 214.4788, Acc: 48.0000%, lr: 2.6785e-05
+INFO:root:[Epoch: 28, Batch: 25000/443757, Loss: 177.0461, Acc: 55.1737%, lr: 2.6668e-05
+INFO:root:[Epoch: 28, Batch: 50000/443757, Loss: 178.6732, Acc: 54.9451%, lr: 2.6549e-05
+INFO:root:[Epoch: 28, Batch: 75000/443757, Loss: 179.3860, Acc: 54.7542%, lr: 2.6428e-05
+INFO:root:[Epoch: 28, Batch: 100000/443757, Loss: 178.4366, Acc: 54.7936%, lr: 2.6306e-05
+INFO:root:[Epoch: 28, Batch: 125000/443757, Loss: 178.8637, Acc: 54.7437%, lr: 2.6182e-05
+INFO:root:[Epoch: 28, Batch: 150000/443757, Loss: 178.9884, Acc: 54.7011%, lr: 2.6056e-05
+INFO:root:[Epoch: 28, Batch: 175000/443757, Loss: 179.5861, Acc: 54.5450%, lr: 2.5929e-05
+INFO:root:[Epoch: 28, Batch: 200000/443757, Loss: 179.4998, Acc: 54.5004%, lr: 2.5801e-05
+INFO:root:[Epoch: 28, Batch: 225000/443757, Loss: 179.8114, Acc: 54.3764%, lr: 2.5671e-05
+INFO:root:[Epoch: 28, Batch: 250000/443757, Loss: 179.9007, Acc: 54.3271%, lr: 2.5539e-05
+INFO:root:[Epoch: 28, Batch: 275000/443757, Loss: 179.8696, Acc: 54.2814%, lr: 2.5406e-05
+INFO:root:[Epoch: 28, Batch: 300000/443757, Loss: 180.0290, Acc: 54.2480%, lr: 2.5272e-05
+INFO:root:[Epoch: 28, Batch: 325000/443757, Loss: 180.1685, Acc: 54.1424%, lr: 2.5137e-05
+INFO:root:[Epoch: 28, Batch: 350000/443757, Loss: 180.4687, Acc: 54.0737%, lr: 2.5000e-05
+INFO:root:[Epoch: 28, Batch: 375000/443757, Loss: 180.5646, Acc: 54.0557%, lr: 2.4862e-05
+INFO:root:[Epoch: 28, Batch: 400000/443757, Loss: 180.5623, Acc: 54.0355%, lr: 2.4723e-05
+INFO:root:[Epoch: 28, Batch: 425000/443757, Loss: 180.6533, Acc: 54.0139%, lr: 2.4582e-05
+INFO:root:Overall Accuracy is: 48.63
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 37.03
+INFO:root:yes/no : 69.40
+INFO:root:number : 32.77
+INFO:root:Training started
+INFO:root:[Epoch: 29, Batch: 0/443757, Loss: 147.5941, Acc: 64.0000%, lr: 2.6549e-05
+INFO:root:[Epoch: 29, Batch: 25000/443757, Loss: 175.7616, Acc: 56.0559%, lr: 2.6428e-05
+INFO:root:[Epoch: 29, Batch: 50000/443757, Loss: 176.6583, Acc: 55.8102%, lr: 2.6306e-05
+INFO:root:[Epoch: 29, Batch: 75000/443757, Loss: 176.8894, Acc: 55.7122%, lr: 2.6182e-05
+INFO:root:[Epoch: 29, Batch: 100000/443757, Loss: 177.2085, Acc: 55.4833%, lr: 2.6056e-05
+INFO:root:[Epoch: 29, Batch: 125000/443757, Loss: 177.4769, Acc: 55.3363%, lr: 2.5929e-05
+INFO:root:[Epoch: 29, Batch: 150000/443757, Loss: 177.4609, Acc: 55.3482%, lr: 2.5801e-05
+INFO:root:[Epoch: 29, Batch: 175000/443757, Loss: 177.7060, Acc: 55.3093%, lr: 2.5671e-05
+INFO:root:[Epoch: 29, Batch: 200000/443757, Loss: 178.2405, Acc: 55.1797%, lr: 2.5539e-05
+INFO:root:[Epoch: 29, Batch: 225000/443757, Loss: 178.5197, Acc: 55.0304%, lr: 2.5406e-05
+INFO:root:[Epoch: 29, Batch: 250000/443757, Loss: 178.8143, Acc: 54.9186%, lr: 2.5272e-05
+INFO:root:[Epoch: 29, Batch: 275000/443757, Loss: 178.7162, Acc: 54.8857%, lr: 2.5137e-05
+INFO:root:[Epoch: 29, Batch: 300000/443757, Loss: 178.6863, Acc: 54.8719%, lr: 2.5000e-05
+INFO:root:[Epoch: 29, Batch: 325000/443757, Loss: 178.8437, Acc: 54.7756%, lr: 2.4862e-05
+INFO:root:[Epoch: 29, Batch: 350000/443757, Loss: 179.0416, Acc: 54.6713%, lr: 2.4723e-05
+INFO:root:[Epoch: 29, Batch: 375000/443757, Loss: 178.9730, Acc: 54.6247%, lr: 2.4582e-05
+INFO:root:[Epoch: 29, Batch: 400000/443757, Loss: 179.3001, Acc: 54.5357%, lr: 2.4441e-05
+INFO:root:[Epoch: 29, Batch: 425000/443757, Loss: 179.3565, Acc: 54.5122%, lr: 2.4298e-05
+INFO:root:Overall Accuracy is: 48.37
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.77
+INFO:root:yes/no : 69.46
+INFO:root:number : 31.55
+INFO:root:Training started
+INFO:root:[Epoch: 30, Batch: 0/443757, Loss: 196.6762, Acc: 54.0000%, lr: 2.6306e-05
+INFO:root:[Epoch: 30, Batch: 25000/443757, Loss: 175.3819, Acc: 55.6527%, lr: 2.6182e-05
+INFO:root:[Epoch: 30, Batch: 50000/443757, Loss: 175.5259, Acc: 55.6184%, lr: 2.6056e-05
+INFO:root:[Epoch: 30, Batch: 75000/443757, Loss: 177.0801, Acc: 55.5883%, lr: 2.5929e-05
+INFO:root:[Epoch: 30, Batch: 100000/443757, Loss: 176.7505, Acc: 55.6072%, lr: 2.5801e-05
+INFO:root:[Epoch: 30, Batch: 125000/443757, Loss: 177.5835, Acc: 55.4754%, lr: 2.5671e-05
+INFO:root:[Epoch: 30, Batch: 150000/443757, Loss: 177.3639, Acc: 55.4735%, lr: 2.5539e-05
+INFO:root:[Epoch: 30, Batch: 175000/443757, Loss: 177.5156, Acc: 55.3802%, lr: 2.5406e-05
+INFO:root:[Epoch: 30, Batch: 200000/443757, Loss: 177.9406, Acc: 55.2447%, lr: 2.5272e-05
+INFO:root:[Epoch: 30, Batch: 225000/443757, Loss: 177.6422, Acc: 55.2202%, lr: 2.5137e-05
+INFO:root:[Epoch: 30, Batch: 250000/443757, Loss: 177.8458, Acc: 55.1190%, lr: 2.5000e-05
+INFO:root:[Epoch: 30, Batch: 275000/443757, Loss: 177.8499, Acc: 55.0725%, lr: 2.4862e-05
+INFO:root:[Epoch: 30, Batch: 300000/443757, Loss: 177.6290, Acc: 55.0941%, lr: 2.4723e-05
+INFO:root:[Epoch: 30, Batch: 325000/443757, Loss: 177.7890, Acc: 55.0485%, lr: 2.4582e-05
+INFO:root:[Epoch: 30, Batch: 350000/443757, Loss: 178.0477, Acc: 54.9830%, lr: 2.4441e-05
+INFO:root:[Epoch: 30, Batch: 375000/443757, Loss: 178.2812, Acc: 54.9257%, lr: 2.4298e-05
+INFO:root:[Epoch: 30, Batch: 400000/443757, Loss: 178.3752, Acc: 54.8679%, lr: 2.4154e-05
+INFO:root:[Epoch: 30, Batch: 425000/443757, Loss: 178.5197, Acc: 54.8227%, lr: 2.4009e-05
+INFO:root:Overall Accuracy is: 48.38
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.79
+INFO:root:yes/no : 69.19
+INFO:root:number : 32.33
+INFO:root:Training started
+INFO:root:[Epoch: 31, Batch: 0/443757, Loss: 239.9549, Acc: 42.0000%, lr: 2.6056e-05
+INFO:root:[Epoch: 31, Batch: 25000/443757, Loss: 174.3057, Acc: 56.1118%, lr: 2.5929e-05
+INFO:root:[Epoch: 31, Batch: 50000/443757, Loss: 174.0394, Acc: 56.1618%, lr: 2.5801e-05
+INFO:root:[Epoch: 31, Batch: 75000/443757, Loss: 174.5227, Acc: 56.1066%, lr: 2.5671e-05
+INFO:root:[Epoch: 31, Batch: 100000/443757, Loss: 174.7555, Acc: 55.9980%, lr: 2.5539e-05
+INFO:root:[Epoch: 31, Batch: 125000/443757, Loss: 174.9715, Acc: 55.9728%, lr: 2.5406e-05
+INFO:root:[Epoch: 31, Batch: 150000/443757, Loss: 175.4318, Acc: 55.7574%, lr: 2.5272e-05
+INFO:root:[Epoch: 31, Batch: 175000/443757, Loss: 175.7065, Acc: 55.6407%, lr: 2.5137e-05
+INFO:root:[Epoch: 31, Batch: 200000/443757, Loss: 175.7373, Acc: 55.6116%, lr: 2.5000e-05
+INFO:root:[Epoch: 31, Batch: 225000/443757, Loss: 175.7234, Acc: 55.6116%, lr: 2.4862e-05
+INFO:root:[Epoch: 31, Batch: 250000/443757, Loss: 175.8251, Acc: 55.5813%, lr: 2.4723e-05
+INFO:root:[Epoch: 31, Batch: 275000/443757, Loss: 176.2619, Acc: 55.4932%, lr: 2.4582e-05
+INFO:root:[Epoch: 31, Batch: 300000/443757, Loss: 176.2039, Acc: 55.5091%, lr: 2.4441e-05
+INFO:root:[Epoch: 31, Batch: 325000/443757, Loss: 176.1576, Acc: 55.5108%, lr: 2.4298e-05
+INFO:root:[Epoch: 31, Batch: 350000/443757, Loss: 176.3958, Acc: 55.4561%, lr: 2.4154e-05
+INFO:root:[Epoch: 31, Batch: 375000/443757, Loss: 176.5502, Acc: 55.3974%, lr: 2.4009e-05
+INFO:root:[Epoch: 31, Batch: 400000/443757, Loss: 176.7233, Acc: 55.3443%, lr: 2.3863e-05
+INFO:root:[Epoch: 31, Batch: 425000/443757, Loss: 177.0597, Acc: 55.3013%, lr: 2.3717e-05
+INFO:root:Overall Accuracy is: 48.49
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.82
+INFO:root:yes/no : 69.35
+INFO:root:number : 32.56
+INFO:root:Training started
+INFO:root:[Epoch: 32, Batch: 0/443757, Loss: 188.7928, Acc: 60.0000%, lr: 2.5801e-05
+INFO:root:[Epoch: 32, Batch: 25000/443757, Loss: 176.2489, Acc: 56.2116%, lr: 2.5671e-05
+INFO:root:[Epoch: 32, Batch: 50000/443757, Loss: 176.0122, Acc: 56.3197%, lr: 2.5539e-05
+INFO:root:[Epoch: 32, Batch: 75000/443757, Loss: 175.0173, Acc: 56.3584%, lr: 2.5406e-05
+INFO:root:[Epoch: 32, Batch: 100000/443757, Loss: 174.8874, Acc: 56.4228%, lr: 2.5272e-05
+INFO:root:[Epoch: 32, Batch: 125000/443757, Loss: 174.4747, Acc: 56.4078%, lr: 2.5137e-05
+INFO:root:[Epoch: 32, Batch: 150000/443757, Loss: 174.4963, Acc: 56.3885%, lr: 2.5000e-05
+INFO:root:[Epoch: 32, Batch: 175000/443757, Loss: 174.4646, Acc: 56.2988%, lr: 2.4862e-05
+INFO:root:[Epoch: 32, Batch: 200000/443757, Loss: 174.8565, Acc: 56.1600%, lr: 2.4723e-05
+INFO:root:[Epoch: 32, Batch: 225000/443757, Loss: 174.6533, Acc: 56.1520%, lr: 2.4582e-05
+INFO:root:[Epoch: 32, Batch: 250000/443757, Loss: 174.8943, Acc: 56.0920%, lr: 2.4441e-05
+INFO:root:[Epoch: 32, Batch: 275000/443757, Loss: 175.1109, Acc: 55.9760%, lr: 2.4298e-05
+INFO:root:[Epoch: 32, Batch: 300000/443757, Loss: 175.3518, Acc: 55.8967%, lr: 2.4154e-05
+INFO:root:[Epoch: 32, Batch: 325000/443757, Loss: 175.5604, Acc: 55.8674%, lr: 2.4009e-05
+INFO:root:[Epoch: 32, Batch: 350000/443757, Loss: 175.6329, Acc: 55.8217%, lr: 2.3863e-05
+INFO:root:[Epoch: 32, Batch: 375000/443757, Loss: 175.7380, Acc: 55.8112%, lr: 2.3717e-05
+INFO:root:[Epoch: 32, Batch: 400000/443757, Loss: 175.7811, Acc: 55.7623%, lr: 2.3569e-05
+INFO:root:[Epoch: 32, Batch: 425000/443757, Loss: 175.7949, Acc: 55.7327%, lr: 2.3420e-05
+INFO:root:Overall Accuracy is: 48.46
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.81
+INFO:root:yes/no : 69.17
+INFO:root:number : 32.91
+INFO:root:Training started
+INFO:root:[Epoch: 33, Batch: 0/443757, Loss: 190.3216, Acc: 44.0000%, lr: 2.5539e-05
+INFO:root:[Epoch: 33, Batch: 25000/443757, Loss: 171.9201, Acc: 57.2774%, lr: 2.5406e-05
+INFO:root:[Epoch: 33, Batch: 50000/443757, Loss: 172.9322, Acc: 56.9431%, lr: 2.5272e-05
+INFO:root:[Epoch: 33, Batch: 75000/443757, Loss: 172.6967, Acc: 56.8994%, lr: 2.5137e-05
+INFO:root:[Epoch: 33, Batch: 100000/443757, Loss: 172.9909, Acc: 56.8995%, lr: 2.5000e-05
+INFO:root:[Epoch: 33, Batch: 125000/443757, Loss: 172.7031, Acc: 56.8996%, lr: 2.4862e-05
+INFO:root:[Epoch: 33, Batch: 150000/443757, Loss: 173.3758, Acc: 56.7291%, lr: 2.4723e-05
+INFO:root:[Epoch: 33, Batch: 175000/443757, Loss: 173.2235, Acc: 56.7586%, lr: 2.4582e-05
+INFO:root:[Epoch: 33, Batch: 200000/443757, Loss: 173.2386, Acc: 56.7138%, lr: 2.4441e-05
+INFO:root:[Epoch: 33, Batch: 225000/443757, Loss: 173.6365, Acc: 56.6207%, lr: 2.4298e-05
+INFO:root:[Epoch: 33, Batch: 250000/443757, Loss: 173.7824, Acc: 56.5587%, lr: 2.4154e-05
+INFO:root:[Epoch: 33, Batch: 275000/443757, Loss: 173.9102, Acc: 56.4988%, lr: 2.4009e-05
+INFO:root:[Epoch: 33, Batch: 300000/443757, Loss: 174.1414, Acc: 56.4266%, lr: 2.3863e-05
+INFO:root:[Epoch: 33, Batch: 325000/443757, Loss: 174.4083, Acc: 56.3436%, lr: 2.3717e-05
+INFO:root:[Epoch: 33, Batch: 350000/443757, Loss: 174.6896, Acc: 56.2831%, lr: 2.3569e-05
+INFO:root:[Epoch: 33, Batch: 375000/443757, Loss: 174.7978, Acc: 56.2304%, lr: 2.3420e-05
+INFO:root:[Epoch: 33, Batch: 400000/443757, Loss: 174.8187, Acc: 56.1445%, lr: 2.3271e-05
+INFO:root:[Epoch: 33, Batch: 425000/443757, Loss: 175.1318, Acc: 56.0562%, lr: 2.3120e-05
+INFO:root:Overall Accuracy is: 48.23
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.52
+INFO:root:yes/no : 69.26
+INFO:root:number : 32.01
+INFO:root:Training started
+INFO:root:[Epoch: 34, Batch: 0/443757, Loss: 165.8898, Acc: 62.0000%, lr: 2.5272e-05
+INFO:root:[Epoch: 34, Batch: 25000/443757, Loss: 171.2199, Acc: 57.4172%, lr: 2.5137e-05
+INFO:root:[Epoch: 34, Batch: 50000/443757, Loss: 172.3335, Acc: 57.0130%, lr: 2.5000e-05
+INFO:root:[Epoch: 34, Batch: 75000/443757, Loss: 172.1284, Acc: 57.1059%, lr: 2.4862e-05
+INFO:root:[Epoch: 34, Batch: 100000/443757, Loss: 172.2778, Acc: 57.0795%, lr: 2.4723e-05
+INFO:root:[Epoch: 34, Batch: 125000/443757, Loss: 172.6436, Acc: 56.9884%, lr: 2.4582e-05
+INFO:root:[Epoch: 34, Batch: 150000/443757, Loss: 172.6963, Acc: 56.9104%, lr: 2.4441e-05
+INFO:root:[Epoch: 34, Batch: 175000/443757, Loss: 172.9803, Acc: 56.8380%, lr: 2.4298e-05
+INFO:root:[Epoch: 34, Batch: 200000/443757, Loss: 173.1542, Acc: 56.8028%, lr: 2.4154e-05
+INFO:root:[Epoch: 34, Batch: 225000/443757, Loss: 173.2739, Acc: 56.7007%, lr: 2.4009e-05
+INFO:root:[Epoch: 34, Batch: 250000/443757, Loss: 173.9600, Acc: 56.5247%, lr: 2.3863e-05
+INFO:root:[Epoch: 34, Batch: 275000/443757, Loss: 173.9367, Acc: 56.4759%, lr: 2.3717e-05
+INFO:root:[Epoch: 34, Batch: 300000/443757, Loss: 174.0008, Acc: 56.4679%, lr: 2.3569e-05
+INFO:root:[Epoch: 34, Batch: 325000/443757, Loss: 174.3142, Acc: 56.3886%, lr: 2.3420e-05
+INFO:root:[Epoch: 34, Batch: 350000/443757, Loss: 174.5513, Acc: 56.2900%, lr: 2.3271e-05
+INFO:root:[Epoch: 34, Batch: 375000/443757, Loss: 174.7358, Acc: 56.2253%, lr: 2.3120e-05
+INFO:root:[Epoch: 34, Batch: 400000/443757, Loss: 174.8128, Acc: 56.1865%, lr: 2.2969e-05
+INFO:root:[Epoch: 34, Batch: 425000/443757, Loss: 174.9722, Acc: 56.1400%, lr: 2.2817e-05
+INFO:root:Overall Accuracy is: 48.40
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.68
+INFO:root:yes/no : 69.36
+INFO:root:number : 32.45
+INFO:root:Training started
+INFO:root:[Epoch: 35, Batch: 0/443757, Loss: 232.2919, Acc: 42.0000%, lr: 2.5000e-05
+INFO:root:[Epoch: 35, Batch: 25000/443757, Loss: 172.2556, Acc: 57.7325%, lr: 2.4862e-05
+INFO:root:[Epoch: 35, Batch: 50000/443757, Loss: 170.4761, Acc: 57.8921%, lr: 2.4723e-05
+INFO:root:[Epoch: 35, Batch: 75000/443757, Loss: 170.2012, Acc: 57.7961%, lr: 2.4582e-05
+INFO:root:[Epoch: 35, Batch: 100000/443757, Loss: 170.4675, Acc: 57.6412%, lr: 2.4441e-05
+INFO:root:[Epoch: 35, Batch: 125000/443757, Loss: 170.9582, Acc: 57.4746%, lr: 2.4298e-05
+INFO:root:[Epoch: 35, Batch: 150000/443757, Loss: 171.7462, Acc: 57.3136%, lr: 2.4154e-05
+INFO:root:[Epoch: 35, Batch: 175000/443757, Loss: 171.7524, Acc: 57.1882%, lr: 2.4009e-05
+INFO:root:[Epoch: 35, Batch: 200000/443757, Loss: 172.0544, Acc: 57.0662%, lr: 2.3863e-05
+INFO:root:[Epoch: 35, Batch: 225000/443757, Loss: 172.3495, Acc: 57.0295%, lr: 2.3717e-05
+INFO:root:[Epoch: 35, Batch: 250000/443757, Loss: 172.5412, Acc: 56.9078%, lr: 2.3569e-05
+INFO:root:[Epoch: 35, Batch: 275000/443757, Loss: 172.5443, Acc: 56.8933%, lr: 2.3420e-05
+INFO:root:[Epoch: 35, Batch: 300000/443757, Loss: 173.0278, Acc: 56.7959%, lr: 2.3271e-05
+INFO:root:[Epoch: 35, Batch: 325000/443757, Loss: 173.2182, Acc: 56.7728%, lr: 2.3120e-05
+INFO:root:[Epoch: 35, Batch: 350000/443757, Loss: 173.1663, Acc: 56.7342%, lr: 2.2969e-05
+INFO:root:[Epoch: 35, Batch: 375000/443757, Loss: 173.1661, Acc: 56.7146%, lr: 2.2817e-05
+INFO:root:[Epoch: 35, Batch: 400000/443757, Loss: 173.2002, Acc: 56.6879%, lr: 2.2665e-05
+INFO:root:[Epoch: 35, Batch: 425000/443757, Loss: 173.3246, Acc: 56.6489%, lr: 2.2511e-05
+INFO:root:Overall Accuracy is: 48.26
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.63
+INFO:root:yes/no : 69.19
+INFO:root:number : 32.04
+INFO:root:Training started
+INFO:root:[Epoch: 36, Batch: 0/443757, Loss: 138.6138, Acc: 64.0000%, lr: 2.4723e-05
+INFO:root:[Epoch: 36, Batch: 25000/443757, Loss: 170.0695, Acc: 58.2156%, lr: 2.4582e-05
+INFO:root:[Epoch: 36, Batch: 50000/443757, Loss: 170.8126, Acc: 58.1479%, lr: 2.4441e-05
+INFO:root:[Epoch: 36, Batch: 75000/443757, Loss: 171.2531, Acc: 57.9414%, lr: 2.4298e-05
+INFO:root:[Epoch: 36, Batch: 100000/443757, Loss: 170.4910, Acc: 58.0560%, lr: 2.4154e-05
+INFO:root:[Epoch: 36, Batch: 125000/443757, Loss: 171.0144, Acc: 57.8808%, lr: 2.4009e-05
+INFO:root:[Epoch: 36, Batch: 150000/443757, Loss: 171.0433, Acc: 57.8007%, lr: 2.3863e-05
+INFO:root:[Epoch: 36, Batch: 175000/443757, Loss: 170.5086, Acc: 57.9280%, lr: 2.3717e-05
+INFO:root:[Epoch: 36, Batch: 200000/443757, Loss: 170.5756, Acc: 57.8115%, lr: 2.3569e-05
+INFO:root:[Epoch: 36, Batch: 225000/443757, Loss: 171.1349, Acc: 57.6374%, lr: 2.3420e-05
+INFO:root:[Epoch: 36, Batch: 250000/443757, Loss: 171.4661, Acc: 57.5325%, lr: 2.3271e-05
+INFO:root:[Epoch: 36, Batch: 275000/443757, Loss: 171.7203, Acc: 57.4205%, lr: 2.3120e-05
+INFO:root:[Epoch: 36, Batch: 300000/443757, Loss: 171.7082, Acc: 57.3761%, lr: 2.2969e-05
+INFO:root:[Epoch: 36, Batch: 325000/443757, Loss: 171.8882, Acc: 57.3213%, lr: 2.2817e-05
+INFO:root:[Epoch: 36, Batch: 350000/443757, Loss: 171.7107, Acc: 57.3115%, lr: 2.2665e-05
+INFO:root:[Epoch: 36, Batch: 375000/443757, Loss: 171.9843, Acc: 57.2502%, lr: 2.2511e-05
+INFO:root:[Epoch: 36, Batch: 400000/443757, Loss: 172.0273, Acc: 57.1926%, lr: 2.2358e-05
+INFO:root:[Epoch: 36, Batch: 425000/443757, Loss: 172.0740, Acc: 57.1446%, lr: 2.2203e-05
+INFO:root:Overall Accuracy is: 48.33
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.77
+INFO:root:yes/no : 69.22
+INFO:root:number : 31.97
+INFO:root:Training started
+INFO:root:[Epoch: 37, Batch: 0/443757, Loss: 128.6696, Acc: 66.0000%, lr: 2.4441e-05
+INFO:root:[Epoch: 37, Batch: 25000/443757, Loss: 167.8354, Acc: 58.6148%, lr: 2.4298e-05
+INFO:root:[Epoch: 37, Batch: 50000/443757, Loss: 170.1673, Acc: 58.0360%, lr: 2.4154e-05
+INFO:root:[Epoch: 37, Batch: 75000/443757, Loss: 170.0368, Acc: 58.0826%, lr: 2.4009e-05
+INFO:root:[Epoch: 37, Batch: 100000/443757, Loss: 170.3846, Acc: 57.8980%, lr: 2.3863e-05
+INFO:root:[Epoch: 37, Batch: 125000/443757, Loss: 170.1161, Acc: 57.9688%, lr: 2.3717e-05
+INFO:root:[Epoch: 37, Batch: 150000/443757, Loss: 169.9136, Acc: 57.9847%, lr: 2.3569e-05
+INFO:root:[Epoch: 37, Batch: 175000/443757, Loss: 169.6651, Acc: 58.0246%, lr: 2.3420e-05
+INFO:root:[Epoch: 37, Batch: 200000/443757, Loss: 169.8429, Acc: 57.9830%, lr: 2.3271e-05
+INFO:root:[Epoch: 37, Batch: 225000/443757, Loss: 170.2273, Acc: 57.8934%, lr: 2.3120e-05
+INFO:root:[Epoch: 37, Batch: 250000/443757, Loss: 170.2437, Acc: 57.8276%, lr: 2.2969e-05
+INFO:root:[Epoch: 37, Batch: 275000/443757, Loss: 170.4946, Acc: 57.7426%, lr: 2.2817e-05
+INFO:root:[Epoch: 37, Batch: 300000/443757, Loss: 170.2996, Acc: 57.7494%, lr: 2.2665e-05
+INFO:root:[Epoch: 37, Batch: 325000/443757, Loss: 170.4276, Acc: 57.6754%, lr: 2.2511e-05
+INFO:root:[Epoch: 37, Batch: 350000/443757, Loss: 170.5035, Acc: 57.6209%, lr: 2.2358e-05
+INFO:root:[Epoch: 37, Batch: 375000/443757, Loss: 170.6765, Acc: 57.5875%, lr: 2.2203e-05
+INFO:root:[Epoch: 37, Batch: 400000/443757, Loss: 170.9772, Acc: 57.5218%, lr: 2.2048e-05
+INFO:root:[Epoch: 37, Batch: 425000/443757, Loss: 171.2134, Acc: 57.4396%, lr: 2.1893e-05
+INFO:root:Overall Accuracy is: 48.51
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.84
+INFO:root:yes/no : 69.66
+INFO:root:number : 31.78
+INFO:root:Training started
+INFO:root:[Epoch: 38, Batch: 0/443757, Loss: 166.2242, Acc: 54.0000%, lr: 2.4154e-05
+INFO:root:[Epoch: 38, Batch: 25000/443757, Loss: 170.0081, Acc: 58.4351%, lr: 2.4009e-05
+INFO:root:[Epoch: 38, Batch: 50000/443757, Loss: 169.7343, Acc: 58.5514%, lr: 2.3863e-05
+INFO:root:[Epoch: 38, Batch: 75000/443757, Loss: 169.2441, Acc: 58.5996%, lr: 2.3717e-05
+INFO:root:[Epoch: 38, Batch: 100000/443757, Loss: 169.7962, Acc: 58.4188%, lr: 2.3569e-05
+INFO:root:[Epoch: 38, Batch: 125000/443757, Loss: 169.7456, Acc: 58.3311%, lr: 2.3420e-05
+INFO:root:[Epoch: 38, Batch: 150000/443757, Loss: 169.8247, Acc: 58.2153%, lr: 2.3271e-05
+INFO:root:[Epoch: 38, Batch: 175000/443757, Loss: 169.6649, Acc: 58.2017%, lr: 2.3120e-05
+INFO:root:[Epoch: 38, Batch: 200000/443757, Loss: 169.5702, Acc: 58.1575%, lr: 2.2969e-05
+INFO:root:[Epoch: 38, Batch: 225000/443757, Loss: 169.8979, Acc: 58.0378%, lr: 2.2817e-05
+INFO:root:[Epoch: 38, Batch: 250000/443757, Loss: 169.9525, Acc: 58.0376%, lr: 2.2665e-05
+INFO:root:[Epoch: 38, Batch: 275000/443757, Loss: 169.7698, Acc: 58.0676%, lr: 2.2511e-05
+INFO:root:[Epoch: 38, Batch: 300000/443757, Loss: 170.2792, Acc: 57.9543%, lr: 2.2358e-05
+INFO:root:[Epoch: 38, Batch: 325000/443757, Loss: 170.4537, Acc: 57.9031%, lr: 2.2203e-05
+INFO:root:[Epoch: 38, Batch: 350000/443757, Loss: 170.3939, Acc: 57.8980%, lr: 2.2048e-05
+INFO:root:[Epoch: 38, Batch: 375000/443757, Loss: 170.6755, Acc: 57.8128%, lr: 2.1893e-05
+INFO:root:[Epoch: 38, Batch: 400000/443757, Loss: 170.7601, Acc: 57.7550%, lr: 2.1736e-05
+INFO:root:[Epoch: 38, Batch: 425000/443757, Loss: 170.6929, Acc: 57.7325%, lr: 2.1580e-05
+INFO:root:Overall Accuracy is: 48.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.70
+INFO:root:yes/no : 69.19
+INFO:root:number : 32.14
+INFO:root:Training started
+INFO:root:[Epoch: 39, Batch: 0/443757, Loss: 185.4630, Acc: 52.0000%, lr: 2.3863e-05
+INFO:root:[Epoch: 39, Batch: 25000/443757, Loss: 167.7998, Acc: 59.0699%, lr: 2.3717e-05
+INFO:root:[Epoch: 39, Batch: 50000/443757, Loss: 168.7236, Acc: 58.9650%, lr: 2.3569e-05
+INFO:root:[Epoch: 39, Batch: 75000/443757, Loss: 169.8273, Acc: 58.5929%, lr: 2.3420e-05
+INFO:root:[Epoch: 39, Batch: 100000/443757, Loss: 169.7662, Acc: 58.5237%, lr: 2.3271e-05
+INFO:root:[Epoch: 39, Batch: 125000/443757, Loss: 169.8652, Acc: 58.4726%, lr: 2.3120e-05
+INFO:root:[Epoch: 39, Batch: 150000/443757, Loss: 170.1312, Acc: 58.3819%, lr: 2.2969e-05
+INFO:root:[Epoch: 39, Batch: 175000/443757, Loss: 169.8270, Acc: 58.4439%, lr: 2.2817e-05
+INFO:root:[Epoch: 39, Batch: 200000/443757, Loss: 169.7525, Acc: 58.4299%, lr: 2.2665e-05
+INFO:root:[Epoch: 39, Batch: 225000/443757, Loss: 169.7851, Acc: 58.3435%, lr: 2.2511e-05
+INFO:root:[Epoch: 39, Batch: 250000/443757, Loss: 169.5942, Acc: 58.2979%, lr: 2.2358e-05
+INFO:root:[Epoch: 39, Batch: 275000/443757, Loss: 169.6025, Acc: 58.2287%, lr: 2.2203e-05
+INFO:root:[Epoch: 39, Batch: 300000/443757, Loss: 169.7453, Acc: 58.1976%, lr: 2.2048e-05
+INFO:root:[Epoch: 39, Batch: 325000/443757, Loss: 169.8456, Acc: 58.1643%, lr: 2.1893e-05
+INFO:root:[Epoch: 39, Batch: 350000/443757, Loss: 169.6975, Acc: 58.1234%, lr: 2.1736e-05
+INFO:root:[Epoch: 39, Batch: 375000/443757, Loss: 169.8722, Acc: 58.0691%, lr: 2.1580e-05
+INFO:root:[Epoch: 39, Batch: 400000/443757, Loss: 169.9828, Acc: 58.0292%, lr: 2.1423e-05
+INFO:root:[Epoch: 39, Batch: 425000/443757, Loss: 170.1060, Acc: 57.9911%, lr: 2.1266e-05
+INFO:root:Overall Accuracy is: 48.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.68
+INFO:root:yes/no : 69.18
+INFO:root:number : 32.19
+INFO:root:Training started
+INFO:root:[Epoch: 40, Batch: 0/443757, Loss: 111.5526, Acc: 76.0000%, lr: 2.3569e-05
+INFO:root:[Epoch: 40, Batch: 25000/443757, Loss: 165.7133, Acc: 59.0539%, lr: 2.3420e-05
+INFO:root:[Epoch: 40, Batch: 50000/443757, Loss: 166.2765, Acc: 58.9910%, lr: 2.3271e-05
+INFO:root:[Epoch: 40, Batch: 75000/443757, Loss: 166.3666, Acc: 59.1699%, lr: 2.3120e-05
+INFO:root:[Epoch: 40, Batch: 100000/443757, Loss: 166.8210, Acc: 59.1174%, lr: 2.2969e-05
+INFO:root:[Epoch: 40, Batch: 125000/443757, Loss: 167.4240, Acc: 58.8748%, lr: 2.2817e-05
+INFO:root:[Epoch: 40, Batch: 150000/443757, Loss: 167.4844, Acc: 58.8124%, lr: 2.2665e-05
+INFO:root:[Epoch: 40, Batch: 175000/443757, Loss: 167.6350, Acc: 58.7621%, lr: 2.2511e-05
+INFO:root:[Epoch: 40, Batch: 200000/443757, Loss: 167.5703, Acc: 58.7428%, lr: 2.2358e-05
+INFO:root:[Epoch: 40, Batch: 225000/443757, Loss: 167.7743, Acc: 58.6870%, lr: 2.2203e-05
+INFO:root:[Epoch: 40, Batch: 250000/443757, Loss: 167.9361, Acc: 58.6307%, lr: 2.2048e-05
+INFO:root:[Epoch: 40, Batch: 275000/443757, Loss: 168.2996, Acc: 58.5126%, lr: 2.1893e-05
+INFO:root:[Epoch: 40, Batch: 300000/443757, Loss: 168.3343, Acc: 58.4932%, lr: 2.1736e-05
+INFO:root:[Epoch: 40, Batch: 325000/443757, Loss: 168.3564, Acc: 58.4676%, lr: 2.1580e-05
+INFO:root:[Epoch: 40, Batch: 350000/443757, Loss: 168.4311, Acc: 58.3851%, lr: 2.1423e-05
+INFO:root:[Epoch: 40, Batch: 375000/443757, Loss: 168.5791, Acc: 58.3546%, lr: 2.1266e-05
+INFO:root:[Epoch: 40, Batch: 400000/443757, Loss: 168.6891, Acc: 58.3402%, lr: 2.1108e-05
+INFO:root:[Epoch: 40, Batch: 425000/443757, Loss: 168.8182, Acc: 58.2847%, lr: 2.0951e-05
+INFO:root:Overall Accuracy is: 48.40
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.63
+INFO:root:yes/no : 69.27
+INFO:root:number : 32.87
+INFO:root:Training started
+INFO:root:[Epoch: 41, Batch: 0/443757, Loss: 216.5234, Acc: 50.0000%, lr: 2.3271e-05
+INFO:root:[Epoch: 41, Batch: 25000/443757, Loss: 162.5330, Acc: 60.4511%, lr: 2.3120e-05
+INFO:root:[Epoch: 41, Batch: 50000/443757, Loss: 164.8444, Acc: 59.9900%, lr: 2.2969e-05
+INFO:root:[Epoch: 41, Batch: 75000/443757, Loss: 164.9900, Acc: 59.6429%, lr: 2.2817e-05
+INFO:root:[Epoch: 41, Batch: 100000/443757, Loss: 165.7638, Acc: 59.4523%, lr: 2.2665e-05
+INFO:root:[Epoch: 41, Batch: 125000/443757, Loss: 166.3398, Acc: 59.3443%, lr: 2.2511e-05
+INFO:root:[Epoch: 41, Batch: 150000/443757, Loss: 166.7276, Acc: 59.2123%, lr: 2.2358e-05
+INFO:root:[Epoch: 41, Batch: 175000/443757, Loss: 166.4953, Acc: 59.2905%, lr: 2.2203e-05
+INFO:root:[Epoch: 41, Batch: 200000/443757, Loss: 166.9143, Acc: 59.1412%, lr: 2.2048e-05
+INFO:root:[Epoch: 41, Batch: 225000/443757, Loss: 167.0357, Acc: 59.0460%, lr: 2.1893e-05
+INFO:root:[Epoch: 41, Batch: 250000/443757, Loss: 167.1783, Acc: 58.9590%, lr: 2.1736e-05
+INFO:root:[Epoch: 41, Batch: 275000/443757, Loss: 167.2026, Acc: 58.9195%, lr: 2.1580e-05
+INFO:root:[Epoch: 41, Batch: 300000/443757, Loss: 166.9919, Acc: 58.9235%, lr: 2.1423e-05
+INFO:root:[Epoch: 41, Batch: 325000/443757, Loss: 167.1426, Acc: 58.8857%, lr: 2.1266e-05
+INFO:root:[Epoch: 41, Batch: 350000/443757, Loss: 167.3611, Acc: 58.8325%, lr: 2.1108e-05
+INFO:root:[Epoch: 41, Batch: 375000/443757, Loss: 167.7336, Acc: 58.7362%, lr: 2.0951e-05
+INFO:root:[Epoch: 41, Batch: 400000/443757, Loss: 167.7265, Acc: 58.7079%, lr: 2.0792e-05
+INFO:root:[Epoch: 41, Batch: 425000/443757, Loss: 167.7362, Acc: 58.7067%, lr: 2.0634e-05
+INFO:root:Overall Accuracy is: 48.12
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.38
+INFO:root:yes/no : 69.25
+INFO:root:number : 31.71
+INFO:root:Training started
+INFO:root:[Epoch: 42, Batch: 0/443757, Loss: 185.2206, Acc: 56.0000%, lr: 2.2969e-05
+INFO:root:[Epoch: 42, Batch: 25000/443757, Loss: 160.4104, Acc: 60.8224%, lr: 2.2817e-05
+INFO:root:[Epoch: 42, Batch: 50000/443757, Loss: 163.7791, Acc: 60.2478%, lr: 2.2665e-05
+INFO:root:[Epoch: 42, Batch: 75000/443757, Loss: 163.7516, Acc: 60.1559%, lr: 2.2511e-05
+INFO:root:[Epoch: 42, Batch: 100000/443757, Loss: 163.1732, Acc: 60.2109%, lr: 2.2358e-05
+INFO:root:[Epoch: 42, Batch: 125000/443757, Loss: 164.0333, Acc: 59.9640%, lr: 2.2203e-05
+INFO:root:[Epoch: 42, Batch: 150000/443757, Loss: 164.2597, Acc: 59.8614%, lr: 2.2048e-05
+INFO:root:[Epoch: 42, Batch: 175000/443757, Loss: 164.4080, Acc: 59.7846%, lr: 2.1893e-05
+INFO:root:[Epoch: 42, Batch: 200000/443757, Loss: 164.6978, Acc: 59.6916%, lr: 2.1736e-05
+INFO:root:[Epoch: 42, Batch: 225000/443757, Loss: 164.9657, Acc: 59.6347%, lr: 2.1580e-05
+INFO:root:[Epoch: 42, Batch: 250000/443757, Loss: 164.9687, Acc: 59.6037%, lr: 2.1423e-05
+INFO:root:[Epoch: 42, Batch: 275000/443757, Loss: 165.0775, Acc: 59.5434%, lr: 2.1266e-05
+INFO:root:[Epoch: 42, Batch: 300000/443757, Loss: 165.4818, Acc: 59.4424%, lr: 2.1108e-05
+INFO:root:[Epoch: 42, Batch: 325000/443757, Loss: 165.7086, Acc: 59.3527%, lr: 2.0951e-05
+INFO:root:[Epoch: 42, Batch: 350000/443757, Loss: 166.0542, Acc: 59.2624%, lr: 2.0792e-05
+INFO:root:[Epoch: 42, Batch: 375000/443757, Loss: 166.1229, Acc: 59.2305%, lr: 2.0634e-05
+INFO:root:[Epoch: 42, Batch: 400000/443757, Loss: 166.4346, Acc: 59.1184%, lr: 2.0476e-05
+INFO:root:[Epoch: 42, Batch: 425000/443757, Loss: 166.7219, Acc: 59.0469%, lr: 2.0317e-05
+INFO:root:Overall Accuracy is: 48.29
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.49
+INFO:root:yes/no : 69.31
+INFO:root:number : 32.46
+INFO:root:Training started
+INFO:root:[Epoch: 43, Batch: 0/443757, Loss: 110.8516, Acc: 74.0000%, lr: 2.2665e-05
+INFO:root:[Epoch: 43, Batch: 25000/443757, Loss: 162.3278, Acc: 60.1437%, lr: 2.2511e-05
+INFO:root:[Epoch: 43, Batch: 50000/443757, Loss: 161.6571, Acc: 60.2717%, lr: 2.2358e-05
+INFO:root:[Epoch: 43, Batch: 75000/443757, Loss: 162.5563, Acc: 60.1173%, lr: 2.2203e-05
+INFO:root:[Epoch: 43, Batch: 100000/443757, Loss: 163.6158, Acc: 59.9590%, lr: 2.2048e-05
+INFO:root:[Epoch: 43, Batch: 125000/443757, Loss: 163.5216, Acc: 59.9648%, lr: 2.1893e-05
+INFO:root:[Epoch: 43, Batch: 150000/443757, Loss: 164.0734, Acc: 59.8947%, lr: 2.1736e-05
+INFO:root:[Epoch: 43, Batch: 175000/443757, Loss: 164.7799, Acc: 59.7435%, lr: 2.1580e-05
+INFO:root:[Epoch: 43, Batch: 200000/443757, Loss: 165.1843, Acc: 59.6471%, lr: 2.1423e-05
+INFO:root:[Epoch: 43, Batch: 225000/443757, Loss: 165.3388, Acc: 59.4850%, lr: 2.1266e-05
+INFO:root:[Epoch: 43, Batch: 250000/443757, Loss: 165.3928, Acc: 59.4753%, lr: 2.1108e-05
+INFO:root:[Epoch: 43, Batch: 275000/443757, Loss: 165.3350, Acc: 59.4808%, lr: 2.0951e-05
+INFO:root:[Epoch: 43, Batch: 300000/443757, Loss: 165.6613, Acc: 59.4258%, lr: 2.0792e-05
+INFO:root:[Epoch: 43, Batch: 325000/443757, Loss: 165.9219, Acc: 59.3401%, lr: 2.0634e-05
+INFO:root:[Epoch: 43, Batch: 350000/443757, Loss: 165.9305, Acc: 59.3324%, lr: 2.0476e-05
+INFO:root:[Epoch: 43, Batch: 375000/443757, Loss: 166.1193, Acc: 59.3081%, lr: 2.0317e-05
+INFO:root:[Epoch: 43, Batch: 400000/443757, Loss: 166.3568, Acc: 59.2431%, lr: 2.0159e-05
+INFO:root:[Epoch: 43, Batch: 425000/443757, Loss: 166.4254, Acc: 59.2170%, lr: 2.0000e-05
+INFO:root:Overall Accuracy is: 48.29
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.59
+INFO:root:yes/no : 69.23
+INFO:root:number : 32.30
+INFO:root:Training started
+INFO:root:[Epoch: 44, Batch: 0/443757, Loss: 162.1318, Acc: 64.0000%, lr: 2.2358e-05
+INFO:root:[Epoch: 44, Batch: 25000/443757, Loss: 161.9150, Acc: 60.6667%, lr: 2.2203e-05
+INFO:root:[Epoch: 44, Batch: 50000/443757, Loss: 161.3457, Acc: 60.6773%, lr: 2.2048e-05
+INFO:root:[Epoch: 44, Batch: 75000/443757, Loss: 162.5655, Acc: 60.3291%, lr: 2.1893e-05
+INFO:root:[Epoch: 44, Batch: 100000/443757, Loss: 163.3383, Acc: 60.3248%, lr: 2.1736e-05
+INFO:root:[Epoch: 44, Batch: 125000/443757, Loss: 164.4644, Acc: 60.0248%, lr: 2.1580e-05
+INFO:root:[Epoch: 44, Batch: 150000/443757, Loss: 164.5467, Acc: 59.9673%, lr: 2.1423e-05
+INFO:root:[Epoch: 44, Batch: 175000/443757, Loss: 164.9320, Acc: 59.9046%, lr: 2.1266e-05
+INFO:root:[Epoch: 44, Batch: 200000/443757, Loss: 165.0400, Acc: 59.8705%, lr: 2.1108e-05
+INFO:root:[Epoch: 44, Batch: 225000/443757, Loss: 165.0626, Acc: 59.8400%, lr: 2.0951e-05
+INFO:root:[Epoch: 44, Batch: 250000/443757, Loss: 165.0025, Acc: 59.8552%, lr: 2.0792e-05
+INFO:root:[Epoch: 44, Batch: 275000/443757, Loss: 165.1289, Acc: 59.8142%, lr: 2.0634e-05
+INFO:root:[Epoch: 44, Batch: 300000/443757, Loss: 165.3873, Acc: 59.6917%, lr: 2.0476e-05
+INFO:root:[Epoch: 44, Batch: 325000/443757, Loss: 165.3734, Acc: 59.6570%, lr: 2.0317e-05
+INFO:root:[Epoch: 44, Batch: 350000/443757, Loss: 165.2866, Acc: 59.6583%, lr: 2.0159e-05
+INFO:root:[Epoch: 44, Batch: 375000/443757, Loss: 165.3364, Acc: 59.5838%, lr: 2.0000e-05
+INFO:root:[Epoch: 44, Batch: 400000/443757, Loss: 165.4254, Acc: 59.5671%, lr: 1.9841e-05
+INFO:root:[Epoch: 44, Batch: 425000/443757, Loss: 165.4330, Acc: 59.5568%, lr: 1.9683e-05
+INFO:root:Overall Accuracy is: 48.23
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.42
+INFO:root:yes/no : 69.39
+INFO:root:number : 32.01
+INFO:root:Training started
+INFO:root:[Epoch: 45, Batch: 0/443757, Loss: 128.9528, Acc: 66.0000%, lr: 2.2048e-05
+INFO:root:[Epoch: 45, Batch: 25000/443757, Loss: 160.1482, Acc: 60.9062%, lr: 2.1893e-05
+INFO:root:[Epoch: 45, Batch: 50000/443757, Loss: 161.5014, Acc: 60.4356%, lr: 2.1736e-05
+INFO:root:[Epoch: 45, Batch: 75000/443757, Loss: 161.2665, Acc: 60.5197%, lr: 2.1580e-05
+INFO:root:[Epoch: 45, Batch: 100000/443757, Loss: 161.5036, Acc: 60.6777%, lr: 2.1423e-05
+INFO:root:[Epoch: 45, Batch: 125000/443757, Loss: 162.1554, Acc: 60.4614%, lr: 2.1266e-05
+INFO:root:[Epoch: 45, Batch: 150000/443757, Loss: 162.5154, Acc: 60.4365%, lr: 2.1108e-05
+INFO:root:[Epoch: 45, Batch: 175000/443757, Loss: 162.7763, Acc: 60.3907%, lr: 2.0951e-05
+INFO:root:[Epoch: 45, Batch: 200000/443757, Loss: 163.0782, Acc: 60.2824%, lr: 2.0792e-05
+INFO:root:[Epoch: 45, Batch: 225000/443757, Loss: 163.3802, Acc: 60.2275%, lr: 2.0634e-05
+INFO:root:[Epoch: 45, Batch: 250000/443757, Loss: 163.6603, Acc: 60.1536%, lr: 2.0476e-05
+INFO:root:[Epoch: 45, Batch: 275000/443757, Loss: 163.7324, Acc: 60.1149%, lr: 2.0317e-05
+INFO:root:[Epoch: 45, Batch: 300000/443757, Loss: 163.8727, Acc: 60.0553%, lr: 2.0159e-05
+INFO:root:[Epoch: 45, Batch: 325000/443757, Loss: 164.1443, Acc: 59.9852%, lr: 2.0000e-05
+INFO:root:[Epoch: 45, Batch: 350000/443757, Loss: 164.4337, Acc: 59.9126%, lr: 1.9841e-05
+INFO:root:[Epoch: 45, Batch: 375000/443757, Loss: 164.7394, Acc: 59.8142%, lr: 1.9683e-05
+INFO:root:[Epoch: 45, Batch: 400000/443757, Loss: 164.8297, Acc: 59.7825%, lr: 1.9524e-05
+INFO:root:[Epoch: 45, Batch: 425000/443757, Loss: 164.8342, Acc: 59.7678%, lr: 1.9366e-05
+INFO:root:Overall Accuracy is: 48.18
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.42
+INFO:root:yes/no : 69.24
+INFO:root:number : 32.04
+INFO:root:Training started
+INFO:root:[Epoch: 46, Batch: 0/443757, Loss: 152.5224, Acc: 56.0000%, lr: 2.1736e-05
+INFO:root:[Epoch: 46, Batch: 25000/443757, Loss: 165.5325, Acc: 60.4032%, lr: 2.1580e-05
+INFO:root:[Epoch: 46, Batch: 50000/443757, Loss: 164.8540, Acc: 60.4236%, lr: 2.1423e-05
+INFO:root:[Epoch: 46, Batch: 75000/443757, Loss: 163.1765, Acc: 60.7395%, lr: 2.1266e-05
+INFO:root:[Epoch: 46, Batch: 100000/443757, Loss: 163.3716, Acc: 60.6217%, lr: 2.1108e-05
+INFO:root:[Epoch: 46, Batch: 125000/443757, Loss: 163.4026, Acc: 60.5254%, lr: 2.0951e-05
+INFO:root:[Epoch: 46, Batch: 150000/443757, Loss: 163.6666, Acc: 60.3619%, lr: 2.0792e-05
+INFO:root:[Epoch: 46, Batch: 175000/443757, Loss: 163.6783, Acc: 60.3313%, lr: 2.0634e-05
+INFO:root:[Epoch: 46, Batch: 200000/443757, Loss: 164.2310, Acc: 60.1570%, lr: 2.0476e-05
+INFO:root:[Epoch: 46, Batch: 225000/443757, Loss: 164.2065, Acc: 60.1480%, lr: 2.0317e-05
+INFO:root:[Epoch: 46, Batch: 250000/443757, Loss: 164.1247, Acc: 60.1896%, lr: 2.0159e-05
+INFO:root:[Epoch: 46, Batch: 275000/443757, Loss: 163.8715, Acc: 60.2396%, lr: 2.0000e-05
+INFO:root:[Epoch: 46, Batch: 300000/443757, Loss: 164.0565, Acc: 60.2243%, lr: 1.9841e-05
+INFO:root:[Epoch: 46, Batch: 325000/443757, Loss: 163.9192, Acc: 60.2240%, lr: 1.9683e-05
+INFO:root:[Epoch: 46, Batch: 350000/443757, Loss: 163.9308, Acc: 60.2351%, lr: 1.9524e-05
+INFO:root:[Epoch: 46, Batch: 375000/443757, Loss: 164.0598, Acc: 60.1640%, lr: 1.9366e-05
+INFO:root:[Epoch: 46, Batch: 400000/443757, Loss: 164.2297, Acc: 60.0757%, lr: 1.9208e-05
+INFO:root:[Epoch: 46, Batch: 425000/443757, Loss: 164.3659, Acc: 60.0313%, lr: 1.9049e-05
+INFO:root:Overall Accuracy is: 48.17
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.35
+INFO:root:yes/no : 69.31
+INFO:root:number : 32.03
+INFO:root:Training started
+INFO:root:[Epoch: 47, Batch: 0/443757, Loss: 145.8501, Acc: 72.0000%, lr: 2.1423e-05
+INFO:root:[Epoch: 47, Batch: 25000/443757, Loss: 159.5491, Acc: 61.9721%, lr: 2.1266e-05
+INFO:root:[Epoch: 47, Batch: 50000/443757, Loss: 159.7639, Acc: 61.7782%, lr: 2.1108e-05
+INFO:root:[Epoch: 47, Batch: 75000/443757, Loss: 161.2191, Acc: 61.2152%, lr: 2.0951e-05
+INFO:root:[Epoch: 47, Batch: 100000/443757, Loss: 161.3163, Acc: 61.1544%, lr: 2.0792e-05
+INFO:root:[Epoch: 47, Batch: 125000/443757, Loss: 161.6702, Acc: 61.0900%, lr: 2.0634e-05
+INFO:root:[Epoch: 47, Batch: 150000/443757, Loss: 162.2286, Acc: 60.8997%, lr: 2.0476e-05
+INFO:root:[Epoch: 47, Batch: 175000/443757, Loss: 162.4503, Acc: 60.8455%, lr: 2.0317e-05
+INFO:root:[Epoch: 47, Batch: 200000/443757, Loss: 162.5079, Acc: 60.8023%, lr: 2.0159e-05
+INFO:root:[Epoch: 47, Batch: 225000/443757, Loss: 162.7268, Acc: 60.7456%, lr: 2.0000e-05
+INFO:root:[Epoch: 47, Batch: 250000/443757, Loss: 162.7042, Acc: 60.6855%, lr: 1.9841e-05
+INFO:root:[Epoch: 47, Batch: 275000/443757, Loss: 162.9652, Acc: 60.6057%, lr: 1.9683e-05
+INFO:root:[Epoch: 47, Batch: 300000/443757, Loss: 163.2280, Acc: 60.4846%, lr: 1.9524e-05
+INFO:root:[Epoch: 47, Batch: 325000/443757, Loss: 163.1168, Acc: 60.4553%, lr: 1.9366e-05
+INFO:root:[Epoch: 47, Batch: 350000/443757, Loss: 163.1707, Acc: 60.4168%, lr: 1.9208e-05
+INFO:root:[Epoch: 47, Batch: 375000/443757, Loss: 163.1782, Acc: 60.3871%, lr: 1.9049e-05
+INFO:root:[Epoch: 47, Batch: 400000/443757, Loss: 163.1953, Acc: 60.3300%, lr: 1.8892e-05
+INFO:root:[Epoch: 47, Batch: 425000/443757, Loss: 163.4044, Acc: 60.2849%, lr: 1.8734e-05
+INFO:root:Overall Accuracy is: 48.26
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.45
+INFO:root:yes/no : 69.38
+INFO:root:number : 32.13
+INFO:root:Training started
+INFO:root:[Epoch: 48, Batch: 0/443757, Loss: 150.7966, Acc: 60.0000%, lr: 2.1108e-05
+INFO:root:[Epoch: 48, Batch: 25000/443757, Loss: 160.0982, Acc: 61.3852%, lr: 2.0951e-05
+INFO:root:[Epoch: 48, Batch: 50000/443757, Loss: 159.7566, Acc: 61.8501%, lr: 2.0792e-05
+INFO:root:[Epoch: 48, Batch: 75000/443757, Loss: 160.9599, Acc: 61.3937%, lr: 2.0634e-05
+INFO:root:[Epoch: 48, Batch: 100000/443757, Loss: 160.2792, Acc: 61.5402%, lr: 2.0476e-05
+INFO:root:[Epoch: 48, Batch: 125000/443757, Loss: 160.0140, Acc: 61.4818%, lr: 2.0317e-05
+INFO:root:[Epoch: 48, Batch: 150000/443757, Loss: 160.1724, Acc: 61.3642%, lr: 2.0159e-05
+INFO:root:[Epoch: 48, Batch: 175000/443757, Loss: 160.2973, Acc: 61.3230%, lr: 2.0000e-05
+INFO:root:[Epoch: 48, Batch: 200000/443757, Loss: 160.8742, Acc: 61.1232%, lr: 1.9841e-05
+INFO:root:[Epoch: 48, Batch: 225000/443757, Loss: 161.1892, Acc: 61.0273%, lr: 1.9683e-05
+INFO:root:[Epoch: 48, Batch: 250000/443757, Loss: 161.5408, Acc: 60.8990%, lr: 1.9524e-05
+INFO:root:[Epoch: 48, Batch: 275000/443757, Loss: 161.6981, Acc: 60.8577%, lr: 1.9366e-05
+INFO:root:[Epoch: 48, Batch: 300000/443757, Loss: 161.8329, Acc: 60.8025%, lr: 1.9208e-05
+INFO:root:[Epoch: 48, Batch: 325000/443757, Loss: 162.0347, Acc: 60.7233%, lr: 1.9049e-05
+INFO:root:[Epoch: 48, Batch: 350000/443757, Loss: 162.4124, Acc: 60.6396%, lr: 1.8892e-05
+INFO:root:[Epoch: 48, Batch: 375000/443757, Loss: 162.4218, Acc: 60.6164%, lr: 1.8734e-05
+INFO:root:[Epoch: 48, Batch: 400000/443757, Loss: 162.7225, Acc: 60.5319%, lr: 1.8577e-05
+INFO:root:[Epoch: 48, Batch: 425000/443757, Loss: 162.8775, Acc: 60.5011%, lr: 1.8420e-05
+INFO:root:Overall Accuracy is: 48.12
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.39
+INFO:root:yes/no : 69.33
+INFO:root:number : 31.47
+INFO:root:Training started
+INFO:root:[Epoch: 49, Batch: 0/443757, Loss: 112.9810, Acc: 70.0000%, lr: 2.0792e-05
+INFO:root:[Epoch: 49, Batch: 25000/443757, Loss: 159.0808, Acc: 61.8962%, lr: 2.0634e-05
+INFO:root:[Epoch: 49, Batch: 50000/443757, Loss: 161.6450, Acc: 61.1528%, lr: 2.0476e-05
+INFO:root:[Epoch: 49, Batch: 75000/443757, Loss: 161.5294, Acc: 61.1286%, lr: 2.0317e-05
+INFO:root:[Epoch: 49, Batch: 100000/443757, Loss: 161.8098, Acc: 61.0575%, lr: 2.0159e-05
+INFO:root:[Epoch: 49, Batch: 125000/443757, Loss: 161.5894, Acc: 61.0452%, lr: 2.0000e-05
+INFO:root:[Epoch: 49, Batch: 150000/443757, Loss: 161.6937, Acc: 60.9603%, lr: 1.9841e-05
+INFO:root:[Epoch: 49, Batch: 175000/443757, Loss: 161.2966, Acc: 61.0568%, lr: 1.9683e-05
+INFO:root:[Epoch: 49, Batch: 200000/443757, Loss: 162.0799, Acc: 60.9003%, lr: 1.9524e-05
+INFO:root:[Epoch: 49, Batch: 225000/443757, Loss: 162.1753, Acc: 60.9016%, lr: 1.9366e-05
+INFO:root:[Epoch: 49, Batch: 250000/443757, Loss: 162.1688, Acc: 60.8610%, lr: 1.9208e-05
+INFO:root:[Epoch: 49, Batch: 275000/443757, Loss: 162.2923, Acc: 60.7977%, lr: 1.9049e-05
+INFO:root:[Epoch: 49, Batch: 300000/443757, Loss: 162.4603, Acc: 60.7532%, lr: 1.8892e-05
+INFO:root:[Epoch: 49, Batch: 325000/443757, Loss: 162.2251, Acc: 60.7986%, lr: 1.8734e-05
+INFO:root:[Epoch: 49, Batch: 350000/443757, Loss: 162.3207, Acc: 60.7802%, lr: 1.8577e-05
+INFO:root:[Epoch: 49, Batch: 375000/443757, Loss: 162.2388, Acc: 60.7628%, lr: 1.8420e-05
+INFO:root:[Epoch: 49, Batch: 400000/443757, Loss: 162.0634, Acc: 60.7911%, lr: 1.8264e-05
+INFO:root:[Epoch: 49, Batch: 425000/443757, Loss: 162.1071, Acc: 60.7976%, lr: 1.8107e-05
+INFO:root:Overall Accuracy is: 48.03
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.14
+INFO:root:yes/no : 69.29
+INFO:root:number : 31.82
+INFO:root:Training started
+INFO:root:[Epoch: 50, Batch: 0/443757, Loss: 125.1775, Acc: 68.0000%, lr: 2.0476e-05
+INFO:root:[Epoch: 50, Batch: 25000/443757, Loss: 159.4494, Acc: 61.8563%, lr: 2.0317e-05
+INFO:root:[Epoch: 50, Batch: 50000/443757, Loss: 161.2675, Acc: 61.3806%, lr: 2.0159e-05
+INFO:root:[Epoch: 50, Batch: 75000/443757, Loss: 160.9207, Acc: 61.4670%, lr: 2.0000e-05
+INFO:root:[Epoch: 50, Batch: 100000/443757, Loss: 161.8561, Acc: 61.3143%, lr: 1.9841e-05
+INFO:root:[Epoch: 50, Batch: 125000/443757, Loss: 161.8461, Acc: 61.3475%, lr: 1.9683e-05
+INFO:root:[Epoch: 50, Batch: 150000/443757, Loss: 161.2280, Acc: 61.4435%, lr: 1.9524e-05
+INFO:root:[Epoch: 50, Batch: 175000/443757, Loss: 161.2398, Acc: 61.3390%, lr: 1.9366e-05
+INFO:root:[Epoch: 50, Batch: 200000/443757, Loss: 161.2890, Acc: 61.2802%, lr: 1.9208e-05
+INFO:root:[Epoch: 50, Batch: 225000/443757, Loss: 161.4522, Acc: 61.2362%, lr: 1.9049e-05
+INFO:root:[Epoch: 50, Batch: 250000/443757, Loss: 161.5031, Acc: 61.1854%, lr: 1.8892e-05
+INFO:root:[Epoch: 50, Batch: 275000/443757, Loss: 161.9133, Acc: 61.0842%, lr: 1.8734e-05
+INFO:root:[Epoch: 50, Batch: 300000/443757, Loss: 162.1667, Acc: 60.9852%, lr: 1.8577e-05
+INFO:root:[Epoch: 50, Batch: 325000/443757, Loss: 162.2134, Acc: 60.9205%, lr: 1.8420e-05
+INFO:root:[Epoch: 50, Batch: 350000/443757, Loss: 162.3673, Acc: 60.8713%, lr: 1.8264e-05
+INFO:root:[Epoch: 50, Batch: 375000/443757, Loss: 162.3979, Acc: 60.8260%, lr: 1.8107e-05
+INFO:root:[Epoch: 50, Batch: 400000/443757, Loss: 162.4388, Acc: 60.8051%, lr: 1.7952e-05
+INFO:root:[Epoch: 50, Batch: 425000/443757, Loss: 162.4286, Acc: 60.8065%, lr: 1.7797e-05
+INFO:root:Overall Accuracy is: 47.86
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.99
+INFO:root:yes/no : 69.01
+INFO:root:number : 31.87
+INFO:root:Training started
+INFO:root:[Epoch: 51, Batch: 0/443757, Loss: 183.4781, Acc: 58.0000%, lr: 2.0159e-05
+INFO:root:[Epoch: 51, Batch: 25000/443757, Loss: 160.4005, Acc: 61.4731%, lr: 2.0000e-05
+INFO:root:[Epoch: 51, Batch: 50000/443757, Loss: 160.1960, Acc: 61.6224%, lr: 1.9841e-05
+INFO:root:[Epoch: 51, Batch: 75000/443757, Loss: 159.3299, Acc: 61.8614%, lr: 1.9683e-05
+INFO:root:[Epoch: 51, Batch: 100000/443757, Loss: 158.8695, Acc: 62.0390%, lr: 1.9524e-05
+INFO:root:[Epoch: 51, Batch: 125000/443757, Loss: 158.6766, Acc: 62.0576%, lr: 1.9366e-05
+INFO:root:[Epoch: 51, Batch: 150000/443757, Loss: 158.8042, Acc: 61.9840%, lr: 1.9208e-05
+INFO:root:[Epoch: 51, Batch: 175000/443757, Loss: 159.3646, Acc: 61.7915%, lr: 1.9049e-05
+INFO:root:[Epoch: 51, Batch: 200000/443757, Loss: 159.5453, Acc: 61.7071%, lr: 1.8892e-05
+INFO:root:[Epoch: 51, Batch: 225000/443757, Loss: 159.5576, Acc: 61.7005%, lr: 1.8734e-05
+INFO:root:[Epoch: 51, Batch: 250000/443757, Loss: 159.7946, Acc: 61.6245%, lr: 1.8577e-05
+INFO:root:[Epoch: 51, Batch: 275000/443757, Loss: 160.1346, Acc: 61.5419%, lr: 1.8420e-05
+INFO:root:[Epoch: 51, Batch: 300000/443757, Loss: 160.2996, Acc: 61.4654%, lr: 1.8264e-05
+INFO:root:[Epoch: 51, Batch: 325000/443757, Loss: 160.3579, Acc: 61.4573%, lr: 1.8107e-05
+INFO:root:[Epoch: 51, Batch: 350000/443757, Loss: 160.4036, Acc: 61.4044%, lr: 1.7952e-05
+INFO:root:[Epoch: 51, Batch: 375000/443757, Loss: 160.3392, Acc: 61.3641%, lr: 1.7797e-05
+INFO:root:[Epoch: 51, Batch: 400000/443757, Loss: 160.5780, Acc: 61.3176%, lr: 1.7642e-05
+INFO:root:[Epoch: 51, Batch: 425000/443757, Loss: 160.6326, Acc: 61.3095%, lr: 1.7489e-05
+INFO:root:Overall Accuracy is: 47.87
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.00
+INFO:root:yes/no : 69.13
+INFO:root:number : 31.59
+INFO:root:Training started
+INFO:root:[Epoch: 52, Batch: 0/443757, Loss: 153.6501, Acc: 60.0000%, lr: 1.9841e-05
+INFO:root:[Epoch: 52, Batch: 25000/443757, Loss: 157.1805, Acc: 62.8703%, lr: 1.9683e-05
+INFO:root:[Epoch: 52, Batch: 50000/443757, Loss: 158.4392, Acc: 62.5614%, lr: 1.9524e-05
+INFO:root:[Epoch: 52, Batch: 75000/443757, Loss: 158.0840, Acc: 62.5450%, lr: 1.9366e-05
+INFO:root:[Epoch: 52, Batch: 100000/443757, Loss: 158.8290, Acc: 62.2919%, lr: 1.9208e-05
+INFO:root:[Epoch: 52, Batch: 125000/443757, Loss: 159.1312, Acc: 62.1032%, lr: 1.9049e-05
+INFO:root:[Epoch: 52, Batch: 150000/443757, Loss: 159.4747, Acc: 62.0340%, lr: 1.8892e-05
+INFO:root:[Epoch: 52, Batch: 175000/443757, Loss: 159.3878, Acc: 62.0069%, lr: 1.8734e-05
+INFO:root:[Epoch: 52, Batch: 200000/443757, Loss: 159.4168, Acc: 61.9820%, lr: 1.8577e-05
+INFO:root:[Epoch: 52, Batch: 225000/443757, Loss: 160.1273, Acc: 61.7876%, lr: 1.8420e-05
+INFO:root:[Epoch: 52, Batch: 250000/443757, Loss: 160.3218, Acc: 61.7233%, lr: 1.8264e-05
+INFO:root:[Epoch: 52, Batch: 275000/443757, Loss: 160.4684, Acc: 61.6677%, lr: 1.8107e-05
+INFO:root:[Epoch: 52, Batch: 300000/443757, Loss: 160.6683, Acc: 61.5664%, lr: 1.7952e-05
+INFO:root:[Epoch: 52, Batch: 325000/443757, Loss: 160.8513, Acc: 61.4739%, lr: 1.7797e-05
+INFO:root:[Epoch: 52, Batch: 350000/443757, Loss: 160.8880, Acc: 61.4504%, lr: 1.7642e-05
+INFO:root:[Epoch: 52, Batch: 375000/443757, Loss: 160.9478, Acc: 61.3923%, lr: 1.7489e-05
+INFO:root:[Epoch: 52, Batch: 400000/443757, Loss: 161.0744, Acc: 61.3563%, lr: 1.7335e-05
+INFO:root:[Epoch: 52, Batch: 425000/443757, Loss: 161.0080, Acc: 61.3817%, lr: 1.7183e-05
+INFO:root:Overall Accuracy is: 47.94
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.03
+INFO:root:yes/no : 69.17
+INFO:root:number : 31.90
+INFO:root:Training started
+INFO:root:[Epoch: 53, Batch: 0/443757, Loss: 87.7460, Acc: 82.0000%, lr: 1.9524e-05
+INFO:root:[Epoch: 53, Batch: 25000/443757, Loss: 155.4237, Acc: 63.1417%, lr: 1.9366e-05
+INFO:root:[Epoch: 53, Batch: 50000/443757, Loss: 158.7490, Acc: 62.3796%, lr: 1.9208e-05
+INFO:root:[Epoch: 53, Batch: 75000/443757, Loss: 158.9331, Acc: 62.2132%, lr: 1.9049e-05
+INFO:root:[Epoch: 53, Batch: 100000/443757, Loss: 159.4359, Acc: 62.1289%, lr: 1.8892e-05
+INFO:root:[Epoch: 53, Batch: 125000/443757, Loss: 159.2805, Acc: 62.1727%, lr: 1.8734e-05
+INFO:root:[Epoch: 53, Batch: 150000/443757, Loss: 158.9308, Acc: 62.1979%, lr: 1.8577e-05
+INFO:root:[Epoch: 53, Batch: 175000/443757, Loss: 158.7555, Acc: 62.2079%, lr: 1.8420e-05
+INFO:root:[Epoch: 53, Batch: 200000/443757, Loss: 158.8049, Acc: 62.1305%, lr: 1.8264e-05
+INFO:root:[Epoch: 53, Batch: 225000/443757, Loss: 159.0913, Acc: 62.0502%, lr: 1.8107e-05
+INFO:root:[Epoch: 53, Batch: 250000/443757, Loss: 159.0430, Acc: 61.9900%, lr: 1.7952e-05
+INFO:root:[Epoch: 53, Batch: 275000/443757, Loss: 158.8531, Acc: 62.0200%, lr: 1.7797e-05
+INFO:root:[Epoch: 53, Batch: 300000/443757, Loss: 159.1057, Acc: 61.9630%, lr: 1.7642e-05
+INFO:root:[Epoch: 53, Batch: 325000/443757, Loss: 159.2803, Acc: 61.8785%, lr: 1.7489e-05
+INFO:root:[Epoch: 53, Batch: 350000/443757, Loss: 159.4327, Acc: 61.8109%, lr: 1.7335e-05
+INFO:root:[Epoch: 53, Batch: 375000/443757, Loss: 159.4202, Acc: 61.8182%, lr: 1.7183e-05
+INFO:root:[Epoch: 53, Batch: 400000/443757, Loss: 159.6281, Acc: 61.7325%, lr: 1.7031e-05
+INFO:root:[Epoch: 53, Batch: 425000/443757, Loss: 159.6703, Acc: 61.6894%, lr: 1.6880e-05
+INFO:root:Overall Accuracy is: 47.77
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.00
+INFO:root:yes/no : 68.89
+INFO:root:number : 31.52
+INFO:root:Training started
+INFO:root:[Epoch: 54, Batch: 0/443757, Loss: 215.2749, Acc: 42.0000%, lr: 1.9208e-05
+INFO:root:[Epoch: 54, Batch: 25000/443757, Loss: 157.0092, Acc: 63.1018%, lr: 1.9049e-05
+INFO:root:[Epoch: 54, Batch: 50000/443757, Loss: 156.1895, Acc: 62.8432%, lr: 1.8892e-05
+INFO:root:[Epoch: 54, Batch: 75000/443757, Loss: 156.1077, Acc: 62.7488%, lr: 1.8734e-05
+INFO:root:[Epoch: 54, Batch: 100000/443757, Loss: 157.4172, Acc: 62.4768%, lr: 1.8577e-05
+INFO:root:[Epoch: 54, Batch: 125000/443757, Loss: 157.7423, Acc: 62.4526%, lr: 1.8420e-05
+INFO:root:[Epoch: 54, Batch: 150000/443757, Loss: 158.3810, Acc: 62.3379%, lr: 1.8264e-05
+INFO:root:[Epoch: 54, Batch: 175000/443757, Loss: 159.0752, Acc: 62.1588%, lr: 1.8107e-05
+INFO:root:[Epoch: 54, Batch: 200000/443757, Loss: 159.3054, Acc: 62.0790%, lr: 1.7952e-05
+INFO:root:[Epoch: 54, Batch: 225000/443757, Loss: 159.3988, Acc: 61.9796%, lr: 1.7797e-05
+INFO:root:[Epoch: 54, Batch: 250000/443757, Loss: 159.7426, Acc: 61.8976%, lr: 1.7642e-05
+INFO:root:[Epoch: 54, Batch: 275000/443757, Loss: 159.6852, Acc: 61.8644%, lr: 1.7489e-05
+INFO:root:[Epoch: 54, Batch: 300000/443757, Loss: 159.7875, Acc: 61.8350%, lr: 1.7335e-05
+INFO:root:[Epoch: 54, Batch: 325000/443757, Loss: 159.8296, Acc: 61.8194%, lr: 1.7183e-05
+INFO:root:[Epoch: 54, Batch: 350000/443757, Loss: 159.6033, Acc: 61.8480%, lr: 1.7031e-05
+INFO:root:[Epoch: 54, Batch: 375000/443757, Loss: 159.4648, Acc: 61.8693%, lr: 1.6880e-05
+INFO:root:[Epoch: 54, Batch: 400000/443757, Loss: 159.5305, Acc: 61.8530%, lr: 1.6729e-05
+INFO:root:[Epoch: 54, Batch: 425000/443757, Loss: 159.3626, Acc: 61.8873%, lr: 1.6580e-05
+INFO:root:Overall Accuracy is: 47.94
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.04
+INFO:root:yes/no : 69.20
+INFO:root:number : 31.74
+INFO:root:Training started
+INFO:root:[Epoch: 55, Batch: 0/443757, Loss: 279.8405, Acc: 40.0000%, lr: 1.8892e-05
+INFO:root:[Epoch: 55, Batch: 25000/443757, Loss: 159.0047, Acc: 62.4471%, lr: 1.8734e-05
+INFO:root:[Epoch: 55, Batch: 50000/443757, Loss: 156.9525, Acc: 62.6993%, lr: 1.8577e-05
+INFO:root:[Epoch: 55, Batch: 75000/443757, Loss: 156.8797, Acc: 62.3797%, lr: 1.8420e-05
+INFO:root:[Epoch: 55, Batch: 100000/443757, Loss: 157.1777, Acc: 62.3438%, lr: 1.8264e-05
+INFO:root:[Epoch: 55, Batch: 125000/443757, Loss: 156.9230, Acc: 62.4070%, lr: 1.8107e-05
+INFO:root:[Epoch: 55, Batch: 150000/443757, Loss: 157.5015, Acc: 62.3246%, lr: 1.7952e-05
+INFO:root:[Epoch: 55, Batch: 175000/443757, Loss: 157.4936, Acc: 62.2753%, lr: 1.7797e-05
+INFO:root:[Epoch: 55, Batch: 200000/443757, Loss: 157.8325, Acc: 62.2484%, lr: 1.7642e-05
+INFO:root:[Epoch: 55, Batch: 225000/443757, Loss: 157.9086, Acc: 62.2337%, lr: 1.7489e-05
+INFO:root:[Epoch: 55, Batch: 250000/443757, Loss: 158.0322, Acc: 62.2052%, lr: 1.7335e-05
+INFO:root:[Epoch: 55, Batch: 275000/443757, Loss: 158.3362, Acc: 62.1262%, lr: 1.7183e-05
+INFO:root:[Epoch: 55, Batch: 300000/443757, Loss: 158.2599, Acc: 62.1046%, lr: 1.7031e-05
+INFO:root:[Epoch: 55, Batch: 325000/443757, Loss: 158.1247, Acc: 62.1264%, lr: 1.6880e-05
+INFO:root:[Epoch: 55, Batch: 350000/443757, Loss: 158.2744, Acc: 62.0723%, lr: 1.6729e-05
+INFO:root:[Epoch: 55, Batch: 375000/443757, Loss: 158.1105, Acc: 62.0931%, lr: 1.6580e-05
+INFO:root:[Epoch: 55, Batch: 400000/443757, Loss: 158.1057, Acc: 62.1087%, lr: 1.6431e-05
+INFO:root:[Epoch: 55, Batch: 425000/443757, Loss: 158.0560, Acc: 62.1113%, lr: 1.6283e-05
+INFO:root:Overall Accuracy is: 47.79
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.86
+INFO:root:yes/no : 69.14
+INFO:root:number : 31.48
+INFO:root:Training started
+INFO:root:[Epoch: 56, Batch: 0/443757, Loss: 142.0379, Acc: 70.0000%, lr: 1.8577e-05
+INFO:root:[Epoch: 56, Batch: 25000/443757, Loss: 151.6040, Acc: 64.1277%, lr: 1.8420e-05
+INFO:root:[Epoch: 56, Batch: 50000/443757, Loss: 153.8805, Acc: 63.5704%, lr: 1.8264e-05
+INFO:root:[Epoch: 56, Batch: 75000/443757, Loss: 154.4957, Acc: 63.3844%, lr: 1.8107e-05
+INFO:root:[Epoch: 56, Batch: 100000/443757, Loss: 154.5224, Acc: 63.2744%, lr: 1.7952e-05
+INFO:root:[Epoch: 56, Batch: 125000/443757, Loss: 154.7492, Acc: 63.1699%, lr: 1.7797e-05
+INFO:root:[Epoch: 56, Batch: 150000/443757, Loss: 155.6430, Acc: 63.0337%, lr: 1.7642e-05
+INFO:root:[Epoch: 56, Batch: 175000/443757, Loss: 155.8378, Acc: 62.9095%, lr: 1.7489e-05
+INFO:root:[Epoch: 56, Batch: 200000/443757, Loss: 156.1634, Acc: 62.8483%, lr: 1.7335e-05
+INFO:root:[Epoch: 56, Batch: 225000/443757, Loss: 156.6145, Acc: 62.7345%, lr: 1.7183e-05
+INFO:root:[Epoch: 56, Batch: 250000/443757, Loss: 156.5460, Acc: 62.7319%, lr: 1.7031e-05
+INFO:root:[Epoch: 56, Batch: 275000/443757, Loss: 156.6811, Acc: 62.6453%, lr: 1.6880e-05
+INFO:root:[Epoch: 56, Batch: 300000/443757, Loss: 156.8692, Acc: 62.5912%, lr: 1.6729e-05
+INFO:root:[Epoch: 56, Batch: 325000/443757, Loss: 156.9857, Acc: 62.5135%, lr: 1.6580e-05
+INFO:root:[Epoch: 56, Batch: 350000/443757, Loss: 157.0536, Acc: 62.5034%, lr: 1.6431e-05
+INFO:root:[Epoch: 56, Batch: 375000/443757, Loss: 157.2039, Acc: 62.4517%, lr: 1.6283e-05
+INFO:root:[Epoch: 56, Batch: 400000/443757, Loss: 157.1407, Acc: 62.4479%, lr: 1.6137e-05
+INFO:root:[Epoch: 56, Batch: 425000/443757, Loss: 157.3731, Acc: 62.4002%, lr: 1.5991e-05
+INFO:root:Overall Accuracy is: 47.81
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.96
+INFO:root:yes/no : 69.01
+INFO:root:number : 31.59
+INFO:root:Training started
+INFO:root:[Epoch: 57, Batch: 0/443757, Loss: 147.8697, Acc: 52.0000%, lr: 1.8264e-05
+INFO:root:[Epoch: 57, Batch: 25000/443757, Loss: 155.8270, Acc: 62.8743%, lr: 1.8107e-05
+INFO:root:[Epoch: 57, Batch: 50000/443757, Loss: 155.8670, Acc: 62.9950%, lr: 1.7952e-05
+INFO:root:[Epoch: 57, Batch: 75000/443757, Loss: 156.4030, Acc: 62.9127%, lr: 1.7797e-05
+INFO:root:[Epoch: 57, Batch: 100000/443757, Loss: 156.2226, Acc: 62.8386%, lr: 1.7642e-05
+INFO:root:[Epoch: 57, Batch: 125000/443757, Loss: 156.1853, Acc: 62.8605%, lr: 1.7489e-05
+INFO:root:[Epoch: 57, Batch: 150000/443757, Loss: 155.9118, Acc: 62.8977%, lr: 1.7335e-05
+INFO:root:[Epoch: 57, Batch: 175000/443757, Loss: 156.5914, Acc: 62.7255%, lr: 1.7183e-05
+INFO:root:[Epoch: 57, Batch: 200000/443757, Loss: 156.5544, Acc: 62.7133%, lr: 1.7031e-05
+INFO:root:[Epoch: 57, Batch: 225000/443757, Loss: 156.7608, Acc: 62.6643%, lr: 1.6880e-05
+INFO:root:[Epoch: 57, Batch: 250000/443757, Loss: 156.9091, Acc: 62.6135%, lr: 1.6729e-05
+INFO:root:[Epoch: 57, Batch: 275000/443757, Loss: 157.3627, Acc: 62.5374%, lr: 1.6580e-05
+INFO:root:[Epoch: 57, Batch: 300000/443757, Loss: 157.4662, Acc: 62.5149%, lr: 1.6431e-05
+INFO:root:[Epoch: 57, Batch: 325000/443757, Loss: 157.6354, Acc: 62.4738%, lr: 1.6283e-05
+INFO:root:[Epoch: 57, Batch: 350000/443757, Loss: 157.6689, Acc: 62.4768%, lr: 1.6137e-05
+INFO:root:[Epoch: 57, Batch: 375000/443757, Loss: 157.6837, Acc: 62.4682%, lr: 1.5991e-05
+INFO:root:[Epoch: 57, Batch: 400000/443757, Loss: 157.7934, Acc: 62.4412%, lr: 1.5846e-05
+INFO:root:[Epoch: 57, Batch: 425000/443757, Loss: 157.8827, Acc: 62.4204%, lr: 1.5702e-05
+INFO:root:Overall Accuracy is: 47.69
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.70
+INFO:root:yes/no : 68.91
+INFO:root:number : 31.96
+INFO:root:Training started
+INFO:root:[Epoch: 58, Batch: 0/443757, Loss: 120.4420, Acc: 80.0000%, lr: 1.7952e-05
+INFO:root:[Epoch: 58, Batch: 25000/443757, Loss: 154.1019, Acc: 63.2016%, lr: 1.7797e-05
+INFO:root:[Epoch: 58, Batch: 50000/443757, Loss: 153.7248, Acc: 63.4925%, lr: 1.7642e-05
+INFO:root:[Epoch: 58, Batch: 75000/443757, Loss: 153.5207, Acc: 63.5350%, lr: 1.7489e-05
+INFO:root:[Epoch: 58, Batch: 100000/443757, Loss: 152.8543, Acc: 63.5802%, lr: 1.7335e-05
+INFO:root:[Epoch: 58, Batch: 125000/443757, Loss: 153.2878, Acc: 63.4450%, lr: 1.7183e-05
+INFO:root:[Epoch: 58, Batch: 150000/443757, Loss: 153.5781, Acc: 63.4249%, lr: 1.7031e-05
+INFO:root:[Epoch: 58, Batch: 175000/443757, Loss: 153.7916, Acc: 63.4007%, lr: 1.6880e-05
+INFO:root:[Epoch: 58, Batch: 200000/443757, Loss: 154.2128, Acc: 63.2982%, lr: 1.6729e-05
+INFO:root:[Epoch: 58, Batch: 225000/443757, Loss: 154.7315, Acc: 63.1944%, lr: 1.6580e-05
+INFO:root:[Epoch: 58, Batch: 250000/443757, Loss: 155.2617, Acc: 63.0554%, lr: 1.6431e-05
+INFO:root:[Epoch: 58, Batch: 275000/443757, Loss: 155.5734, Acc: 62.9787%, lr: 1.6283e-05
+INFO:root:[Epoch: 58, Batch: 300000/443757, Loss: 155.9460, Acc: 62.9018%, lr: 1.6137e-05
+INFO:root:[Epoch: 58, Batch: 325000/443757, Loss: 156.0159, Acc: 62.8743%, lr: 1.5991e-05
+INFO:root:[Epoch: 58, Batch: 350000/443757, Loss: 156.0316, Acc: 62.8850%, lr: 1.5846e-05
+INFO:root:[Epoch: 58, Batch: 375000/443757, Loss: 156.2369, Acc: 62.7994%, lr: 1.5702e-05
+INFO:root:[Epoch: 58, Batch: 400000/443757, Loss: 156.2984, Acc: 62.7789%, lr: 1.5559e-05
+INFO:root:[Epoch: 58, Batch: 425000/443757, Loss: 156.4134, Acc: 62.7472%, lr: 1.5418e-05
+INFO:root:Overall Accuracy is: 47.96
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 36.01
+INFO:root:yes/no : 69.13
+INFO:root:number : 32.20
+INFO:root:Training started
+INFO:root:[Epoch: 59, Batch: 0/443757, Loss: 152.6237, Acc: 62.0000%, lr: 1.7642e-05
+INFO:root:[Epoch: 59, Batch: 25000/443757, Loss: 150.3965, Acc: 64.1397%, lr: 1.7489e-05
+INFO:root:[Epoch: 59, Batch: 50000/443757, Loss: 153.2413, Acc: 63.8022%, lr: 1.7335e-05
+INFO:root:[Epoch: 59, Batch: 75000/443757, Loss: 153.5981, Acc: 63.8428%, lr: 1.7183e-05
+INFO:root:[Epoch: 59, Batch: 100000/443757, Loss: 153.5461, Acc: 63.7181%, lr: 1.7031e-05
+INFO:root:[Epoch: 59, Batch: 125000/443757, Loss: 154.1274, Acc: 63.5258%, lr: 1.6880e-05
+INFO:root:[Epoch: 59, Batch: 150000/443757, Loss: 154.6605, Acc: 63.3349%, lr: 1.6729e-05
+INFO:root:[Epoch: 59, Batch: 175000/443757, Loss: 154.9029, Acc: 63.3316%, lr: 1.6580e-05
+INFO:root:[Epoch: 59, Batch: 200000/443757, Loss: 155.0241, Acc: 63.3342%, lr: 1.6431e-05
+INFO:root:[Epoch: 59, Batch: 225000/443757, Loss: 155.5584, Acc: 63.1677%, lr: 1.6283e-05
+INFO:root:[Epoch: 59, Batch: 250000/443757, Loss: 155.8264, Acc: 63.0878%, lr: 1.6137e-05
+INFO:root:[Epoch: 59, Batch: 275000/443757, Loss: 155.7523, Acc: 63.0823%, lr: 1.5991e-05
+INFO:root:[Epoch: 59, Batch: 300000/443757, Loss: 155.7069, Acc: 63.0785%, lr: 1.5846e-05
+INFO:root:[Epoch: 59, Batch: 325000/443757, Loss: 155.8633, Acc: 63.0500%, lr: 1.5702e-05
+INFO:root:[Epoch: 59, Batch: 350000/443757, Loss: 156.1679, Acc: 62.9756%, lr: 1.5559e-05
+INFO:root:[Epoch: 59, Batch: 375000/443757, Loss: 156.2812, Acc: 62.9180%, lr: 1.5418e-05
+INFO:root:[Epoch: 59, Batch: 400000/443757, Loss: 156.3609, Acc: 62.8841%, lr: 1.5277e-05
+INFO:root:[Epoch: 59, Batch: 425000/443757, Loss: 156.6382, Acc: 62.8215%, lr: 1.5138e-05
+INFO:root:Overall Accuracy is: 47.69
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.76
+INFO:root:yes/no : 68.98
+INFO:root:number : 31.55
+INFO:root:Training started
+INFO:root:[Epoch: 60, Batch: 0/443757, Loss: 189.9883, Acc: 56.0000%, lr: 1.7335e-05
+INFO:root:[Epoch: 60, Batch: 25000/443757, Loss: 154.9433, Acc: 64.0319%, lr: 1.7183e-05
+INFO:root:[Epoch: 60, Batch: 50000/443757, Loss: 156.9555, Acc: 63.5504%, lr: 1.7031e-05
+INFO:root:[Epoch: 60, Batch: 75000/443757, Loss: 155.9330, Acc: 63.4817%, lr: 1.6880e-05
+INFO:root:[Epoch: 60, Batch: 100000/443757, Loss: 156.0644, Acc: 63.3973%, lr: 1.6729e-05
+INFO:root:[Epoch: 60, Batch: 125000/443757, Loss: 155.6948, Acc: 63.5218%, lr: 1.6580e-05
+INFO:root:[Epoch: 60, Batch: 150000/443757, Loss: 155.6250, Acc: 63.5188%, lr: 1.6431e-05
+INFO:root:[Epoch: 60, Batch: 175000/443757, Loss: 155.4584, Acc: 63.5081%, lr: 1.6283e-05
+INFO:root:[Epoch: 60, Batch: 200000/443757, Loss: 155.7294, Acc: 63.4216%, lr: 1.6137e-05
+INFO:root:[Epoch: 60, Batch: 225000/443757, Loss: 156.0098, Acc: 63.3273%, lr: 1.5991e-05
+INFO:root:[Epoch: 60, Batch: 250000/443757, Loss: 156.1648, Acc: 63.2533%, lr: 1.5846e-05
+INFO:root:[Epoch: 60, Batch: 275000/443757, Loss: 156.1484, Acc: 63.2398%, lr: 1.5702e-05
+INFO:root:[Epoch: 60, Batch: 300000/443757, Loss: 156.1206, Acc: 63.1628%, lr: 1.5559e-05
+INFO:root:[Epoch: 60, Batch: 325000/443757, Loss: 156.1479, Acc: 63.1491%, lr: 1.5418e-05
+INFO:root:[Epoch: 60, Batch: 350000/443757, Loss: 156.2710, Acc: 63.0927%, lr: 1.5277e-05
+INFO:root:[Epoch: 60, Batch: 375000/443757, Loss: 156.4177, Acc: 63.0777%, lr: 1.5138e-05
+INFO:root:[Epoch: 60, Batch: 400000/443757, Loss: 156.3284, Acc: 63.0711%, lr: 1.5000e-05
+INFO:root:[Epoch: 60, Batch: 425000/443757, Loss: 156.4663, Acc: 63.0248%, lr: 1.4863e-05
+INFO:root:Overall Accuracy is: 47.76
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.97
+INFO:root:yes/no : 69.02
+INFO:root:number : 31.17
+INFO:root:Training started
+INFO:root:[Epoch: 61, Batch: 0/443757, Loss: 173.0565, Acc: 40.0000%, lr: 1.7031e-05
+INFO:root:[Epoch: 61, Batch: 25000/443757, Loss: 149.9791, Acc: 64.6347%, lr: 1.6880e-05
+INFO:root:[Epoch: 61, Batch: 50000/443757, Loss: 152.6766, Acc: 64.1718%, lr: 1.6729e-05
+INFO:root:[Epoch: 61, Batch: 75000/443757, Loss: 152.9813, Acc: 64.1013%, lr: 1.6580e-05
+INFO:root:[Epoch: 61, Batch: 100000/443757, Loss: 152.8867, Acc: 64.1769%, lr: 1.6431e-05
+INFO:root:[Epoch: 61, Batch: 125000/443757, Loss: 153.7300, Acc: 63.9840%, lr: 1.6283e-05
+INFO:root:[Epoch: 61, Batch: 150000/443757, Loss: 154.0978, Acc: 63.8940%, lr: 1.6137e-05
+INFO:root:[Epoch: 61, Batch: 175000/443757, Loss: 154.2158, Acc: 63.8195%, lr: 1.5991e-05
+INFO:root:[Epoch: 61, Batch: 200000/443757, Loss: 154.0775, Acc: 63.8195%, lr: 1.5846e-05
+INFO:root:[Epoch: 61, Batch: 225000/443757, Loss: 154.5651, Acc: 63.6872%, lr: 1.5702e-05
+INFO:root:[Epoch: 61, Batch: 250000/443757, Loss: 154.5164, Acc: 63.6985%, lr: 1.5559e-05
+INFO:root:[Epoch: 61, Batch: 275000/443757, Loss: 154.4269, Acc: 63.6513%, lr: 1.5418e-05
+INFO:root:[Epoch: 61, Batch: 300000/443757, Loss: 154.3337, Acc: 63.6304%, lr: 1.5277e-05
+INFO:root:[Epoch: 61, Batch: 325000/443757, Loss: 154.3053, Acc: 63.6130%, lr: 1.5138e-05
+INFO:root:[Epoch: 61, Batch: 350000/443757, Loss: 154.6215, Acc: 63.5335%, lr: 1.5000e-05
+INFO:root:[Epoch: 61, Batch: 375000/443757, Loss: 154.6966, Acc: 63.4865%, lr: 1.4863e-05
+INFO:root:[Epoch: 61, Batch: 400000/443757, Loss: 154.7255, Acc: 63.4258%, lr: 1.4728e-05
+INFO:root:[Epoch: 61, Batch: 425000/443757, Loss: 154.8943, Acc: 63.3711%, lr: 1.4594e-05
+INFO:root:Overall Accuracy is: 47.53
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.65
+INFO:root:yes/no : 68.83
+INFO:root:number : 31.21
+INFO:root:Training started
+INFO:root:[Epoch: 62, Batch: 0/443757, Loss: 143.7372, Acc: 62.0000%, lr: 1.6729e-05
+INFO:root:[Epoch: 62, Batch: 25000/443757, Loss: 154.4834, Acc: 64.2555%, lr: 1.6580e-05
+INFO:root:[Epoch: 62, Batch: 50000/443757, Loss: 153.7756, Acc: 64.1778%, lr: 1.6431e-05
+INFO:root:[Epoch: 62, Batch: 75000/443757, Loss: 152.1882, Acc: 64.2265%, lr: 1.6283e-05
+INFO:root:[Epoch: 62, Batch: 100000/443757, Loss: 152.8799, Acc: 63.9900%, lr: 1.6137e-05
+INFO:root:[Epoch: 62, Batch: 125000/443757, Loss: 152.8494, Acc: 64.0992%, lr: 1.5991e-05
+INFO:root:[Epoch: 62, Batch: 150000/443757, Loss: 153.1642, Acc: 64.0533%, lr: 1.5846e-05
+INFO:root:[Epoch: 62, Batch: 175000/443757, Loss: 153.2691, Acc: 64.0497%, lr: 1.5702e-05
+INFO:root:[Epoch: 62, Batch: 200000/443757, Loss: 153.7107, Acc: 63.9100%, lr: 1.5559e-05
+INFO:root:[Epoch: 62, Batch: 225000/443757, Loss: 153.8331, Acc: 63.8667%, lr: 1.5418e-05
+INFO:root:[Epoch: 62, Batch: 250000/443757, Loss: 154.4569, Acc: 63.6805%, lr: 1.5277e-05
+INFO:root:[Epoch: 62, Batch: 275000/443757, Loss: 154.7500, Acc: 63.5768%, lr: 1.5138e-05
+INFO:root:[Epoch: 62, Batch: 300000/443757, Loss: 154.6475, Acc: 63.5361%, lr: 1.5000e-05
+INFO:root:[Epoch: 62, Batch: 325000/443757, Loss: 154.6508, Acc: 63.5324%, lr: 1.4863e-05
+INFO:root:[Epoch: 62, Batch: 350000/443757, Loss: 154.5202, Acc: 63.5295%, lr: 1.4728e-05
+INFO:root:[Epoch: 62, Batch: 375000/443757, Loss: 154.6912, Acc: 63.4758%, lr: 1.4594e-05
+INFO:root:[Epoch: 62, Batch: 400000/443757, Loss: 154.8223, Acc: 63.4171%, lr: 1.4461e-05
+INFO:root:[Epoch: 62, Batch: 425000/443757, Loss: 154.8510, Acc: 63.4031%, lr: 1.4329e-05
+INFO:root:Overall Accuracy is: 47.66
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.67
+INFO:root:yes/no : 68.76
+INFO:root:number : 32.32
+INFO:root:Training started
+INFO:root:[Epoch: 63, Batch: 0/443757, Loss: 123.6433, Acc: 62.0000%, lr: 1.6431e-05
+INFO:root:[Epoch: 63, Batch: 25000/443757, Loss: 153.2626, Acc: 63.7964%, lr: 1.6283e-05
+INFO:root:[Epoch: 63, Batch: 50000/443757, Loss: 154.2627, Acc: 63.8721%, lr: 1.6137e-05
+INFO:root:[Epoch: 63, Batch: 75000/443757, Loss: 154.0970, Acc: 63.9933%, lr: 1.5991e-05
+INFO:root:[Epoch: 63, Batch: 100000/443757, Loss: 154.5466, Acc: 63.8671%, lr: 1.5846e-05
+INFO:root:[Epoch: 63, Batch: 125000/443757, Loss: 154.3655, Acc: 63.9448%, lr: 1.5702e-05
+INFO:root:[Epoch: 63, Batch: 150000/443757, Loss: 154.5014, Acc: 63.8154%, lr: 1.5559e-05
+INFO:root:[Epoch: 63, Batch: 175000/443757, Loss: 154.4219, Acc: 63.7909%, lr: 1.5418e-05
+INFO:root:[Epoch: 63, Batch: 200000/443757, Loss: 154.2450, Acc: 63.7926%, lr: 1.5277e-05
+INFO:root:[Epoch: 63, Batch: 225000/443757, Loss: 154.2855, Acc: 63.7361%, lr: 1.5138e-05
+INFO:root:[Epoch: 63, Batch: 250000/443757, Loss: 154.5482, Acc: 63.6897%, lr: 1.5000e-05
+INFO:root:[Epoch: 63, Batch: 275000/443757, Loss: 154.6578, Acc: 63.6746%, lr: 1.4863e-05
+INFO:root:[Epoch: 63, Batch: 300000/443757, Loss: 154.8002, Acc: 63.6861%, lr: 1.4728e-05
+INFO:root:[Epoch: 63, Batch: 325000/443757, Loss: 155.0172, Acc: 63.6139%, lr: 1.4594e-05
+INFO:root:[Epoch: 63, Batch: 350000/443757, Loss: 155.1098, Acc: 63.5575%, lr: 1.4461e-05
+INFO:root:[Epoch: 63, Batch: 375000/443757, Loss: 155.2773, Acc: 63.5065%, lr: 1.4329e-05
+INFO:root:[Epoch: 63, Batch: 400000/443757, Loss: 155.1832, Acc: 63.4803%, lr: 1.4199e-05
+INFO:root:[Epoch: 63, Batch: 425000/443757, Loss: 155.3742, Acc: 63.4003%, lr: 1.4071e-05
+INFO:root:Overall Accuracy is: 47.65
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.63
+INFO:root:yes/no : 69.03
+INFO:root:number : 31.58
+INFO:root:Training started
+INFO:root:[Epoch: 64, Batch: 0/443757, Loss: 139.4397, Acc: 60.0000%, lr: 1.6137e-05
+INFO:root:[Epoch: 64, Batch: 25000/443757, Loss: 154.8080, Acc: 63.5609%, lr: 1.5991e-05
+INFO:root:[Epoch: 64, Batch: 50000/443757, Loss: 153.1312, Acc: 64.0739%, lr: 1.5846e-05
+INFO:root:[Epoch: 64, Batch: 75000/443757, Loss: 152.6417, Acc: 64.1612%, lr: 1.5702e-05
+INFO:root:[Epoch: 64, Batch: 100000/443757, Loss: 153.3939, Acc: 63.9100%, lr: 1.5559e-05
+INFO:root:[Epoch: 64, Batch: 125000/443757, Loss: 153.4895, Acc: 63.8848%, lr: 1.5418e-05
+INFO:root:[Epoch: 64, Batch: 150000/443757, Loss: 153.1085, Acc: 64.0047%, lr: 1.5277e-05
+INFO:root:[Epoch: 64, Batch: 175000/443757, Loss: 153.0201, Acc: 64.0600%, lr: 1.5138e-05
+INFO:root:[Epoch: 64, Batch: 200000/443757, Loss: 153.2180, Acc: 63.9765%, lr: 1.5000e-05
+INFO:root:[Epoch: 64, Batch: 225000/443757, Loss: 153.5835, Acc: 63.8765%, lr: 1.4863e-05
+INFO:root:[Epoch: 64, Batch: 250000/443757, Loss: 153.4757, Acc: 63.8924%, lr: 1.4728e-05
+INFO:root:[Epoch: 64, Batch: 275000/443757, Loss: 153.6447, Acc: 63.8851%, lr: 1.4594e-05
+INFO:root:[Epoch: 64, Batch: 300000/443757, Loss: 153.8747, Acc: 63.8494%, lr: 1.4461e-05
+INFO:root:[Epoch: 64, Batch: 325000/443757, Loss: 153.7629, Acc: 63.8668%, lr: 1.4329e-05
+INFO:root:[Epoch: 64, Batch: 350000/443757, Loss: 154.0202, Acc: 63.7606%, lr: 1.4199e-05
+INFO:root:[Epoch: 64, Batch: 375000/443757, Loss: 154.1814, Acc: 63.7352%, lr: 1.4071e-05
+INFO:root:[Epoch: 64, Batch: 400000/443757, Loss: 154.2152, Acc: 63.7193%, lr: 1.3944e-05
+INFO:root:[Epoch: 64, Batch: 425000/443757, Loss: 154.2043, Acc: 63.7083%, lr: 1.3818e-05
+INFO:root:Overall Accuracy is: 47.62
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.70
+INFO:root:yes/no : 68.90
+INFO:root:number : 31.46
+INFO:root:Training started
+INFO:root:[Epoch: 65, Batch: 0/443757, Loss: 182.4607, Acc: 60.0000%, lr: 1.5846e-05
+INFO:root:[Epoch: 65, Batch: 25000/443757, Loss: 147.8922, Acc: 65.4451%, lr: 1.5702e-05
+INFO:root:[Epoch: 65, Batch: 50000/443757, Loss: 150.3170, Acc: 65.0210%, lr: 1.5559e-05
+INFO:root:[Epoch: 65, Batch: 75000/443757, Loss: 150.9500, Acc: 64.7622%, lr: 1.5418e-05
+INFO:root:[Epoch: 65, Batch: 100000/443757, Loss: 151.2016, Acc: 64.6057%, lr: 1.5277e-05
+INFO:root:[Epoch: 65, Batch: 125000/443757, Loss: 151.8722, Acc: 64.4166%, lr: 1.5138e-05
+INFO:root:[Epoch: 65, Batch: 150000/443757, Loss: 152.3384, Acc: 64.2932%, lr: 1.5000e-05
+INFO:root:[Epoch: 65, Batch: 175000/443757, Loss: 152.4322, Acc: 64.2428%, lr: 1.4863e-05
+INFO:root:[Epoch: 65, Batch: 200000/443757, Loss: 153.1452, Acc: 64.0875%, lr: 1.4728e-05
+INFO:root:[Epoch: 65, Batch: 225000/443757, Loss: 153.4334, Acc: 64.0111%, lr: 1.4594e-05
+INFO:root:[Epoch: 65, Batch: 250000/443757, Loss: 153.0870, Acc: 64.0572%, lr: 1.4461e-05
+INFO:root:[Epoch: 65, Batch: 275000/443757, Loss: 153.0122, Acc: 64.0553%, lr: 1.4329e-05
+INFO:root:[Epoch: 65, Batch: 300000/443757, Loss: 153.3394, Acc: 63.9947%, lr: 1.4199e-05
+INFO:root:[Epoch: 65, Batch: 325000/443757, Loss: 153.5960, Acc: 63.9625%, lr: 1.4071e-05
+INFO:root:[Epoch: 65, Batch: 350000/443757, Loss: 153.7281, Acc: 63.9214%, lr: 1.3944e-05
+INFO:root:[Epoch: 65, Batch: 375000/443757, Loss: 153.6132, Acc: 63.9328%, lr: 1.3818e-05
+INFO:root:[Epoch: 65, Batch: 400000/443757, Loss: 153.5893, Acc: 63.8988%, lr: 1.3694e-05
+INFO:root:[Epoch: 65, Batch: 425000/443757, Loss: 153.6722, Acc: 63.8720%, lr: 1.3572e-05
+INFO:root:Overall Accuracy is: 47.56
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.58
+INFO:root:yes/no : 68.92
+INFO:root:number : 31.38
+INFO:root:Training started
+INFO:root:[Epoch: 66, Batch: 0/443757, Loss: 127.1788, Acc: 70.0000%, lr: 1.5559e-05
+INFO:root:[Epoch: 66, Batch: 25000/443757, Loss: 152.9205, Acc: 64.6307%, lr: 1.5418e-05
+INFO:root:[Epoch: 66, Batch: 50000/443757, Loss: 151.2316, Acc: 64.8092%, lr: 1.5277e-05
+INFO:root:[Epoch: 66, Batch: 75000/443757, Loss: 152.2493, Acc: 64.6089%, lr: 1.5138e-05
+INFO:root:[Epoch: 66, Batch: 100000/443757, Loss: 152.7977, Acc: 64.4448%, lr: 1.5000e-05
+INFO:root:[Epoch: 66, Batch: 125000/443757, Loss: 153.5379, Acc: 64.2559%, lr: 1.4863e-05
+INFO:root:[Epoch: 66, Batch: 150000/443757, Loss: 152.7278, Acc: 64.3539%, lr: 1.4728e-05
+INFO:root:[Epoch: 66, Batch: 175000/443757, Loss: 152.6825, Acc: 64.3319%, lr: 1.4594e-05
+INFO:root:[Epoch: 66, Batch: 200000/443757, Loss: 152.3654, Acc: 64.4374%, lr: 1.4461e-05
+INFO:root:[Epoch: 66, Batch: 225000/443757, Loss: 152.3251, Acc: 64.4070%, lr: 1.4329e-05
+INFO:root:[Epoch: 66, Batch: 250000/443757, Loss: 152.4121, Acc: 64.3327%, lr: 1.4199e-05
+INFO:root:[Epoch: 66, Batch: 275000/443757, Loss: 152.6546, Acc: 64.2607%, lr: 1.4071e-05
+INFO:root:[Epoch: 66, Batch: 300000/443757, Loss: 152.7326, Acc: 64.2450%, lr: 1.3944e-05
+INFO:root:[Epoch: 66, Batch: 325000/443757, Loss: 152.8821, Acc: 64.1661%, lr: 1.3818e-05
+INFO:root:[Epoch: 66, Batch: 350000/443757, Loss: 152.8102, Acc: 64.1286%, lr: 1.3694e-05
+INFO:root:[Epoch: 66, Batch: 375000/443757, Loss: 153.0487, Acc: 64.0675%, lr: 1.3572e-05
+INFO:root:[Epoch: 66, Batch: 400000/443757, Loss: 153.1431, Acc: 64.0402%, lr: 1.3451e-05
+INFO:root:[Epoch: 66, Batch: 425000/443757, Loss: 153.2163, Acc: 64.0329%, lr: 1.3332e-05
+INFO:root:Overall Accuracy is: 47.71
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.77
+INFO:root:yes/no : 69.02
+INFO:root:number : 31.55
+INFO:root:Training started
+INFO:root:[Epoch: 67, Batch: 0/443757, Loss: 172.8077, Acc: 66.0000%, lr: 1.5277e-05
+INFO:root:[Epoch: 67, Batch: 25000/443757, Loss: 147.7366, Acc: 65.2056%, lr: 1.5138e-05
+INFO:root:[Epoch: 67, Batch: 50000/443757, Loss: 150.3170, Acc: 64.9291%, lr: 1.5000e-05
+INFO:root:[Epoch: 67, Batch: 75000/443757, Loss: 150.3195, Acc: 64.9087%, lr: 1.4863e-05
+INFO:root:[Epoch: 67, Batch: 100000/443757, Loss: 151.0004, Acc: 64.8066%, lr: 1.4728e-05
+INFO:root:[Epoch: 67, Batch: 125000/443757, Loss: 150.7113, Acc: 64.8429%, lr: 1.4594e-05
+INFO:root:[Epoch: 67, Batch: 150000/443757, Loss: 150.8124, Acc: 64.7151%, lr: 1.4461e-05
+INFO:root:[Epoch: 67, Batch: 175000/443757, Loss: 151.2623, Acc: 64.6421%, lr: 1.4329e-05
+INFO:root:[Epoch: 67, Batch: 200000/443757, Loss: 151.5978, Acc: 64.5064%, lr: 1.4199e-05
+INFO:root:[Epoch: 67, Batch: 225000/443757, Loss: 152.1198, Acc: 64.3506%, lr: 1.4071e-05
+INFO:root:[Epoch: 67, Batch: 250000/443757, Loss: 152.3518, Acc: 64.3111%, lr: 1.3944e-05
+INFO:root:[Epoch: 67, Batch: 275000/443757, Loss: 152.7546, Acc: 64.2040%, lr: 1.3818e-05
+INFO:root:[Epoch: 67, Batch: 300000/443757, Loss: 152.8276, Acc: 64.2213%, lr: 1.3694e-05
+INFO:root:[Epoch: 67, Batch: 325000/443757, Loss: 152.6818, Acc: 64.2286%, lr: 1.3572e-05
+INFO:root:[Epoch: 67, Batch: 350000/443757, Loss: 152.7095, Acc: 64.2083%, lr: 1.3451e-05
+INFO:root:[Epoch: 67, Batch: 375000/443757, Loss: 152.7845, Acc: 64.1792%, lr: 1.3332e-05
+INFO:root:[Epoch: 67, Batch: 400000/443757, Loss: 152.8716, Acc: 64.1657%, lr: 1.3215e-05
+INFO:root:[Epoch: 67, Batch: 425000/443757, Loss: 152.8990, Acc: 64.1461%, lr: 1.3099e-05
+INFO:root:Overall Accuracy is: 47.59
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.63
+INFO:root:yes/no : 68.98
+INFO:root:number : 31.27
+INFO:root:Training started
+INFO:root:[Epoch: 68, Batch: 0/443757, Loss: 145.5905, Acc: 64.0000%, lr: 1.5000e-05
+INFO:root:[Epoch: 68, Batch: 25000/443757, Loss: 151.6279, Acc: 64.9860%, lr: 1.4863e-05
+INFO:root:[Epoch: 68, Batch: 50000/443757, Loss: 152.1806, Acc: 64.5015%, lr: 1.4728e-05
+INFO:root:[Epoch: 68, Batch: 75000/443757, Loss: 152.1451, Acc: 64.6449%, lr: 1.4594e-05
+INFO:root:[Epoch: 68, Batch: 100000/443757, Loss: 152.0338, Acc: 64.5117%, lr: 1.4461e-05
+INFO:root:[Epoch: 68, Batch: 125000/443757, Loss: 152.5986, Acc: 64.3894%, lr: 1.4329e-05
+INFO:root:[Epoch: 68, Batch: 150000/443757, Loss: 152.5158, Acc: 64.3146%, lr: 1.4199e-05
+INFO:root:[Epoch: 68, Batch: 175000/443757, Loss: 152.7551, Acc: 64.2445%, lr: 1.4071e-05
+INFO:root:[Epoch: 68, Batch: 200000/443757, Loss: 153.2172, Acc: 64.1465%, lr: 1.3944e-05
+INFO:root:[Epoch: 68, Batch: 225000/443757, Loss: 152.9922, Acc: 64.1271%, lr: 1.3818e-05
+INFO:root:[Epoch: 68, Batch: 250000/443757, Loss: 153.0427, Acc: 64.1600%, lr: 1.3694e-05
+INFO:root:[Epoch: 68, Batch: 275000/443757, Loss: 152.8924, Acc: 64.1916%, lr: 1.3572e-05
+INFO:root:[Epoch: 68, Batch: 300000/443757, Loss: 152.8776, Acc: 64.1983%, lr: 1.3451e-05
+INFO:root:[Epoch: 68, Batch: 325000/443757, Loss: 152.8919, Acc: 64.2027%, lr: 1.3332e-05
+INFO:root:[Epoch: 68, Batch: 350000/443757, Loss: 152.8330, Acc: 64.2017%, lr: 1.3215e-05
+INFO:root:[Epoch: 68, Batch: 375000/443757, Loss: 152.8442, Acc: 64.1938%, lr: 1.3099e-05
+INFO:root:[Epoch: 68, Batch: 400000/443757, Loss: 152.8421, Acc: 64.1762%, lr: 1.2985e-05
+INFO:root:[Epoch: 68, Batch: 425000/443757, Loss: 152.9000, Acc: 64.1212%, lr: 1.2873e-05
+INFO:root:Overall Accuracy is: 47.60
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.61
+INFO:root:yes/no : 68.92
+INFO:root:number : 31.61
+INFO:root:Training started
+INFO:root:[Epoch: 69, Batch: 0/443757, Loss: 205.0187, Acc: 50.0000%, lr: 1.4728e-05
+INFO:root:[Epoch: 69, Batch: 25000/443757, Loss: 150.9705, Acc: 64.8144%, lr: 1.4594e-05
+INFO:root:[Epoch: 69, Batch: 50000/443757, Loss: 150.9127, Acc: 64.7672%, lr: 1.4461e-05
+INFO:root:[Epoch: 69, Batch: 75000/443757, Loss: 151.6117, Acc: 64.6169%, lr: 1.4329e-05
+INFO:root:[Epoch: 69, Batch: 100000/443757, Loss: 151.4974, Acc: 64.6507%, lr: 1.4199e-05
+INFO:root:[Epoch: 69, Batch: 125000/443757, Loss: 151.7810, Acc: 64.5550%, lr: 1.4071e-05
+INFO:root:[Epoch: 69, Batch: 150000/443757, Loss: 151.5366, Acc: 64.5738%, lr: 1.3944e-05
+INFO:root:[Epoch: 69, Batch: 175000/443757, Loss: 151.1886, Acc: 64.6330%, lr: 1.3818e-05
+INFO:root:[Epoch: 69, Batch: 200000/443757, Loss: 150.9606, Acc: 64.7353%, lr: 1.3694e-05
+INFO:root:[Epoch: 69, Batch: 225000/443757, Loss: 151.1660, Acc: 64.6510%, lr: 1.3572e-05
+INFO:root:[Epoch: 69, Batch: 250000/443757, Loss: 151.2548, Acc: 64.6191%, lr: 1.3451e-05
+INFO:root:[Epoch: 69, Batch: 275000/443757, Loss: 151.1642, Acc: 64.6112%, lr: 1.3332e-05
+INFO:root:[Epoch: 69, Batch: 300000/443757, Loss: 151.3545, Acc: 64.5776%, lr: 1.3215e-05
+INFO:root:[Epoch: 69, Batch: 325000/443757, Loss: 151.4536, Acc: 64.5618%, lr: 1.3099e-05
+INFO:root:[Epoch: 69, Batch: 350000/443757, Loss: 151.4985, Acc: 64.5825%, lr: 1.2985e-05
+INFO:root:[Epoch: 69, Batch: 375000/443757, Loss: 151.5293, Acc: 64.5415%, lr: 1.2873e-05
+INFO:root:[Epoch: 69, Batch: 400000/443757, Loss: 151.2797, Acc: 64.5699%, lr: 1.2763e-05
+INFO:root:[Epoch: 69, Batch: 425000/443757, Loss: 151.4915, Acc: 64.5338%, lr: 1.2654e-05
+INFO:root:Overall Accuracy is: 47.46
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.48
+INFO:root:yes/no : 68.97
+INFO:root:number : 30.89
+INFO:root:Training started
+INFO:root:[Epoch: 70, Batch: 0/443757, Loss: 126.5214, Acc: 70.0000%, lr: 1.4461e-05
+INFO:root:[Epoch: 70, Batch: 25000/443757, Loss: 153.5291, Acc: 64.0918%, lr: 1.4329e-05
+INFO:root:[Epoch: 70, Batch: 50000/443757, Loss: 152.7251, Acc: 64.2737%, lr: 1.4199e-05
+INFO:root:[Epoch: 70, Batch: 75000/443757, Loss: 151.8941, Acc: 64.4437%, lr: 1.4071e-05
+INFO:root:[Epoch: 70, Batch: 100000/443757, Loss: 151.6048, Acc: 64.6307%, lr: 1.3944e-05
+INFO:root:[Epoch: 70, Batch: 125000/443757, Loss: 151.7981, Acc: 64.5950%, lr: 1.3818e-05
+INFO:root:[Epoch: 70, Batch: 150000/443757, Loss: 152.1860, Acc: 64.5958%, lr: 1.3694e-05
+INFO:root:[Epoch: 70, Batch: 175000/443757, Loss: 152.3090, Acc: 64.5387%, lr: 1.3572e-05
+INFO:root:[Epoch: 70, Batch: 200000/443757, Loss: 152.3952, Acc: 64.4584%, lr: 1.3451e-05
+INFO:root:[Epoch: 70, Batch: 225000/443757, Loss: 152.2292, Acc: 64.4355%, lr: 1.3332e-05
+INFO:root:[Epoch: 70, Batch: 250000/443757, Loss: 152.4017, Acc: 64.3991%, lr: 1.3215e-05
+INFO:root:[Epoch: 70, Batch: 275000/443757, Loss: 152.3261, Acc: 64.3897%, lr: 1.3099e-05
+INFO:root:[Epoch: 70, Batch: 300000/443757, Loss: 152.3848, Acc: 64.3786%, lr: 1.2985e-05
+INFO:root:[Epoch: 70, Batch: 325000/443757, Loss: 152.5824, Acc: 64.3159%, lr: 1.2873e-05
+INFO:root:[Epoch: 70, Batch: 350000/443757, Loss: 152.6877, Acc: 64.3351%, lr: 1.2763e-05
+INFO:root:[Epoch: 70, Batch: 375000/443757, Loss: 152.6294, Acc: 64.3336%, lr: 1.2654e-05
+INFO:root:[Epoch: 70, Batch: 400000/443757, Loss: 152.6215, Acc: 64.3372%, lr: 1.2547e-05
+INFO:root:[Epoch: 70, Batch: 425000/443757, Loss: 152.6165, Acc: 64.3042%, lr: 1.2443e-05
+INFO:root:Overall Accuracy is: 47.70
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.72
+INFO:root:yes/no : 69.14
+INFO:root:number : 31.36
+INFO:root:Training started
+INFO:root:[Epoch: 71, Batch: 0/443757, Loss: 98.5945, Acc: 74.0000%, lr: 1.4199e-05
+INFO:root:[Epoch: 71, Batch: 25000/443757, Loss: 149.6445, Acc: 65.6447%, lr: 1.4071e-05
+INFO:root:[Epoch: 71, Batch: 50000/443757, Loss: 149.5420, Acc: 65.3007%, lr: 1.3944e-05
+INFO:root:[Epoch: 71, Batch: 75000/443757, Loss: 150.0539, Acc: 65.2192%, lr: 1.3818e-05
+INFO:root:[Epoch: 71, Batch: 100000/443757, Loss: 150.8850, Acc: 64.9825%, lr: 1.3694e-05
+INFO:root:[Epoch: 71, Batch: 125000/443757, Loss: 150.6748, Acc: 64.9908%, lr: 1.3572e-05
+INFO:root:[Epoch: 71, Batch: 150000/443757, Loss: 150.9944, Acc: 64.8890%, lr: 1.3451e-05
+INFO:root:[Epoch: 71, Batch: 175000/443757, Loss: 151.0272, Acc: 64.8318%, lr: 1.3332e-05
+INFO:root:[Epoch: 71, Batch: 200000/443757, Loss: 151.6007, Acc: 64.7073%, lr: 1.3215e-05
+INFO:root:[Epoch: 71, Batch: 225000/443757, Loss: 151.4342, Acc: 64.7065%, lr: 1.3099e-05
+INFO:root:[Epoch: 71, Batch: 250000/443757, Loss: 151.4931, Acc: 64.6963%, lr: 1.2985e-05
+INFO:root:[Epoch: 71, Batch: 275000/443757, Loss: 151.5714, Acc: 64.6232%, lr: 1.2873e-05
+INFO:root:[Epoch: 71, Batch: 300000/443757, Loss: 151.3017, Acc: 64.6752%, lr: 1.2763e-05
+INFO:root:[Epoch: 71, Batch: 325000/443757, Loss: 151.3934, Acc: 64.6365%, lr: 1.2654e-05
+INFO:root:[Epoch: 71, Batch: 350000/443757, Loss: 151.7363, Acc: 64.5588%, lr: 1.2547e-05
+INFO:root:[Epoch: 71, Batch: 375000/443757, Loss: 151.7278, Acc: 64.5885%, lr: 1.2443e-05
+INFO:root:[Epoch: 71, Batch: 400000/443757, Loss: 151.6062, Acc: 64.6064%, lr: 1.2340e-05
+INFO:root:[Epoch: 71, Batch: 425000/443757, Loss: 151.3943, Acc: 64.6580%, lr: 1.2239e-05
+INFO:root:Overall Accuracy is: 47.34
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.26
+INFO:root:yes/no : 68.88
+INFO:root:number : 31.07
+INFO:root:Training started
+INFO:root:[Epoch: 72, Batch: 0/443757, Loss: 120.7160, Acc: 70.0000%, lr: 1.3944e-05
+INFO:root:[Epoch: 72, Batch: 25000/443757, Loss: 144.2640, Acc: 66.2475%, lr: 1.3818e-05
+INFO:root:[Epoch: 72, Batch: 50000/443757, Loss: 147.0374, Acc: 65.7143%, lr: 1.3694e-05
+INFO:root:[Epoch: 72, Batch: 75000/443757, Loss: 147.0266, Acc: 65.8508%, lr: 1.3572e-05
+INFO:root:[Epoch: 72, Batch: 100000/443757, Loss: 147.3696, Acc: 65.6912%, lr: 1.3451e-05
+INFO:root:[Epoch: 72, Batch: 125000/443757, Loss: 148.3895, Acc: 65.4322%, lr: 1.3332e-05
+INFO:root:[Epoch: 72, Batch: 150000/443757, Loss: 148.6294, Acc: 65.3775%, lr: 1.3215e-05
+INFO:root:[Epoch: 72, Batch: 175000/443757, Loss: 149.3009, Acc: 65.1974%, lr: 1.3099e-05
+INFO:root:[Epoch: 72, Batch: 200000/443757, Loss: 149.3639, Acc: 65.1817%, lr: 1.2985e-05
+INFO:root:[Epoch: 72, Batch: 225000/443757, Loss: 149.5515, Acc: 65.1220%, lr: 1.2873e-05
+INFO:root:[Epoch: 72, Batch: 250000/443757, Loss: 149.5099, Acc: 65.1310%, lr: 1.2763e-05
+INFO:root:[Epoch: 72, Batch: 275000/443757, Loss: 149.3544, Acc: 65.1274%, lr: 1.2654e-05
+INFO:root:[Epoch: 72, Batch: 300000/443757, Loss: 149.8720, Acc: 65.0465%, lr: 1.2547e-05
+INFO:root:[Epoch: 72, Batch: 325000/443757, Loss: 150.0241, Acc: 65.0201%, lr: 1.2443e-05
+INFO:root:[Epoch: 72, Batch: 350000/443757, Loss: 149.9643, Acc: 65.0416%, lr: 1.2340e-05
+INFO:root:[Epoch: 72, Batch: 375000/443757, Loss: 150.0351, Acc: 65.0409%, lr: 1.2239e-05
+INFO:root:[Epoch: 72, Batch: 400000/443757, Loss: 150.2381, Acc: 64.9711%, lr: 1.2139e-05
+INFO:root:[Epoch: 72, Batch: 425000/443757, Loss: 150.3479, Acc: 64.9152%, lr: 1.2042e-05
+INFO:root:Overall Accuracy is: 47.56
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.38
+INFO:root:yes/no : 69.04
+INFO:root:number : 31.81
+INFO:root:Training started
+INFO:root:[Epoch: 73, Batch: 0/443757, Loss: 218.6139, Acc: 58.0000%, lr: 1.3694e-05
+INFO:root:[Epoch: 73, Batch: 25000/443757, Loss: 150.7810, Acc: 65.1537%, lr: 1.3572e-05
+INFO:root:[Epoch: 73, Batch: 50000/443757, Loss: 150.4238, Acc: 65.2308%, lr: 1.3451e-05
+INFO:root:[Epoch: 73, Batch: 75000/443757, Loss: 150.3313, Acc: 65.1885%, lr: 1.3332e-05
+INFO:root:[Epoch: 73, Batch: 100000/443757, Loss: 150.7598, Acc: 65.1964%, lr: 1.3215e-05
+INFO:root:[Epoch: 73, Batch: 125000/443757, Loss: 150.6361, Acc: 65.1619%, lr: 1.3099e-05
+INFO:root:[Epoch: 73, Batch: 150000/443757, Loss: 150.3678, Acc: 65.2756%, lr: 1.2985e-05
+INFO:root:[Epoch: 73, Batch: 175000/443757, Loss: 150.6678, Acc: 65.2208%, lr: 1.2873e-05
+INFO:root:[Epoch: 73, Batch: 200000/443757, Loss: 150.2859, Acc: 65.2482%, lr: 1.2763e-05
+INFO:root:[Epoch: 73, Batch: 225000/443757, Loss: 150.6041, Acc: 65.2215%, lr: 1.2654e-05
+INFO:root:[Epoch: 73, Batch: 250000/443757, Loss: 150.6123, Acc: 65.2242%, lr: 1.2547e-05
+INFO:root:[Epoch: 73, Batch: 275000/443757, Loss: 150.5619, Acc: 65.1918%, lr: 1.2443e-05
+INFO:root:[Epoch: 73, Batch: 300000/443757, Loss: 150.5965, Acc: 65.1498%, lr: 1.2340e-05
+INFO:root:[Epoch: 73, Batch: 325000/443757, Loss: 150.5021, Acc: 65.1598%, lr: 1.2239e-05
+INFO:root:[Epoch: 73, Batch: 350000/443757, Loss: 150.5544, Acc: 65.0978%, lr: 1.2139e-05
+INFO:root:[Epoch: 73, Batch: 375000/443757, Loss: 150.5367, Acc: 65.0740%, lr: 1.2042e-05
+INFO:root:[Epoch: 73, Batch: 400000/443757, Loss: 150.4071, Acc: 65.0761%, lr: 1.1947e-05
+INFO:root:[Epoch: 73, Batch: 425000/443757, Loss: 150.5014, Acc: 65.0199%, lr: 1.1854e-05
+INFO:root:Overall Accuracy is: 47.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.18
+INFO:root:yes/no : 68.90
+INFO:root:number : 31.03
+INFO:root:Training started
+INFO:root:[Epoch: 74, Batch: 0/443757, Loss: 138.7350, Acc: 74.0000%, lr: 1.3451e-05
+INFO:root:[Epoch: 74, Batch: 25000/443757, Loss: 148.0149, Acc: 65.7685%, lr: 1.3332e-05
+INFO:root:[Epoch: 74, Batch: 50000/443757, Loss: 147.3586, Acc: 65.6204%, lr: 1.3215e-05
+INFO:root:[Epoch: 74, Batch: 75000/443757, Loss: 147.3665, Acc: 65.6163%, lr: 1.3099e-05
+INFO:root:[Epoch: 74, Batch: 100000/443757, Loss: 147.9337, Acc: 65.6552%, lr: 1.2985e-05
+INFO:root:[Epoch: 74, Batch: 125000/443757, Loss: 148.5020, Acc: 65.5986%, lr: 1.2873e-05
+INFO:root:[Epoch: 74, Batch: 150000/443757, Loss: 148.3583, Acc: 65.5888%, lr: 1.2763e-05
+INFO:root:[Epoch: 74, Batch: 175000/443757, Loss: 149.0508, Acc: 65.4647%, lr: 1.2654e-05
+INFO:root:[Epoch: 74, Batch: 200000/443757, Loss: 149.5116, Acc: 65.3507%, lr: 1.2547e-05
+INFO:root:[Epoch: 74, Batch: 225000/443757, Loss: 149.5210, Acc: 65.3357%, lr: 1.2443e-05
+INFO:root:[Epoch: 74, Batch: 250000/443757, Loss: 149.4270, Acc: 65.3453%, lr: 1.2340e-05
+INFO:root:[Epoch: 74, Batch: 275000/443757, Loss: 149.4602, Acc: 65.3045%, lr: 1.2239e-05
+INFO:root:[Epoch: 74, Batch: 300000/443757, Loss: 149.4681, Acc: 65.2871%, lr: 1.2139e-05
+INFO:root:[Epoch: 74, Batch: 325000/443757, Loss: 149.7672, Acc: 65.1943%, lr: 1.2042e-05
+INFO:root:[Epoch: 74, Batch: 350000/443757, Loss: 149.8538, Acc: 65.1935%, lr: 1.1947e-05
+INFO:root:[Epoch: 74, Batch: 375000/443757, Loss: 149.7892, Acc: 65.1990%, lr: 1.1854e-05
+INFO:root:[Epoch: 74, Batch: 400000/443757, Loss: 149.9781, Acc: 65.1754%, lr: 1.1763e-05
+INFO:root:[Epoch: 74, Batch: 425000/443757, Loss: 150.0983, Acc: 65.1488%, lr: 1.1674e-05
+INFO:root:Overall Accuracy is: 47.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.11
+INFO:root:yes/no : 68.87
+INFO:root:number : 31.38
+INFO:root:Training started
+INFO:root:[Epoch: 75, Batch: 0/443757, Loss: 156.1135, Acc: 62.0000%, lr: 1.3215e-05
+INFO:root:[Epoch: 75, Batch: 25000/443757, Loss: 148.1427, Acc: 65.9361%, lr: 1.3099e-05
+INFO:root:[Epoch: 75, Batch: 50000/443757, Loss: 147.4746, Acc: 66.0639%, lr: 1.2985e-05
+INFO:root:[Epoch: 75, Batch: 75000/443757, Loss: 148.7687, Acc: 65.7748%, lr: 1.2873e-05
+INFO:root:[Epoch: 75, Batch: 100000/443757, Loss: 149.2608, Acc: 65.6742%, lr: 1.2763e-05
+INFO:root:[Epoch: 75, Batch: 125000/443757, Loss: 149.1073, Acc: 65.6641%, lr: 1.2654e-05
+INFO:root:[Epoch: 75, Batch: 150000/443757, Loss: 149.6680, Acc: 65.4942%, lr: 1.2547e-05
+INFO:root:[Epoch: 75, Batch: 175000/443757, Loss: 149.4186, Acc: 65.5144%, lr: 1.2443e-05
+INFO:root:[Epoch: 75, Batch: 200000/443757, Loss: 149.6129, Acc: 65.4401%, lr: 1.2340e-05
+INFO:root:[Epoch: 75, Batch: 225000/443757, Loss: 149.6219, Acc: 65.4317%, lr: 1.2239e-05
+INFO:root:[Epoch: 75, Batch: 250000/443757, Loss: 149.7573, Acc: 65.4049%, lr: 1.2139e-05
+INFO:root:[Epoch: 75, Batch: 275000/443757, Loss: 149.8127, Acc: 65.3445%, lr: 1.2042e-05
+INFO:root:[Epoch: 75, Batch: 300000/443757, Loss: 150.0240, Acc: 65.2795%, lr: 1.1947e-05
+INFO:root:[Epoch: 75, Batch: 325000/443757, Loss: 150.0196, Acc: 65.2706%, lr: 1.1854e-05
+INFO:root:[Epoch: 75, Batch: 350000/443757, Loss: 150.0855, Acc: 65.2410%, lr: 1.1763e-05
+INFO:root:[Epoch: 75, Batch: 375000/443757, Loss: 150.1343, Acc: 65.2118%, lr: 1.1674e-05
+INFO:root:[Epoch: 75, Batch: 400000/443757, Loss: 150.3234, Acc: 65.1571%, lr: 1.1587e-05
+INFO:root:[Epoch: 75, Batch: 425000/443757, Loss: 150.4284, Acc: 65.1076%, lr: 1.1503e-05
+INFO:root:Overall Accuracy is: 47.45
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.43
+INFO:root:yes/no : 68.84
+INFO:root:number : 31.35
+INFO:root:Training started
+INFO:root:[Epoch: 76, Batch: 0/443757, Loss: 115.7369, Acc: 78.0000%, lr: 1.2985e-05
+INFO:root:[Epoch: 76, Batch: 25000/443757, Loss: 151.2009, Acc: 64.9661%, lr: 1.2873e-05
+INFO:root:[Epoch: 76, Batch: 50000/443757, Loss: 149.8266, Acc: 65.4266%, lr: 1.2763e-05
+INFO:root:[Epoch: 76, Batch: 75000/443757, Loss: 150.7544, Acc: 65.3271%, lr: 1.2654e-05
+INFO:root:[Epoch: 76, Batch: 100000/443757, Loss: 150.6963, Acc: 65.2894%, lr: 1.2547e-05
+INFO:root:[Epoch: 76, Batch: 125000/443757, Loss: 151.4594, Acc: 65.1419%, lr: 1.2443e-05
+INFO:root:[Epoch: 76, Batch: 150000/443757, Loss: 150.6308, Acc: 65.2882%, lr: 1.2340e-05
+INFO:root:[Epoch: 76, Batch: 175000/443757, Loss: 150.4275, Acc: 65.3099%, lr: 1.2239e-05
+INFO:root:[Epoch: 76, Batch: 200000/443757, Loss: 150.5736, Acc: 65.2867%, lr: 1.2139e-05
+INFO:root:[Epoch: 76, Batch: 225000/443757, Loss: 150.4143, Acc: 65.2766%, lr: 1.2042e-05
+INFO:root:[Epoch: 76, Batch: 250000/443757, Loss: 150.0678, Acc: 65.2709%, lr: 1.1947e-05
+INFO:root:[Epoch: 76, Batch: 275000/443757, Loss: 149.8132, Acc: 65.3267%, lr: 1.1854e-05
+INFO:root:[Epoch: 76, Batch: 300000/443757, Loss: 149.9282, Acc: 65.2811%, lr: 1.1763e-05
+INFO:root:[Epoch: 76, Batch: 325000/443757, Loss: 149.8594, Acc: 65.2915%, lr: 1.1674e-05
+INFO:root:[Epoch: 76, Batch: 350000/443757, Loss: 149.7755, Acc: 65.2895%, lr: 1.1587e-05
+INFO:root:[Epoch: 76, Batch: 375000/443757, Loss: 149.8733, Acc: 65.2662%, lr: 1.1503e-05
+INFO:root:[Epoch: 76, Batch: 400000/443757, Loss: 149.8549, Acc: 65.2793%, lr: 1.1420e-05
+INFO:root:[Epoch: 76, Batch: 425000/443757, Loss: 149.7797, Acc: 65.2737%, lr: 1.1340e-05
+INFO:root:Overall Accuracy is: 47.26
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.09
+INFO:root:yes/no : 68.85
+INFO:root:number : 31.17
+INFO:root:Training started
+INFO:root:[Epoch: 77, Batch: 0/443757, Loss: 94.4009, Acc: 74.0000%, lr: 1.2763e-05
+INFO:root:[Epoch: 77, Batch: 25000/443757, Loss: 150.6420, Acc: 65.3493%, lr: 1.2654e-05
+INFO:root:[Epoch: 77, Batch: 50000/443757, Loss: 149.6266, Acc: 65.7602%, lr: 1.2547e-05
+INFO:root:[Epoch: 77, Batch: 75000/443757, Loss: 149.3465, Acc: 65.7189%, lr: 1.2443e-05
+INFO:root:[Epoch: 77, Batch: 100000/443757, Loss: 149.2591, Acc: 65.6612%, lr: 1.2340e-05
+INFO:root:[Epoch: 77, Batch: 125000/443757, Loss: 149.2823, Acc: 65.6162%, lr: 1.2239e-05
+INFO:root:[Epoch: 77, Batch: 150000/443757, Loss: 148.8986, Acc: 65.7041%, lr: 1.2139e-05
+INFO:root:[Epoch: 77, Batch: 175000/443757, Loss: 149.0280, Acc: 65.5893%, lr: 1.2042e-05
+INFO:root:[Epoch: 77, Batch: 200000/443757, Loss: 149.0022, Acc: 65.6146%, lr: 1.1947e-05
+INFO:root:[Epoch: 77, Batch: 225000/443757, Loss: 148.7894, Acc: 65.6112%, lr: 1.1854e-05
+INFO:root:[Epoch: 77, Batch: 250000/443757, Loss: 148.8329, Acc: 65.5993%, lr: 1.1763e-05
+INFO:root:[Epoch: 77, Batch: 275000/443757, Loss: 148.8373, Acc: 65.5146%, lr: 1.1674e-05
+INFO:root:[Epoch: 77, Batch: 300000/443757, Loss: 148.9716, Acc: 65.4858%, lr: 1.1587e-05
+INFO:root:[Epoch: 77, Batch: 325000/443757, Loss: 148.8635, Acc: 65.4810%, lr: 1.1503e-05
+INFO:root:[Epoch: 77, Batch: 350000/443757, Loss: 148.9324, Acc: 65.4321%, lr: 1.1420e-05
+INFO:root:[Epoch: 77, Batch: 375000/443757, Loss: 148.9622, Acc: 65.4310%, lr: 1.1340e-05
+INFO:root:[Epoch: 77, Batch: 400000/443757, Loss: 149.1903, Acc: 65.3821%, lr: 1.1262e-05
+INFO:root:[Epoch: 77, Batch: 425000/443757, Loss: 149.2187, Acc: 65.3570%, lr: 1.1185e-05
+INFO:root:Overall Accuracy is: 47.38
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.23
+INFO:root:yes/no : 68.97
+INFO:root:number : 31.18
+INFO:root:Training started
+INFO:root:[Epoch: 78, Batch: 0/443757, Loss: 107.8590, Acc: 72.0000%, lr: 1.2547e-05
+INFO:root:[Epoch: 78, Batch: 25000/443757, Loss: 149.6825, Acc: 65.7485%, lr: 1.2443e-05
+INFO:root:[Epoch: 78, Batch: 50000/443757, Loss: 149.5019, Acc: 65.7502%, lr: 1.2340e-05
+INFO:root:[Epoch: 78, Batch: 75000/443757, Loss: 149.1518, Acc: 65.7748%, lr: 1.2239e-05
+INFO:root:[Epoch: 78, Batch: 100000/443757, Loss: 149.3423, Acc: 65.7101%, lr: 1.2139e-05
+INFO:root:[Epoch: 78, Batch: 125000/443757, Loss: 148.6600, Acc: 65.8784%, lr: 1.2042e-05
+INFO:root:[Epoch: 78, Batch: 150000/443757, Loss: 148.8843, Acc: 65.7414%, lr: 1.1947e-05
+INFO:root:[Epoch: 78, Batch: 175000/443757, Loss: 148.6876, Acc: 65.8046%, lr: 1.1854e-05
+INFO:root:[Epoch: 78, Batch: 200000/443757, Loss: 148.5236, Acc: 65.8365%, lr: 1.1763e-05
+INFO:root:[Epoch: 78, Batch: 225000/443757, Loss: 148.3934, Acc: 65.8618%, lr: 1.1674e-05
+INFO:root:[Epoch: 78, Batch: 250000/443757, Loss: 148.3732, Acc: 65.8380%, lr: 1.1587e-05
+INFO:root:[Epoch: 78, Batch: 275000/443757, Loss: 148.6012, Acc: 65.7604%, lr: 1.1503e-05
+INFO:root:[Epoch: 78, Batch: 300000/443757, Loss: 148.6381, Acc: 65.7117%, lr: 1.1420e-05
+INFO:root:[Epoch: 78, Batch: 325000/443757, Loss: 148.9123, Acc: 65.6637%, lr: 1.1340e-05
+INFO:root:[Epoch: 78, Batch: 350000/443757, Loss: 148.5804, Acc: 65.7423%, lr: 1.1262e-05
+INFO:root:[Epoch: 78, Batch: 375000/443757, Loss: 148.6773, Acc: 65.6723%, lr: 1.1185e-05
+INFO:root:[Epoch: 78, Batch: 400000/443757, Loss: 148.8520, Acc: 65.6030%, lr: 1.1112e-05
+INFO:root:[Epoch: 78, Batch: 425000/443757, Loss: 149.2742, Acc: 65.4841%, lr: 1.1040e-05
+INFO:root:Overall Accuracy is: 47.24
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.08
+INFO:root:yes/no : 68.78
+INFO:root:number : 31.25
+INFO:root:Training started
+INFO:root:[Epoch: 79, Batch: 0/443757, Loss: 214.4773, Acc: 60.0000%, lr: 1.2340e-05
+INFO:root:[Epoch: 79, Batch: 25000/443757, Loss: 144.9794, Acc: 66.4870%, lr: 1.2239e-05
+INFO:root:[Epoch: 79, Batch: 50000/443757, Loss: 146.9035, Acc: 65.8222%, lr: 1.2139e-05
+INFO:root:[Epoch: 79, Batch: 75000/443757, Loss: 146.0735, Acc: 66.2105%, lr: 1.2042e-05
+INFO:root:[Epoch: 79, Batch: 100000/443757, Loss: 145.9609, Acc: 66.2649%, lr: 1.1947e-05
+INFO:root:[Epoch: 79, Batch: 125000/443757, Loss: 146.2766, Acc: 66.1535%, lr: 1.1854e-05
+INFO:root:[Epoch: 79, Batch: 150000/443757, Loss: 146.9968, Acc: 66.0846%, lr: 1.1763e-05
+INFO:root:[Epoch: 79, Batch: 175000/443757, Loss: 147.1091, Acc: 66.0600%, lr: 1.1674e-05
+INFO:root:[Epoch: 79, Batch: 200000/443757, Loss: 147.1467, Acc: 66.0065%, lr: 1.1587e-05
+INFO:root:[Epoch: 79, Batch: 225000/443757, Loss: 147.1297, Acc: 66.0129%, lr: 1.1503e-05
+INFO:root:[Epoch: 79, Batch: 250000/443757, Loss: 147.5412, Acc: 65.9436%, lr: 1.1420e-05
+INFO:root:[Epoch: 79, Batch: 275000/443757, Loss: 147.3730, Acc: 66.0182%, lr: 1.1340e-05
+INFO:root:[Epoch: 79, Batch: 300000/443757, Loss: 147.2429, Acc: 66.0417%, lr: 1.1262e-05
+INFO:root:[Epoch: 79, Batch: 325000/443757, Loss: 147.1477, Acc: 66.0732%, lr: 1.1185e-05
+INFO:root:[Epoch: 79, Batch: 350000/443757, Loss: 147.4362, Acc: 66.0026%, lr: 1.1112e-05
+INFO:root:[Epoch: 79, Batch: 375000/443757, Loss: 147.3485, Acc: 65.9971%, lr: 1.1040e-05
+INFO:root:[Epoch: 79, Batch: 400000/443757, Loss: 147.5807, Acc: 65.9255%, lr: 1.0971e-05
+INFO:root:[Epoch: 79, Batch: 425000/443757, Loss: 147.7079, Acc: 65.8544%, lr: 1.0904e-05
+INFO:root:Overall Accuracy is: 47.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.12
+INFO:root:yes/no : 69.00
+INFO:root:number : 31.01
+INFO:root:Training started
+INFO:root:[Epoch: 80, Batch: 0/443757, Loss: 144.1607, Acc: 58.0000%, lr: 1.2139e-05
+INFO:root:[Epoch: 80, Batch: 25000/443757, Loss: 149.9917, Acc: 65.6407%, lr: 1.2042e-05
+INFO:root:[Epoch: 80, Batch: 50000/443757, Loss: 147.5568, Acc: 66.3137%, lr: 1.1947e-05
+INFO:root:[Epoch: 80, Batch: 75000/443757, Loss: 146.9680, Acc: 66.1879%, lr: 1.1854e-05
+INFO:root:[Epoch: 80, Batch: 100000/443757, Loss: 148.5648, Acc: 65.9330%, lr: 1.1763e-05
+INFO:root:[Epoch: 80, Batch: 125000/443757, Loss: 148.3682, Acc: 65.9192%, lr: 1.1674e-05
+INFO:root:[Epoch: 80, Batch: 150000/443757, Loss: 148.1036, Acc: 65.9280%, lr: 1.1587e-05
+INFO:root:[Epoch: 80, Batch: 175000/443757, Loss: 148.7030, Acc: 65.7669%, lr: 1.1503e-05
+INFO:root:[Epoch: 80, Batch: 200000/443757, Loss: 148.9283, Acc: 65.6516%, lr: 1.1420e-05
+INFO:root:[Epoch: 80, Batch: 225000/443757, Loss: 148.6869, Acc: 65.7010%, lr: 1.1340e-05
+INFO:root:[Epoch: 80, Batch: 250000/443757, Loss: 148.6269, Acc: 65.7492%, lr: 1.1262e-05
+INFO:root:[Epoch: 80, Batch: 275000/443757, Loss: 148.4119, Acc: 65.7699%, lr: 1.1185e-05
+INFO:root:[Epoch: 80, Batch: 300000/443757, Loss: 148.7602, Acc: 65.7007%, lr: 1.1112e-05
+INFO:root:[Epoch: 80, Batch: 325000/443757, Loss: 148.7259, Acc: 65.6899%, lr: 1.1040e-05
+INFO:root:[Epoch: 80, Batch: 350000/443757, Loss: 148.7588, Acc: 65.6635%, lr: 1.0971e-05
+INFO:root:[Epoch: 80, Batch: 375000/443757, Loss: 148.8835, Acc: 65.6155%, lr: 1.0904e-05
+INFO:root:[Epoch: 80, Batch: 400000/443757, Loss: 148.9226, Acc: 65.5903%, lr: 1.0839e-05
+INFO:root:[Epoch: 80, Batch: 425000/443757, Loss: 148.8988, Acc: 65.5551%, lr: 1.0776e-05
+INFO:root:Overall Accuracy is: 47.31
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.13
+INFO:root:yes/no : 68.86
+INFO:root:number : 31.35
+INFO:root:Training started
+INFO:root:[Epoch: 81, Batch: 0/443757, Loss: 112.8815, Acc: 70.0000%, lr: 1.1947e-05
+INFO:root:[Epoch: 81, Batch: 25000/443757, Loss: 144.9623, Acc: 66.9661%, lr: 1.1854e-05
+INFO:root:[Epoch: 81, Batch: 50000/443757, Loss: 145.2307, Acc: 66.6294%, lr: 1.1763e-05
+INFO:root:[Epoch: 81, Batch: 75000/443757, Loss: 145.3577, Acc: 66.7382%, lr: 1.1674e-05
+INFO:root:[Epoch: 81, Batch: 100000/443757, Loss: 145.3797, Acc: 66.7126%, lr: 1.1587e-05
+INFO:root:[Epoch: 81, Batch: 125000/443757, Loss: 145.8466, Acc: 66.5894%, lr: 1.1503e-05
+INFO:root:[Epoch: 81, Batch: 150000/443757, Loss: 145.8048, Acc: 66.5192%, lr: 1.1420e-05
+INFO:root:[Epoch: 81, Batch: 175000/443757, Loss: 146.0828, Acc: 66.4827%, lr: 1.1340e-05
+INFO:root:[Epoch: 81, Batch: 200000/443757, Loss: 146.0856, Acc: 66.4414%, lr: 1.1262e-05
+INFO:root:[Epoch: 81, Batch: 225000/443757, Loss: 146.4770, Acc: 66.3439%, lr: 1.1185e-05
+INFO:root:[Epoch: 81, Batch: 250000/443757, Loss: 146.6851, Acc: 66.3143%, lr: 1.1112e-05
+INFO:root:[Epoch: 81, Batch: 275000/443757, Loss: 146.6814, Acc: 66.3003%, lr: 1.1040e-05
+INFO:root:[Epoch: 81, Batch: 300000/443757, Loss: 146.9801, Acc: 66.2216%, lr: 1.0971e-05
+INFO:root:[Epoch: 81, Batch: 325000/443757, Loss: 147.2564, Acc: 66.1403%, lr: 1.0904e-05
+INFO:root:[Epoch: 81, Batch: 350000/443757, Loss: 147.2899, Acc: 66.1077%, lr: 1.0839e-05
+INFO:root:[Epoch: 81, Batch: 375000/443757, Loss: 147.3739, Acc: 66.0512%, lr: 1.0776e-05
+INFO:root:[Epoch: 81, Batch: 400000/443757, Loss: 147.3727, Acc: 66.0542%, lr: 1.0716e-05
+INFO:root:[Epoch: 81, Batch: 425000/443757, Loss: 147.5107, Acc: 66.0155%, lr: 1.0659e-05
+INFO:root:Overall Accuracy is: 47.26
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.97
+INFO:root:yes/no : 68.93
+INFO:root:number : 31.38
+INFO:root:Training started
+INFO:root:[Epoch: 82, Batch: 0/443757, Loss: 161.7297, Acc: 70.0000%, lr: 1.1763e-05
+INFO:root:[Epoch: 82, Batch: 25000/443757, Loss: 147.9612, Acc: 66.3114%, lr: 1.1674e-05
+INFO:root:[Epoch: 82, Batch: 50000/443757, Loss: 146.8630, Acc: 66.5475%, lr: 1.1587e-05
+INFO:root:[Epoch: 82, Batch: 75000/443757, Loss: 146.7650, Acc: 66.5809%, lr: 1.1503e-05
+INFO:root:[Epoch: 82, Batch: 100000/443757, Loss: 147.8029, Acc: 66.2169%, lr: 1.1420e-05
+INFO:root:[Epoch: 82, Batch: 125000/443757, Loss: 146.9876, Acc: 66.3663%, lr: 1.1340e-05
+INFO:root:[Epoch: 82, Batch: 150000/443757, Loss: 146.5935, Acc: 66.4565%, lr: 1.1262e-05
+INFO:root:[Epoch: 82, Batch: 175000/443757, Loss: 146.8823, Acc: 66.4307%, lr: 1.1185e-05
+INFO:root:[Epoch: 82, Batch: 200000/443757, Loss: 146.7918, Acc: 66.4149%, lr: 1.1112e-05
+INFO:root:[Epoch: 82, Batch: 225000/443757, Loss: 147.1055, Acc: 66.2853%, lr: 1.1040e-05
+INFO:root:[Epoch: 82, Batch: 250000/443757, Loss: 147.0170, Acc: 66.2887%, lr: 1.0971e-05
+INFO:root:[Epoch: 82, Batch: 275000/443757, Loss: 147.0219, Acc: 66.2356%, lr: 1.0904e-05
+INFO:root:[Epoch: 82, Batch: 300000/443757, Loss: 147.2933, Acc: 66.1806%, lr: 1.0839e-05
+INFO:root:[Epoch: 82, Batch: 325000/443757, Loss: 147.3520, Acc: 66.1581%, lr: 1.0776e-05
+INFO:root:[Epoch: 82, Batch: 350000/443757, Loss: 147.2498, Acc: 66.1386%, lr: 1.0716e-05
+INFO:root:[Epoch: 82, Batch: 375000/443757, Loss: 147.3185, Acc: 66.1027%, lr: 1.0659e-05
+INFO:root:[Epoch: 82, Batch: 400000/443757, Loss: 147.4827, Acc: 66.0527%, lr: 1.0603e-05
+INFO:root:[Epoch: 82, Batch: 425000/443757, Loss: 147.5340, Acc: 66.0254%, lr: 1.0550e-05
+INFO:root:Overall Accuracy is: 47.13
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.05
+INFO:root:yes/no : 68.58
+INFO:root:number : 31.09
+INFO:root:Training started
+INFO:root:[Epoch: 83, Batch: 0/443757, Loss: 147.8292, Acc: 70.0000%, lr: 1.1587e-05
+INFO:root:[Epoch: 83, Batch: 25000/443757, Loss: 145.1315, Acc: 67.1457%, lr: 1.1503e-05
+INFO:root:[Epoch: 83, Batch: 50000/443757, Loss: 145.4031, Acc: 66.9590%, lr: 1.1420e-05
+INFO:root:[Epoch: 83, Batch: 75000/443757, Loss: 145.7691, Acc: 66.8341%, lr: 1.1340e-05
+INFO:root:[Epoch: 83, Batch: 100000/443757, Loss: 146.0287, Acc: 66.7636%, lr: 1.1262e-05
+INFO:root:[Epoch: 83, Batch: 125000/443757, Loss: 146.1831, Acc: 66.6277%, lr: 1.1185e-05
+INFO:root:[Epoch: 83, Batch: 150000/443757, Loss: 146.3167, Acc: 66.5798%, lr: 1.1112e-05
+INFO:root:[Epoch: 83, Batch: 175000/443757, Loss: 146.4907, Acc: 66.4890%, lr: 1.1040e-05
+INFO:root:[Epoch: 83, Batch: 200000/443757, Loss: 146.5055, Acc: 66.4509%, lr: 1.0971e-05
+INFO:root:[Epoch: 83, Batch: 225000/443757, Loss: 146.6318, Acc: 66.3875%, lr: 1.0904e-05
+INFO:root:[Epoch: 83, Batch: 250000/443757, Loss: 147.0616, Acc: 66.2160%, lr: 1.0839e-05
+INFO:root:[Epoch: 83, Batch: 275000/443757, Loss: 147.0571, Acc: 66.1723%, lr: 1.0776e-05
+INFO:root:[Epoch: 83, Batch: 300000/443757, Loss: 147.0207, Acc: 66.1610%, lr: 1.0716e-05
+INFO:root:[Epoch: 83, Batch: 325000/443757, Loss: 147.1218, Acc: 66.1594%, lr: 1.0659e-05
+INFO:root:[Epoch: 83, Batch: 350000/443757, Loss: 147.2169, Acc: 66.1534%, lr: 1.0603e-05
+INFO:root:[Epoch: 83, Batch: 375000/443757, Loss: 147.4500, Acc: 66.0931%, lr: 1.0550e-05
+INFO:root:[Epoch: 83, Batch: 400000/443757, Loss: 147.4169, Acc: 66.0892%, lr: 1.0499e-05
+INFO:root:[Epoch: 83, Batch: 425000/443757, Loss: 147.2057, Acc: 66.1103%, lr: 1.0451e-05
+INFO:root:Overall Accuracy is: 47.16
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.94
+INFO:root:yes/no : 68.76
+INFO:root:number : 31.24
+INFO:root:Training started
+INFO:root:[Epoch: 84, Batch: 0/443757, Loss: 87.8918, Acc: 76.0000%, lr: 1.1420e-05
+INFO:root:[Epoch: 84, Batch: 25000/443757, Loss: 146.6360, Acc: 66.7505%, lr: 1.1340e-05
+INFO:root:[Epoch: 84, Batch: 50000/443757, Loss: 147.2810, Acc: 66.5974%, lr: 1.1262e-05
+INFO:root:[Epoch: 84, Batch: 75000/443757, Loss: 146.7132, Acc: 66.6942%, lr: 1.1185e-05
+INFO:root:[Epoch: 84, Batch: 100000/443757, Loss: 146.3379, Acc: 66.7216%, lr: 1.1112e-05
+INFO:root:[Epoch: 84, Batch: 125000/443757, Loss: 146.1821, Acc: 66.5758%, lr: 1.1040e-05
+INFO:root:[Epoch: 84, Batch: 150000/443757, Loss: 146.0169, Acc: 66.5551%, lr: 1.0971e-05
+INFO:root:[Epoch: 84, Batch: 175000/443757, Loss: 146.5421, Acc: 66.3839%, lr: 1.0904e-05
+INFO:root:[Epoch: 84, Batch: 200000/443757, Loss: 146.7911, Acc: 66.3274%, lr: 1.0839e-05
+INFO:root:[Epoch: 84, Batch: 225000/443757, Loss: 146.8952, Acc: 66.2946%, lr: 1.0776e-05
+INFO:root:[Epoch: 84, Batch: 250000/443757, Loss: 147.1294, Acc: 66.2356%, lr: 1.0716e-05
+INFO:root:[Epoch: 84, Batch: 275000/443757, Loss: 147.3453, Acc: 66.1731%, lr: 1.0659e-05
+INFO:root:[Epoch: 84, Batch: 300000/443757, Loss: 147.2312, Acc: 66.2080%, lr: 1.0603e-05
+INFO:root:[Epoch: 84, Batch: 325000/443757, Loss: 147.0273, Acc: 66.2387%, lr: 1.0550e-05
+INFO:root:[Epoch: 84, Batch: 350000/443757, Loss: 147.0876, Acc: 66.2174%, lr: 1.0499e-05
+INFO:root:[Epoch: 84, Batch: 375000/443757, Loss: 147.1255, Acc: 66.1981%, lr: 1.0451e-05
+INFO:root:[Epoch: 84, Batch: 400000/443757, Loss: 147.3606, Acc: 66.1135%, lr: 1.0405e-05
+INFO:root:[Epoch: 84, Batch: 425000/443757, Loss: 147.3030, Acc: 66.0981%, lr: 1.0362e-05
+INFO:root:Overall Accuracy is: 47.17
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.96
+INFO:root:yes/no : 68.74
+INFO:root:number : 31.27
+INFO:root:Training started
+INFO:root:[Epoch: 85, Batch: 0/443757, Loss: 218.7434, Acc: 62.0000%, lr: 1.1262e-05
+INFO:root:[Epoch: 85, Batch: 25000/443757, Loss: 145.1001, Acc: 66.8024%, lr: 1.1185e-05
+INFO:root:[Epoch: 85, Batch: 50000/443757, Loss: 145.5559, Acc: 66.8751%, lr: 1.1112e-05
+INFO:root:[Epoch: 85, Batch: 75000/443757, Loss: 145.1368, Acc: 66.8021%, lr: 1.1040e-05
+INFO:root:[Epoch: 85, Batch: 100000/443757, Loss: 145.3341, Acc: 66.7006%, lr: 1.0971e-05
+INFO:root:[Epoch: 85, Batch: 125000/443757, Loss: 145.4527, Acc: 66.7117%, lr: 1.0904e-05
+INFO:root:[Epoch: 85, Batch: 150000/443757, Loss: 145.5209, Acc: 66.6378%, lr: 1.0839e-05
+INFO:root:[Epoch: 85, Batch: 175000/443757, Loss: 145.4724, Acc: 66.5815%, lr: 1.0776e-05
+INFO:root:[Epoch: 85, Batch: 200000/443757, Loss: 145.2861, Acc: 66.5854%, lr: 1.0716e-05
+INFO:root:[Epoch: 85, Batch: 225000/443757, Loss: 145.3810, Acc: 66.5066%, lr: 1.0659e-05
+INFO:root:[Epoch: 85, Batch: 250000/443757, Loss: 145.8257, Acc: 66.4431%, lr: 1.0603e-05
+INFO:root:[Epoch: 85, Batch: 275000/443757, Loss: 145.7511, Acc: 66.4901%, lr: 1.0550e-05
+INFO:root:[Epoch: 85, Batch: 300000/443757, Loss: 146.1249, Acc: 66.4239%, lr: 1.0499e-05
+INFO:root:[Epoch: 85, Batch: 325000/443757, Loss: 146.3102, Acc: 66.3599%, lr: 1.0451e-05
+INFO:root:[Epoch: 85, Batch: 350000/443757, Loss: 146.4833, Acc: 66.3142%, lr: 1.0405e-05
+INFO:root:[Epoch: 85, Batch: 375000/443757, Loss: 146.8015, Acc: 66.2413%, lr: 1.0362e-05
+INFO:root:[Epoch: 85, Batch: 400000/443757, Loss: 146.9932, Acc: 66.2055%, lr: 1.0321e-05
+INFO:root:[Epoch: 85, Batch: 425000/443757, Loss: 147.2452, Acc: 66.1565%, lr: 1.0282e-05
+INFO:root:Overall Accuracy is: 47.19
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.05
+INFO:root:yes/no : 68.76
+INFO:root:number : 31.09
+INFO:root:Training started
+INFO:root:[Epoch: 86, Batch: 0/443757, Loss: 103.5617, Acc: 80.0000%, lr: 1.1112e-05
+INFO:root:[Epoch: 86, Batch: 25000/443757, Loss: 143.0397, Acc: 67.2096%, lr: 1.1040e-05
+INFO:root:[Epoch: 86, Batch: 50000/443757, Loss: 144.8038, Acc: 66.7153%, lr: 1.0971e-05
+INFO:root:[Epoch: 86, Batch: 75000/443757, Loss: 144.3412, Acc: 66.8075%, lr: 1.0904e-05
+INFO:root:[Epoch: 86, Batch: 100000/443757, Loss: 143.7417, Acc: 66.9955%, lr: 1.0839e-05
+INFO:root:[Epoch: 86, Batch: 125000/443757, Loss: 144.4791, Acc: 66.8213%, lr: 1.0776e-05
+INFO:root:[Epoch: 86, Batch: 150000/443757, Loss: 144.3404, Acc: 66.8224%, lr: 1.0716e-05
+INFO:root:[Epoch: 86, Batch: 175000/443757, Loss: 144.1105, Acc: 66.7855%, lr: 1.0659e-05
+INFO:root:[Epoch: 86, Batch: 200000/443757, Loss: 144.1105, Acc: 66.8263%, lr: 1.0603e-05
+INFO:root:[Epoch: 86, Batch: 225000/443757, Loss: 144.2509, Acc: 66.7567%, lr: 1.0550e-05
+INFO:root:[Epoch: 86, Batch: 250000/443757, Loss: 144.3222, Acc: 66.7466%, lr: 1.0499e-05
+INFO:root:[Epoch: 86, Batch: 275000/443757, Loss: 144.5359, Acc: 66.6722%, lr: 1.0451e-05
+INFO:root:[Epoch: 86, Batch: 300000/443757, Loss: 144.9413, Acc: 66.5882%, lr: 1.0405e-05
+INFO:root:[Epoch: 86, Batch: 325000/443757, Loss: 145.3780, Acc: 66.5110%, lr: 1.0362e-05
+INFO:root:[Epoch: 86, Batch: 350000/443757, Loss: 145.7465, Acc: 66.4234%, lr: 1.0321e-05
+INFO:root:[Epoch: 86, Batch: 375000/443757, Loss: 145.7618, Acc: 66.4215%, lr: 1.0282e-05
+INFO:root:[Epoch: 86, Batch: 400000/443757, Loss: 145.8558, Acc: 66.3922%, lr: 1.0246e-05
+INFO:root:[Epoch: 86, Batch: 425000/443757, Loss: 146.0039, Acc: 66.3400%, lr: 1.0212e-05
+INFO:root:Overall Accuracy is: 47.13
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.96
+INFO:root:yes/no : 68.80
+INFO:root:number : 30.82
+INFO:root:Training started
+INFO:root:[Epoch: 87, Batch: 0/443757, Loss: 124.8322, Acc: 74.0000%, lr: 1.0971e-05
+INFO:root:[Epoch: 87, Batch: 25000/443757, Loss: 142.4720, Acc: 67.1936%, lr: 1.0904e-05
+INFO:root:[Epoch: 87, Batch: 50000/443757, Loss: 145.0193, Acc: 66.7592%, lr: 1.0839e-05
+INFO:root:[Epoch: 87, Batch: 75000/443757, Loss: 145.1865, Acc: 66.6689%, lr: 1.0776e-05
+INFO:root:[Epoch: 87, Batch: 100000/443757, Loss: 145.0688, Acc: 66.7376%, lr: 1.0716e-05
+INFO:root:[Epoch: 87, Batch: 125000/443757, Loss: 144.8068, Acc: 66.7909%, lr: 1.0659e-05
+INFO:root:[Epoch: 87, Batch: 150000/443757, Loss: 144.4755, Acc: 66.8597%, lr: 1.0603e-05
+INFO:root:[Epoch: 87, Batch: 175000/443757, Loss: 145.2635, Acc: 66.5901%, lr: 1.0550e-05
+INFO:root:[Epoch: 87, Batch: 200000/443757, Loss: 145.4988, Acc: 66.5309%, lr: 1.0499e-05
+INFO:root:[Epoch: 87, Batch: 225000/443757, Loss: 145.6732, Acc: 66.4541%, lr: 1.0451e-05
+INFO:root:[Epoch: 87, Batch: 250000/443757, Loss: 145.8289, Acc: 66.4479%, lr: 1.0405e-05
+INFO:root:[Epoch: 87, Batch: 275000/443757, Loss: 146.0751, Acc: 66.4076%, lr: 1.0362e-05
+INFO:root:[Epoch: 87, Batch: 300000/443757, Loss: 146.0860, Acc: 66.4043%, lr: 1.0321e-05
+INFO:root:[Epoch: 87, Batch: 325000/443757, Loss: 146.1441, Acc: 66.3916%, lr: 1.0282e-05
+INFO:root:[Epoch: 87, Batch: 350000/443757, Loss: 146.4039, Acc: 66.3471%, lr: 1.0246e-05
+INFO:root:[Epoch: 87, Batch: 375000/443757, Loss: 146.4507, Acc: 66.3317%, lr: 1.0212e-05
+INFO:root:[Epoch: 87, Batch: 400000/443757, Loss: 146.4232, Acc: 66.3397%, lr: 1.0181e-05
+INFO:root:[Epoch: 87, Batch: 425000/443757, Loss: 146.6377, Acc: 66.2821%, lr: 1.0152e-05
+INFO:root:Overall Accuracy is: 47.20
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.90
+INFO:root:yes/no : 68.84
+INFO:root:number : 31.42
+INFO:root:Training started
+INFO:root:[Epoch: 88, Batch: 0/443757, Loss: 106.2543, Acc: 74.0000%, lr: 1.0839e-05
+INFO:root:[Epoch: 88, Batch: 25000/443757, Loss: 146.1007, Acc: 67.0978%, lr: 1.0776e-05
+INFO:root:[Epoch: 88, Batch: 50000/443757, Loss: 146.7997, Acc: 66.7932%, lr: 1.0716e-05
+INFO:root:[Epoch: 88, Batch: 75000/443757, Loss: 145.6330, Acc: 66.9714%, lr: 1.0659e-05
+INFO:root:[Epoch: 88, Batch: 100000/443757, Loss: 145.2739, Acc: 66.9235%, lr: 1.0603e-05
+INFO:root:[Epoch: 88, Batch: 125000/443757, Loss: 145.0281, Acc: 66.9068%, lr: 1.0550e-05
+INFO:root:[Epoch: 88, Batch: 150000/443757, Loss: 145.0740, Acc: 66.8957%, lr: 1.0499e-05
+INFO:root:[Epoch: 88, Batch: 175000/443757, Loss: 145.4200, Acc: 66.7878%, lr: 1.0451e-05
+INFO:root:[Epoch: 88, Batch: 200000/443757, Loss: 145.2255, Acc: 66.8578%, lr: 1.0405e-05
+INFO:root:[Epoch: 88, Batch: 225000/443757, Loss: 145.2238, Acc: 66.8891%, lr: 1.0362e-05
+INFO:root:[Epoch: 88, Batch: 250000/443757, Loss: 145.1868, Acc: 66.8730%, lr: 1.0321e-05
+INFO:root:[Epoch: 88, Batch: 275000/443757, Loss: 145.3016, Acc: 66.8366%, lr: 1.0282e-05
+INFO:root:[Epoch: 88, Batch: 300000/443757, Loss: 145.3153, Acc: 66.8419%, lr: 1.0246e-05
+INFO:root:[Epoch: 88, Batch: 325000/443757, Loss: 145.3813, Acc: 66.7802%, lr: 1.0212e-05
+INFO:root:[Epoch: 88, Batch: 350000/443757, Loss: 145.5331, Acc: 66.7239%, lr: 1.0181e-05
+INFO:root:[Epoch: 88, Batch: 375000/443757, Loss: 145.8332, Acc: 66.6564%, lr: 1.0152e-05
+INFO:root:[Epoch: 88, Batch: 400000/443757, Loss: 145.7035, Acc: 66.6652%, lr: 1.0126e-05
+INFO:root:[Epoch: 88, Batch: 425000/443757, Loss: 145.6674, Acc: 66.6475%, lr: 1.0102e-05
+INFO:root:Overall Accuracy is: 47.25
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 35.02
+INFO:root:yes/no : 68.79
+INFO:root:number : 31.50
+INFO:root:Training started
+INFO:root:[Epoch: 89, Batch: 0/443757, Loss: 116.6478, Acc: 70.0000%, lr: 1.0716e-05
+INFO:root:[Epoch: 89, Batch: 25000/443757, Loss: 143.9868, Acc: 67.6247%, lr: 1.0659e-05
+INFO:root:[Epoch: 89, Batch: 50000/443757, Loss: 144.1402, Acc: 67.2747%, lr: 1.0603e-05
+INFO:root:[Epoch: 89, Batch: 75000/443757, Loss: 143.8712, Acc: 67.3591%, lr: 1.0550e-05
+INFO:root:[Epoch: 89, Batch: 100000/443757, Loss: 144.1922, Acc: 67.1784%, lr: 1.0499e-05
+INFO:root:[Epoch: 89, Batch: 125000/443757, Loss: 144.5272, Acc: 67.1563%, lr: 1.0451e-05
+INFO:root:[Epoch: 89, Batch: 150000/443757, Loss: 144.7955, Acc: 67.0183%, lr: 1.0405e-05
+INFO:root:[Epoch: 89, Batch: 175000/443757, Loss: 145.3772, Acc: 66.8683%, lr: 1.0362e-05
+INFO:root:[Epoch: 89, Batch: 200000/443757, Loss: 145.4171, Acc: 66.8343%, lr: 1.0321e-05
+INFO:root:[Epoch: 89, Batch: 225000/443757, Loss: 145.6642, Acc: 66.7634%, lr: 1.0282e-05
+INFO:root:[Epoch: 89, Batch: 250000/443757, Loss: 145.7487, Acc: 66.7506%, lr: 1.0246e-05
+INFO:root:[Epoch: 89, Batch: 275000/443757, Loss: 145.7084, Acc: 66.7366%, lr: 1.0212e-05
+INFO:root:[Epoch: 89, Batch: 300000/443757, Loss: 145.9071, Acc: 66.6599%, lr: 1.0181e-05
+INFO:root:[Epoch: 89, Batch: 325000/443757, Loss: 145.9499, Acc: 66.6442%, lr: 1.0152e-05
+INFO:root:[Epoch: 89, Batch: 350000/443757, Loss: 145.6396, Acc: 66.6816%, lr: 1.0126e-05
+INFO:root:[Epoch: 89, Batch: 375000/443757, Loss: 145.7441, Acc: 66.6626%, lr: 1.0102e-05
+INFO:root:[Epoch: 89, Batch: 400000/443757, Loss: 146.0259, Acc: 66.5829%, lr: 1.0080e-05
+INFO:root:[Epoch: 89, Batch: 425000/443757, Loss: 145.9708, Acc: 66.5644%, lr: 1.0062e-05
+INFO:root:Overall Accuracy is: 47.07
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.86
+INFO:root:yes/no : 68.85
+INFO:root:number : 30.58
+INFO:root:Training started
+INFO:root:[Epoch: 90, Batch: 0/443757, Loss: 116.2723, Acc: 62.0000%, lr: 1.0603e-05
+INFO:root:[Epoch: 90, Batch: 25000/443757, Loss: 144.9120, Acc: 67.3932%, lr: 1.0550e-05
+INFO:root:[Epoch: 90, Batch: 50000/443757, Loss: 144.2858, Acc: 67.1728%, lr: 1.0499e-05
+INFO:root:[Epoch: 90, Batch: 75000/443757, Loss: 144.0685, Acc: 67.2472%, lr: 1.0451e-05
+INFO:root:[Epoch: 90, Batch: 100000/443757, Loss: 143.6947, Acc: 67.2824%, lr: 1.0405e-05
+INFO:root:[Epoch: 90, Batch: 125000/443757, Loss: 143.4491, Acc: 67.4138%, lr: 1.0362e-05
+INFO:root:[Epoch: 90, Batch: 150000/443757, Loss: 143.8471, Acc: 67.3142%, lr: 1.0321e-05
+INFO:root:[Epoch: 90, Batch: 175000/443757, Loss: 144.1957, Acc: 67.2534%, lr: 1.0282e-05
+INFO:root:[Epoch: 90, Batch: 200000/443757, Loss: 144.1666, Acc: 67.2267%, lr: 1.0246e-05
+INFO:root:[Epoch: 90, Batch: 225000/443757, Loss: 144.2855, Acc: 67.2108%, lr: 1.0212e-05
+INFO:root:[Epoch: 90, Batch: 250000/443757, Loss: 144.3145, Acc: 67.1190%, lr: 1.0181e-05
+INFO:root:[Epoch: 90, Batch: 275000/443757, Loss: 144.4928, Acc: 67.0576%, lr: 1.0152e-05
+INFO:root:[Epoch: 90, Batch: 300000/443757, Loss: 144.4317, Acc: 67.0545%, lr: 1.0126e-05
+INFO:root:[Epoch: 90, Batch: 325000/443757, Loss: 144.7327, Acc: 66.9488%, lr: 1.0102e-05
+INFO:root:[Epoch: 90, Batch: 350000/443757, Loss: 144.7915, Acc: 66.9313%, lr: 1.0080e-05
+INFO:root:[Epoch: 90, Batch: 375000/443757, Loss: 144.9884, Acc: 66.8578%, lr: 1.0062e-05
+INFO:root:[Epoch: 90, Batch: 400000/443757, Loss: 145.0295, Acc: 66.8374%, lr: 1.0045e-05
+INFO:root:[Epoch: 90, Batch: 425000/443757, Loss: 145.1996, Acc: 66.7745%, lr: 1.0031e-05
+INFO:root:Overall Accuracy is: 47.21
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.82
+INFO:root:yes/no : 68.90
+INFO:root:number : 31.61
+INFO:root:Training started
+INFO:root:[Epoch: 91, Batch: 0/443757, Loss: 140.8001, Acc: 76.0000%, lr: 1.0499e-05
+INFO:root:[Epoch: 91, Batch: 25000/443757, Loss: 141.5008, Acc: 67.4571%, lr: 1.0451e-05
+INFO:root:[Epoch: 91, Batch: 50000/443757, Loss: 143.1797, Acc: 67.0330%, lr: 1.0405e-05
+INFO:root:[Epoch: 91, Batch: 75000/443757, Loss: 143.6604, Acc: 66.9873%, lr: 1.0362e-05
+INFO:root:[Epoch: 91, Batch: 100000/443757, Loss: 143.2827, Acc: 67.0974%, lr: 1.0321e-05
+INFO:root:[Epoch: 91, Batch: 125000/443757, Loss: 143.6231, Acc: 67.1132%, lr: 1.0282e-05
+INFO:root:[Epoch: 91, Batch: 150000/443757, Loss: 143.9805, Acc: 66.9830%, lr: 1.0246e-05
+INFO:root:[Epoch: 91, Batch: 175000/443757, Loss: 144.4158, Acc: 66.8723%, lr: 1.0212e-05
+INFO:root:[Epoch: 91, Batch: 200000/443757, Loss: 144.4559, Acc: 66.8348%, lr: 1.0181e-05
+INFO:root:[Epoch: 91, Batch: 225000/443757, Loss: 144.7838, Acc: 66.7940%, lr: 1.0152e-05
+INFO:root:[Epoch: 91, Batch: 250000/443757, Loss: 144.7731, Acc: 66.7686%, lr: 1.0126e-05
+INFO:root:[Epoch: 91, Batch: 275000/443757, Loss: 144.8987, Acc: 66.7566%, lr: 1.0102e-05
+INFO:root:[Epoch: 91, Batch: 300000/443757, Loss: 144.8811, Acc: 66.7369%, lr: 1.0080e-05
+INFO:root:[Epoch: 91, Batch: 325000/443757, Loss: 144.5672, Acc: 66.8146%, lr: 1.0062e-05
+INFO:root:[Epoch: 91, Batch: 350000/443757, Loss: 144.8092, Acc: 66.7519%, lr: 1.0045e-05
+INFO:root:[Epoch: 91, Batch: 375000/443757, Loss: 145.1727, Acc: 66.6834%, lr: 1.0031e-05
+INFO:root:[Epoch: 91, Batch: 400000/443757, Loss: 145.2025, Acc: 66.6762%, lr: 1.0020e-05
+INFO:root:[Epoch: 91, Batch: 425000/443757, Loss: 145.2810, Acc: 66.6717%, lr: 1.0011e-05
+INFO:root:Overall Accuracy is: 46.90
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.58
+INFO:root:yes/no : 68.62
+INFO:root:number : 30.97
+INFO:root:Training started
+INFO:root:[Epoch: 92, Batch: 0/443757, Loss: 131.5676, Acc: 72.0000%, lr: 1.0405e-05
+INFO:root:[Epoch: 92, Batch: 25000/443757, Loss: 146.4299, Acc: 66.8982%, lr: 1.0362e-05
+INFO:root:[Epoch: 92, Batch: 50000/443757, Loss: 144.8754, Acc: 67.2328%, lr: 1.0321e-05
+INFO:root:[Epoch: 92, Batch: 75000/443757, Loss: 144.8007, Acc: 67.2725%, lr: 1.0282e-05
+INFO:root:[Epoch: 92, Batch: 100000/443757, Loss: 144.9148, Acc: 67.1774%, lr: 1.0246e-05
+INFO:root:[Epoch: 92, Batch: 125000/443757, Loss: 144.3586, Acc: 67.3179%, lr: 1.0212e-05
+INFO:root:[Epoch: 92, Batch: 150000/443757, Loss: 144.3457, Acc: 67.2976%, lr: 1.0181e-05
+INFO:root:[Epoch: 92, Batch: 175000/443757, Loss: 144.4347, Acc: 67.3082%, lr: 1.0152e-05
+INFO:root:[Epoch: 92, Batch: 200000/443757, Loss: 144.3493, Acc: 67.2742%, lr: 1.0126e-05
+INFO:root:[Epoch: 92, Batch: 225000/443757, Loss: 144.5756, Acc: 67.1526%, lr: 1.0102e-05
+INFO:root:[Epoch: 92, Batch: 250000/443757, Loss: 144.4644, Acc: 67.1418%, lr: 1.0080e-05
+INFO:root:[Epoch: 92, Batch: 275000/443757, Loss: 144.5104, Acc: 67.0998%, lr: 1.0062e-05
+INFO:root:[Epoch: 92, Batch: 300000/443757, Loss: 144.7591, Acc: 67.0102%, lr: 1.0045e-05
+INFO:root:[Epoch: 92, Batch: 325000/443757, Loss: 144.9783, Acc: 66.9186%, lr: 1.0031e-05
+INFO:root:[Epoch: 92, Batch: 350000/443757, Loss: 144.8254, Acc: 66.8756%, lr: 1.0020e-05
+INFO:root:[Epoch: 92, Batch: 375000/443757, Loss: 144.8049, Acc: 66.8655%, lr: 1.0011e-05
+INFO:root:[Epoch: 92, Batch: 400000/443757, Loss: 144.9079, Acc: 66.8126%, lr: 1.0005e-05
+INFO:root:[Epoch: 92, Batch: 425000/443757, Loss: 145.2130, Acc: 66.7364%, lr: 1.0001e-05
+INFO:root:Overall Accuracy is: 47.05
+INFO:root:Per Answer Type Accuracy is the following:
+INFO:root:other : 34.72
+INFO:root:yes/no : 68.75
+INFO:root:number : 31.25
+INFO:root:Training started
+INFO:root:[Epoch: 93, Batch: 0/443757, Loss: 128.7150, Acc: 64.0000%, lr: 1.0321e-05
+INFO:root:[Epoch: 93, Batch: 25000/443757, Loss: 143.6689, Acc: 67.2216%, lr: 1.0282e-05
+INFO:root:[Epoch: 93, Batch: 50000/443757, Loss: 142.3637, Acc: 67.6124%, lr: 1.0246e-05
+INFO:root:[Epoch: 93, Batch: 75000/443757, Loss: 142.8355, Acc: 67.4763%, lr: 1.0212e-05
+INFO:root:[Epoch: 93, Batch: 100000/443757, Loss: 142.5259, Acc: 67.6112%, lr: 1.0181e-05
+INFO:root:[Epoch: 93, Batch: 125000/443757, Loss: 142.6448, Acc: 67.5586%, lr: 1.0152e-05
+INFO:root:[Epoch: 93, Batch: 150000/443757, Loss: 143.3939, Acc: 67.3289%, lr: 1.0126e-05
+INFO:root:[Epoch: 93, Batch: 175000/443757, Loss: 143.4979, Acc: 67.3168%, lr: 1.0102e-05
+INFO:root:[Epoch: 93, Batch: 200000/443757, Loss: 143.5625, Acc: 67.3522%, lr: 1.0080e-05
+INFO:root:[Epoch: 93, Batch: 225000/443757, Loss: 144.0293, Acc: 67.2006%, lr: 1.0062e-05
+INFO:root:[Epoch: 93, Batch: 250000/443757, Loss: 144.3093, Acc: 67.1074%, lr: 1.0045e-05
+INFO:root:[Epoch: 93, Batch: 275000/443757, Loss: 144.4757, Acc: 67.0318%, lr: 1.0031e-05
+INFO:root:[Epoch: 93, Batch: 300000/443757, Loss: 144.2870, Acc: 67.0508%, lr: 1.0020e-05
+INFO:root:[Epoch: 93, Batch: 325000/443757, Loss: 144.4369, Acc: 67.0032%, lr: 1.0011e-05
+INFO:root:[Epoch: 93, Batch: 350000/443757, Loss: 144.5285, Acc: 66.9593%, lr: 1.0005e-05
+INFO:root:[Epoch: 93, Batch: 375000/443757, Loss: 144.5041, Acc: 66.9612%, lr: 1.0001e-05

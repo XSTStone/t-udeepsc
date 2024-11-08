@@ -95,6 +95,8 @@ def evaluate(ta_perform: str, net: torch.nn.Module, dataloader: Iterable,
                 loss = 0
                 texts, targets = texts.to(device), targets.to(device)
                 targets = targets[:,1:]
+                # print('text type in engine: ', type(texts))
+                # print('ta_perform content: ', ta_perform)
                 outputs = net(text=texts, ta_perform=ta_perform)
                 batch_size = targets.size(0)
                 preds = torch.zeros_like(targets)
@@ -163,9 +165,7 @@ def evaluate_vqa(ta_perform: str, net: torch.nn.Module, dataloader: Iterable,
 
     return vqaEval.accuracy
 
-"""
-根据不同任务类型，进行相应的损失值的计算
-"""
+
 def train_class_batch_uni(ta_perform, model, sel_batch, targets, criterion):
     loss = 0
     imgs, texts, speechs = sel_batch
@@ -192,9 +192,6 @@ def train_class_batch_uni(ta_perform, model, sel_batch, targets, criterion):
         loss = criterion[ta_perform](outputs, targets) * 8
     return loss, outputs
 
-"""
-用于初始化用于跟踪训练过程中的准确率、损失和 PSNR（峰值信噪比）的计量器
-"""
 def meter(ta_sel):
     acc_meter_dict = {}
     acc_meter_dict['imgc'] = AverageMeter()
@@ -207,47 +204,28 @@ def meter(ta_sel):
     psnr_meter = AverageMeter()
     return acc_meter_dict, loss_meter_dict, psnr_meter
 
-"""
-这段代码定义了一个 train_epoch_uni 函数，用于训练深度学习模型的一个训练周期
-model: 要训练的深度学习模型。
-criterion: 每个任务类型对应的损失函数字典。
-data_dict: 包含每个任务的数据加载器。
-optimizer: 优化器，用于更新模型参数。
-device: 训练所使用的设备（CPU 或 GPU）。
-epoch: 当前的训练周期。
-loss_scaler: 用于自动混合精度训练的损失缩放器。
-ta_sel: 任务类型的列表。
-max_norm: 梯度裁剪的最大范数。
-start_steps: 训练的起始步骤数。
-lr_schedule_values: 学习率调度的值。
-wd_schedule_values: 权重衰减调度的值。
-update_freq: 更新频率。
-print_freq: 打印日志的频率。
-"""
+
 def train_epoch_uni(model: torch.nn.Module, criterion: dict,
                 data_dict: dict, optimizer: torch.optim.Optimizer,
                 device: torch.device, epoch: int, loss_scaler, ta_sel, max_norm: float=0,
                 start_steps=None,lr_schedule_values=None, wd_schedule_values=None, 
                 update_freq=None, print_freq=10):
     model.train(True)                                                         
-    acc_meter_dict, loss_meter_dict, psnr_meter = meter(ta_sel)  # 创建用于跟踪每个任务的准确率、损失值和 PSNR（峰值信噪比）的计量器
+    acc_meter_dict, loss_meter_dict, psnr_meter = meter(ta_sel)
 
-    if loss_scaler is None:  # 根据是否使用损失缩放器来选择合适的梯度清零方式
+    if loss_scaler is None:    
         model.zero_grad()
         model.micro_steps = 0
     else:
         optimizer.zero_grad()
-    num_samples = 5000  # 准备数据的迭代器和样本数量
+    num_samples = 5000
     data_iter_step = 0
     num_tasks = len(data_dict)
     data_tuple = [data_loader for data_loader in data_dict.values()]
     # data_tuple[2],data_tuple[3],data_tuple[4]
-    # 开始数据处理循环
-    for data_batch in zip(data_tuple[0], data_tuple[1]):    # 使用 zip 函数将不同任务的数据加载器组合在一起，逐批处理数据
+    for data_batch in zip(data_tuple[0], data_tuple[1]):    
         step = data_iter_step // update_freq
-        it = start_steps + step
-        # 学习率和权重衰减更新
-        # 在每次更新频率到达时，更新优化器的学习率和权重衰减
+        it = start_steps + step  
         if lr_schedule_values is not None or wd_schedule_values is not None and data_iter_step % update_freq == 0:
             for i, param_group in enumerate(optimizer.param_groups):
                 if lr_schedule_values is not None:
@@ -255,11 +233,9 @@ def train_epoch_uni(model: torch.nn.Module, criterion: dict,
                 if wd_schedule_values is not None and param_group["weight_decay"] > 0:
                     param_group["weight_decay"] = wd_schedule_values[it]
         imgs, texts, speechs, targets = None, None, None, None
-        # 随机选择一个任务类型并获取对应的数据
         ta_index = np.random.randint(num_tasks)
         ta = ta_sel[ta_index]
         data = data_batch[ta_index]
-        # 根据不同的任务类型（图像、文本、视觉问答等）从 data 中提取输入和目标数据
         if ta.startswith('img'):
             imgs = data[0].to(device, non_blocking=True)
             targets = data[1].to(device, non_blocking=True)
@@ -280,19 +256,15 @@ def train_epoch_uni(model: torch.nn.Module, criterion: dict,
         batch_size = targets.shape[0]
         sel_batch = [imgs, texts, speechs]                                           
         # with torch.cuda.amp.autocast():
-        # 调用 train_class_batch_uni 函数计算损失和模型输出
         loss, outputs = train_class_batch_uni(
             ta, model, sel_batch, targets, criterion)
         loss_value = loss.item()
         # print(loss)
-        ######  Error
-        # 检查计算的损失是否有效。如果无效，则停止训练
+        ######  Error                              
         if not math.isfinite(loss_value):   
             print("Loss is {}, stopping training".format(loss_value))
             sys.exit(1)
         ######  Update
-        # 进行反向传播和优化
-        # 根据是否使用损失缩放器，选择不同的梯度更新方式
         if loss_scaler is None:
             loss /= update_freq
             model.backward(loss)
@@ -312,7 +284,6 @@ def train_epoch_uni(model: torch.nn.Module, criterion: dict,
         for group in optimizer.param_groups:
             min_lr,max_lr = min(min_lr, group["lr"]),max(max_lr, group["lr"])
 
-        # 根据任务类型更新准确率和损失计量器
         if ta.endswith('c'):
             acc_meter_dict[ta].update((outputs.max(-1)[-1] == targets).float().mean().item(), n=batch_size)
             loss_meter_dict[ta].update(loss_value, 1)
@@ -332,8 +303,7 @@ def train_epoch_uni(model: torch.nn.Module, criterion: dict,
         elif ta.startswith('msa'):
             # acc_meter.update((outputs.max(-1)[-1] == targets.max(-1)[-1]).float().mean().item(), n=batch_size)
             loss_meter_dict[ta].update(loss_value, 1)
-
-        # 每隔一定步骤打印当前的损失、准确率和学习率信息
+        
         if data_iter_step % print_freq == 0:
             if ta.startswith('imgc'):
                 print('Epoch:[%d] [%s] %d/%d: [loss: %.3f] [acc1: %.3f /100] [lr: %.3e]' 
@@ -362,7 +332,7 @@ def train_epoch_uni(model: torch.nn.Module, criterion: dict,
               
     train_stat = None
 
-    return train_stat
+    return train_stat 
 
 
 def train_class_batch_vqa(ta_perform, model, imgs, texts, targets, criterion):

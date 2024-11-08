@@ -77,6 +77,8 @@ class TDeepSC_imgc(nn.Module):
             noise_std, noise_snr = noise_std.cuda(), noise_snr.cpu().item()
         else:
             noise_std = torch.FloatTensor([1]) * 10**(-test_snr/20)  
+        if img is not None:
+            img = F.interpolate(img, size=(224, 224), mode='bilinear', align_corners=False)
         x = self.img_encoder(img, ta_perform)
         batch_size = x.shape[0]
         x = self.encoder_to_channel(x[:,0])
@@ -165,14 +167,15 @@ class TDeepSC_vqa(nn.Module):
                                 drop_path_rate=drop_path_rate,norm_layer=norm_layer, init_values=init_values,
                                 use_learnable_pos_emb=use_learnable_pos_emb)
         
-        bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        # bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        bert_ckpt = f"/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-{mode}"
         self.text_encoder = BertModel.from_pretrained(bert_ckpt)
         if mode=='tiny':
-            encoder_dim_text = 128
+            encoder_dim_text = 768
         elif mode=='small':
-            encoder_dim_text = 512
+            encoder_dim_text = 768
         else:
-            encoder_dim_text = 512
+            encoder_dim_text = 768
 
         self.num_symbols_img = 16  # Keep all feature vectors
         self.num_symbols_text = 6   # Keep all feature vectors
@@ -242,14 +245,17 @@ class TDeepSC_textc(nn.Module):
                  qkv_bias=False, qk_scale=None,norm_layer=nn.LayerNorm, init_values=0.,
                  ):
         super().__init__()
-        bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        # bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        bert_ckpt = f"/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-{mode}"
+
+        # bert_ckpt = '/home/local/Stone/code/t-udeepsc/pretrain-models/all_bert_models/bert-small' 
         self.text_encoder = BertModel.from_pretrained(bert_ckpt)
         if mode=='tiny':
-            encoder_embed_dim = 128
+            encoder_embed_dim = 768
         elif mode=='small':
-            encoder_embed_dim = 512
+            encoder_embed_dim = 768
         else:
-            encoder_embed_dim = 512
+            encoder_embed_dim = 768
 
         self.num_symbols = 4
 
@@ -258,57 +264,46 @@ class TDeepSC_textc(nn.Module):
         self.channel_to_decoder = nn.Linear(self.num_symbols, decoder_embed_dim)
 
         self.decoder = Decoder(depth=decoder_depth,embed_dim=decoder_embed_dim, 
-                                   num_heads=decoder_num_heads, dff=mlp_ratio*decoder_embed_dim, drop_rate=drop_rate)  # 解码器是多层自注意力机制，嵌入维度由decoder_num_heads决定
-        self.query_embedd = nn.Embedding(25, decoder_embed_dim)  # 为解码器生成嵌入查询向量的方法，用于引导解码过程 即文中图5中的W_ry
+                                   num_heads=decoder_num_heads, dff=mlp_ratio*decoder_embed_dim, drop_rate=drop_rate)
+        self.query_embedd = nn.Embedding(25, decoder_embed_dim)
 
 
-        self.head = nn.Linear(decoder_embed_dim, TEXTC_NUMCLASS)  # 通过线性层将解码器的输出映射到 TEXTC_NUMCLASS，这是最终的分类标签数
+        self.head = nn.Linear(decoder_embed_dim, TEXTC_NUMCLASS)
 
     def _init_weights(self, m):
         if isinstance(m, nn.Linear):
-            nn.init.xavier_uniform_(m.weight)  # 使用 xavier_uniform_ 初始化线性层的权重，并将偏置初始化为 0
+            nn.init.xavier_uniform_(m.weight)
             if isinstance(m, nn.Linear) and m.bias is not None:
                 nn.init.constant_(m.bias, 0)
-        elif isinstance(m, nn.LayerNorm):  # 初始化 LayerNorm 的权重为 1，偏置为 0
+        elif isinstance(m, nn.LayerNorm):
             nn.init.constant_(m.bias, 0)
             nn.init.constant_(m.weight, 1.0)
 
     def get_num_layers(self):
         return len(self.blocks)
 
-    """
-    no_weight_decay 函数的作用是返回一个集合，其中包含在优化过程中不需要进行权重衰减（weight decay）的参数名称。
-    权重衰减是一种正则化技术，它通过在每次更新时减小权重值，防止模型过拟合。
-    通常，像 weight decay 这样的正则化技术适用于大多数模型参数，
-    但对于一些特殊的参数（比如 pos_embed、cls_token、mask_token），权重衰减并不是必要的，甚至可能带来负面影响
-    pos_embed：位置嵌入
-    cls_token：分类标记
-    mask_token：用于掩码操作的标记
-    """
     @torch.jit.ignore
     def no_weight_decay(self):
         return {'pos_embed', 'cls_token', 'mask_token'}
 
     def forward(self, text=None, img=None, ta_perform=None, test_snr=torch.FloatTensor([12])):
-        x = self.text_encoder(ta_perform=None, input_ids= text, return_dict=False)[0]  # 输入文本通过BERT模型编码，返回每个token的隐藏状态X，形状为[batch size, seq_length, encoder_embed_dim]
-        # 其中batch size是一次处理的文本样本的数量，sequence_length表示每个文本样本的词汇长度，encoder_embed_dim是 BERT 模型的嵌入维度
-        # [0]表示取的是 BERT 的第一个返回值（隐藏状态），即 所有 token 的隐藏状态
+        x = self.text_encoder(input_ids= text, return_dict=False)[0]
         batch_size = x.shape[0]
         if self.training:
             noise_snr, noise_std = noise_gen(self.training)
             noise_std, noise_snr = noise_std.cuda(), noise_snr.cpu().item()
         else:
             noise_std = torch.FloatTensor([1]) * 10**(-test_snr/20)  
-        x = self.encoder_to_channel(x[:,0])  # x[:,0]形状为[batch_size, encoder_embed_dim]，即每个样本的第一个token的隐藏状态，cls_token；encoder_to_channel将该隐藏状态映射到符号空间
-        x = power_norm_batchwise(x)  # 对数据进行归一化
-        x = self.channel.Rayleigh(x, noise_std.item())  # 通过Rayleigh通道添加噪声。 噪声的标准差是 noise_std，基于训练时生成的 SNR 值
-        x = self.channel_to_decoder(x)  # 将通道输出映射回解码器的嵌入向量空间
+        x = self.encoder_to_channel(x[:,0])
+        x = power_norm_batchwise(x)
+        x = self.channel.Rayleigh(x, noise_std.item())
+        x = self.channel_to_decoder(x)
 
-        query_embed = self.query_embedd.weight.unsqueeze(0).repeat(batch_size, 1, 1)  # 生成任务查询嵌入 即文章图5的trainable task query embeddings; query_embed 的形状为 [batch_size, 25, decoder_embed_dim]
-        x = self.decoder(query_embed, x, None, None, None)  # 将映射到解码器嵌入向量空间的信号X，根据查询嵌入，来进行解码，回到最原始的数据状态---存疑
+        query_embed = self.query_embedd.weight.unsqueeze(0).repeat(batch_size, 1, 1)
+        x = self.decoder(query_embed, x, None, None, None) 
 
-        x = self.head(x.mean(1))  # 解码器输出经过平均池化后，通过分类头 self.head 进行分类
-        return x  # 返回分类结果
+        x = self.head(x.mean(1))
+        return x
     
 class TDeepSC_textr(nn.Module):
     def __init__(self,
@@ -317,14 +312,15 @@ class TDeepSC_textr(nn.Module):
                  qkv_bias=False, qk_scale=None,norm_layer=nn.LayerNorm, init_values=0.,
                  ):
         super().__init__()
-        bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        # bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/TDeepSC_Base/pretrain_models/bert-{mode}/"
+        bert_ckpt = f"/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-{mode}"
         self.text_encoder = BertModel.from_pretrained(bert_ckpt)
         if mode=='tiny':
-            encoder_embed_dim = 128
+            encoder_embed_dim = 768
         elif mode=='small':
-            encoder_embed_dim = 512
+            encoder_embed_dim = 768
         else:
-            encoder_embed_dim = 512
+            encoder_embed_dim = 768
 
         self.num_symbols = 24
         

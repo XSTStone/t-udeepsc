@@ -1,0 +1,11 @@
+INFO:root:Training started
+INFO:root:[Epoch: 1, Batch: 0/6920, Loss: 678.4873, lr: 0.0000e+00
+INFO:root:[Epoch: 1, Batch: 750/6920, Loss: 677.0179, lr: 4.3269e-07
+INFO:root:[Epoch: 1, Batch: 1500/6920, Loss: 669.5212, lr: 9.0144e-07
+INFO:root:[Epoch: 1, Batch: 2250/6920, Loss: 657.4697, lr: 1.3341e-06
+INFO:root:[Epoch: 1, Batch: 3000/6920, Loss: 647.5470, lr: 1.8029e-06
+INFO:root:[Epoch: 1, Batch: 3750/6920, Loss: 638.8838, lr: 2.2356e-06
+INFO:root:[Epoch: 1, Batch: 4500/6920, Loss: 632.6183, lr: 2.7043e-06
+INFO:root:[Epoch: 1, Batch: 5250/6920, Loss: 627.3738, lr: 3.1370e-06
+INFO:root:[Epoch: 1, Batch: 6000/6920, Loss: 622.1495, lr: 3.6058e-06
+INFO:root:[Epoch: 1, Batch: 6750/6920, Loss: 617.8874, lr: 4.0385e-06

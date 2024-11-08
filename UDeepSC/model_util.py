@@ -8,10 +8,12 @@ import torch.nn as nn
 from channel import *
 from functools import partial
 import torch.nn.functional as F
+import ssl
 
 
 import timm
-net = timm.create_model("vit_base_patch16_384", pretrained=True)
+#ssl._create_default_https_context = ssl._create_unverified_context
+net = timm.create_model("vit_base_patch16_384")
 
 
 

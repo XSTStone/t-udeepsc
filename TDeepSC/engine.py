@@ -3,8 +3,11 @@ import math
 import nltk
 import torch.nn as nn
 import sys
+import logging
+import os
 
 from utils import *
+from datetime import datetime
 from tqdm import tqdm
 from timm.data import Mixup
 from einops import rearrange
@@ -181,11 +184,22 @@ def train_epoch_it(model: torch.nn.Module, criterion: torch.nn.Module,
                 data_loader: Iterable, optimizer: torch.optim.Optimizer,
                 device: torch.device, epoch: int, loss_scaler, ta_perform, max_norm: float=0,
                 start_steps=None,lr_schedule_values=None, wd_schedule_values=None, 
-                update_freq=None, print_freq=50):
+                update_freq=None, print_freq=25):
     model.train(True)                                                         
     acc_meter = AverageMeter()
     psnr_meter = AverageMeter()
     loss_meter = AverageMeter()
+
+    # 设置日志文件的保存路径
+    logging_root_dir = "/home/local/Stone/code/t-udeepsc/TDeepSC/log"
+    current_date = datetime.now().strftime('%Y_%m_%d_%H%M')
+    log_filename = f"{logging_root_dir}/{ta_perform}/{current_date}_training.log"
+    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+
+    print("Log filename from engine.py: ", log_filename)
+
+    logging.basicConfig(filename=log_filename, level=logging.INFO)
+    logging.info("Training started")
 
     if loss_scaler is None:    
         model.zero_grad()
@@ -195,13 +209,24 @@ def train_epoch_it(model: torch.nn.Module, criterion: torch.nn.Module,
 
     for data_iter_step, (samples ,targets) in enumerate(data_loader):    
         step = data_iter_step // update_freq
+        # print('start_steps: ', start_steps, ' data_iter_step: ', data_iter_step, ' step: ', step)
+        # step = data_iter_step // update_freq
         it = start_steps + step  
         if lr_schedule_values is not None or wd_schedule_values is not None and data_iter_step % update_freq == 0:
             for i, param_group in enumerate(optimizer.param_groups):
                 if lr_schedule_values is not None:
-                    param_group["lr"] = lr_schedule_values[it] * param_group["lr_scale"]                
+                    if it < len(lr_schedule_values):
+                        param_group["lr"] = lr_schedule_values[it] * param_group["lr_scale"]
+                    else:
+                        print(f"Warning: 'it' ({it}) is out of bounds for 'lr_schedule_values' of size {len(lr_schedule_values)}")
                 if wd_schedule_values is not None and param_group["weight_decay"] > 0:
-                    param_group["weight_decay"] = wd_schedule_values[it]
+                    if it < len(wd_schedule_values):
+                        param_group["weight_decay"] = wd_schedule_values[it]
+                    else:
+                        print(f"Warning: 'it' ({it}) is out of bounds for 'wd_schedule_values' of size {len(wd_schedule_values)}")
+                   # param_group["lr"] = lr_schedule_values[it] * param_group["lr_scale"]                
+                # if wd_schedule_values is not None and param_group["weight_decay"] > 0:
+                    # param_group["weight_decay"] = wd_schedule_values[it]
 
         targets = targets.to(device, non_blocking=True)
         samples = samples.to(device, non_blocking=True)
@@ -251,18 +276,22 @@ def train_epoch_it(model: torch.nn.Module, criterion: torch.nn.Module,
         
         if data_iter_step % print_freq == 0:
             if ta_perform.startswith('imgc'):
+                logging.info(f'[Epoch: {epoch+1}, Batch: {batch_size*data_iter_step}/{len(data_loader.dataset)}, Loss: {loss_meter.avg:.4f}, Acc: {acc_meter.avg*100}%, lr: {max_lr:.4e}')
                 print('Epoch:[%d] %d/%d: [loss: %.3f] [acc1: %.3f /100] [lr: %.3e]' 
                     %(epoch, batch_size*data_iter_step, len(data_loader.dataset),
                         loss_meter.avg, acc_meter.avg*100, max_lr))
-            elif ta_perform.startswith('imgr'):
+            elif ta_perform.startswith('imgr'): 
+                logging.info(f'[Epoch: {epoch+1}, Batch: {batch_size*data_iter_step}/{len(data_loader.dataset)}, Loss: {loss_meter.avg:.4f}, PNSR: {psnr_meter.avg}, lr: {max_lr:.4e}')
                 print('Epoch:[%d] %d/%d: [loss: %.3f] [psnr: %.3f dB] [lr: %.3e]' 
                     %(epoch, batch_size*data_iter_step, len(data_loader.dataset),
                         loss_meter.avg, psnr_meter.avg, max_lr)) 
             elif ta_perform.startswith('textc'):
+                logging.info(f'[Epoch: {epoch+1}, Batch: {batch_size*data_iter_step}/{len(data_loader.dataset)}, Loss: {loss_meter.avg:.4f}, Acc: {acc_meter.avg*100}%, lr: {max_lr:.4e}')
                 print('Epoch:[%d] %d/%d: [loss: %.3f] [acc1: %.3f /100] [lr: %.3e]' 
                     %(epoch, batch_size*data_iter_step, len(data_loader.dataset),
                         loss_meter.avg, acc_meter.avg*100, max_lr)) 
             elif ta_perform.startswith('textr'):
+                logging.info(f'[Epoch: {epoch+1}, Batch: {batch_size*data_iter_step}/{len(data_loader.dataset)}, Loss: {loss_meter.avg:.4f}, lr: {max_lr:.4e}')
                 print('Epoch:[%d] %d/%d: [loss: %.3f] [lr: %.3e]' 
                     %(epoch, batch_size*data_iter_step, len(data_loader.dataset),
                         loss_meter.avg, max_lr)) 
@@ -288,6 +317,18 @@ def train_epoch_vqa(model: torch.nn.Module, criterion: torch.nn.Module,
     model.train(True)                                                         
     acc_meter = AverageMeter()
     loss_meter = AverageMeter()
+
+    # 设置日志文件的保存路径
+    logging_root_dir = "/home/local/Stone/code/t-udeepsc/TDeepSC/log"
+    current_date = datetime.now().strftime('%Y_%m_%d_%H%M')
+    log_filename = f"{logging_root_dir}/{ta_perform}/{current_date}_training.log"
+    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+
+    print("Log filename from engine.py: ", log_filename)
+
+    logging.basicConfig(filename=log_filename, level=logging.INFO)
+    logging.info("Training started")
+
 
     if loss_scaler is None:    
         model.zero_grad()
@@ -346,6 +387,7 @@ def train_epoch_vqa(model: torch.nn.Module, criterion: torch.nn.Module,
         
         if data_iter_step % print_freq == 0:
             if ta_perform.startswith('vqa'):
+                logging.info(f'[Epoch: {epoch+1}, Batch: {batch_size*data_iter_step}/{len(data_loader.dataset)}, Loss: {loss_meter.avg:.4f}, Acc: {acc_meter.avg*100:.4f}%, lr: {max_lr:.4e}')
                 print('Epoch:[%d] %d/%d: [loss: %.3f] [acc1: %.3f /100] [lr: %.3e]' 
                     %(epoch, batch_size*data_iter_step, len(data_loader.dataset),
                         loss_meter.avg, acc_meter.avg*100, max_lr))

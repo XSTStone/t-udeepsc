@@ -13,7 +13,7 @@ from utils import batch_index_select
 from timm.models.registry import register_model
 from timm.models.layers import trunc_normal_ as __call_trunc_normal_
 from typing import List, Callable, Union, Any, TypeVar, Tuple
-from transformers import BertForSequenceClassification, BertModel
+from transformers import BertForSequenceClassification, BertModel, BertTokenizer
 from model_util import Block, _cfg, PatchEmbed, get_sinusoid_encoding_table
 from base_args import IMGC_NUMCLASS,TEXTC_NUMCLASS,IMGR_LENGTH,TEXTR_NUMCLASS,VQA_NUMCLASS,MSA_NUMCLASS
 
@@ -42,7 +42,9 @@ class UDeepSC_M1(nn.Module):
                                 drop_path_rate=drop_path_rate,norm_layer=norm_layer, init_values=init_values,
                                 use_learnable_pos_emb=use_learnable_pos_emb)
         
-        bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/UDeepSC_Base/pretrained_models/bert-{mode}"
+        # bert_ckpt = f"/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-{mode}"
+        bert_ckpt = "/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-small"
+        # /home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-small
         self.text_encoder = BertModel.from_pretrained(bert_ckpt)
         
         self.spe_encoder = SPTEncoder(in_chans=encoder_in_chans,num_classes=encoder_num_classes, embed_dim=speech_embed_dim,
@@ -117,9 +119,6 @@ class UDeepSC_M1(nn.Module):
         else:
             noise_std = torch.FloatTensor([1]) * 10**(-test_snr/20) 
         if text is not None:
-            """
-            通过 text_encoder 提取文本特征，并根据任务类型（如文本分类 textc、文本回归 textr、视觉问答 vqa、多模态情感分析 msa）对特征进行不同的处理
-            """
             x_text = self.text_encoder(ta_perform, text, return_dict=False)[0]
             x_text = self.text_encoder_to_channel(x_text)
 
@@ -132,7 +131,6 @@ class UDeepSC_M1(nn.Module):
             elif ta_perform.startswith('msa'):
                 x_text = x_text[:,0].unsqueeze(1)
 
-            # 对文本特征进行功率归一化，并通过通道加入噪声，最后将其映射到解码器的维度
             x_text = power_norm_batchwise(x_text)
             x_text = self.channel.AWGN(x_text, noise_std.item())
             x_text = self.text_channel_to_decoder(x_text)
@@ -159,11 +157,7 @@ class UDeepSC_M1(nn.Module):
             x_spe = power_norm_batchwise(x_spe)
             x_spe = self.channel.AWGN(x_spe, noise_std.item())
             x_spe = self.spe_channel_to_decoder(x_spe)
-
-        # 如果是图像任务，则使用图像特征作为下一步的输入；
-        # 如果是文本任务，则使用文本特征；
-        # 如果是视觉问答，则将图像和文本特征拼接作为输入；
-        # 如果是多模态情感分析，则将图像、文本和语音特征拼接
+        
         if ta_perform.startswith('img'):
             x = x_img
         elif ta_perform.startswith('text'):
@@ -174,20 +168,19 @@ class UDeepSC_M1(nn.Module):
             x = torch.cat([x_img,x_text,x_spe], dim=1)
 
         batch_size = x.shape[0]
-        if ta_perform.endswith('r'):  # 如果任务是重构任务，则需要对X多进行一步解码和任务相关的线性映射
+        if ta_perform.endswith('r'):
             x = self.decoder(x, x, None, None, None) 
             x = self.head[ta_perform](x)
             return x
         else:
             query_embed = self.task_dict[ta_perform].weight.unsqueeze(0).repeat(batch_size, 1, 1)
-            x = self.decoder(query_embed, x, None, None, None)
-            # 根据任务类型，对X进行不同线性映射方法
+            x = self.decoder(query_embed, x, None, None, None) 
             if ta_perform.startswith('textr'): 
                 x = self.head[ta_perform](x)
             else:
                 x = self.head[ta_perform](x.mean(1))
             if ta_perform.startswith('vqa'):
-                x = self.sigmoid_layer(x)  # 在视觉问答任务中，使用 sigmoid 激活函数进行多标签分类
+                x = self.sigmoid_layer(x)
             return x
 
 
@@ -210,7 +203,9 @@ class UDeepSC_M2(nn.Module):
                                 drop_path_rate=drop_path_rate,norm_layer=norm_layer, init_values=init_values,
                                 use_learnable_pos_emb=use_learnable_pos_emb)
         
-        bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/UDeepSC_Base/pretrained_models/bert-{mode}"
+        # bert_ckpt = f"/Data1/zhangguangyi/SemanRes2/JSACCode/UDeepSC_Base/pretrained_models/bert-{mode}"
+        # bert_ckpt = f"/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-{mode}"
+        bert_ckpt = "/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-small"
         self.text_encoder = BertModel.from_pretrained(bert_ckpt)
         
         self.spe_encoder = SPTEncoder(in_chans=encoder_in_chans,num_classes=encoder_num_classes, embed_dim=speech_embed_dim,
@@ -313,7 +308,32 @@ class UDeepSC_M2(nn.Module):
         else:
             noise_std = torch.FloatTensor([1]) * 10**(-test_snr/20) 
         if text is not None:
+            device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+            # print('text size:', text.size)
+            # print('text shape:', text.shape)
+            # print('ta_perform size:', ta_pe
+            # print('ta_perform shape:', ta_perform.shape)
+            ta_perform_list = [ta_perform]
+            # x_text = self.text_encoder(ta_perform_list, text, return_dict=False)[0]
+            # ta_perform_tensor = torch.tensor(len(ta_perform))
+            # 自己加的，尝试修改报错str has no size
+            bert_ckpt = "/home/local/Stone/code/t-udeepsc/pretrain_models/all_bert_models/bert-small"
+            tokenizer = BertTokenizer.from_pretrained(bert_ckpt)
+            #print(type(text))
+            #ta_perform_list = [ta_perform] * text.size(0)
+            #text_gpu = text.to(device)
+            # print('text type: ', type(text))
+            # print('text content: ', text)
+            inputs = tokenizer(ta_perform, return_tensors='pt', padding=True, truncation=True, max_length=66)
+            input_ids = inputs['input_ids']
+            attention_mask = inputs['attention_mask']
+            #print('input_ids shape: ', input_ids.shape)
+            #print('text_gpu shape: ', text_gpu.shape)
+
+            # x_text = self.text_encoder(input_ids, attention_mask=attention_mask, return_dict=False)[0]
             x_text = self.text_encoder(ta_perform, text, return_dict=False)[0]
+            # print('x_text shape:', x_text.shape)
+            # print('x_text size:', x_text.size)
             # x_text = self.LN(x_text)
             if ta_perform.startswith('textc'):
                 x_text = x_text[:,0,:].unsqueeze(1)
